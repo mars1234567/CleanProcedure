@@ -1,0 +1,226 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="CleanModelStoreContainer" CdmEntityContainer="CleanProcedureEntities">
+    <EntitySetMapping Name="Clean_Card">
+      <EntityTypeMapping TypeName="CleanModel.Clean_Card">
+        <MappingFragment StoreEntitySet="Clean_Card">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="CardNo" ColumnName="CardNo" />
+          <ScalarProperty Name="DevType" ColumnName="DevType" />
+          <ScalarProperty Name="CardID" ColumnName="CardID" />
+          <ScalarProperty Name="CardName" ColumnName="CardName" />
+          <ScalarProperty Name="CardType" ColumnName="CardType" />
+          <ScalarProperty Name="Department" ColumnName="Department" />
+          <ScalarProperty Name="ExamRoom" ColumnName="ExamRoom" />
+          <ScalarProperty Name="Uses" ColumnName="Uses" />
+          <ScalarProperty Name="StartedDate" ColumnName="StartedDate" />
+          <ScalarProperty Name="Stopped" ColumnName="Stopped" />
+          <ScalarProperty Name="StoppedDate" ColumnName="StoppedDate" />
+          <ScalarProperty Name="StopReason" ColumnName="StopReason" />
+          <ScalarProperty Name="HandlingMan" ColumnName="HandlingMan" />
+          <ScalarProperty Name="DevRemark" ColumnName="DevRemark" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Clean_Factory">
+      <EntityTypeMapping TypeName="CleanModel.Clean_Factory">
+        <MappingFragment StoreEntitySet="Clean_Factory">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="DevType" ColumnName="DevType" />
+          <ScalarProperty Name="FcName" ColumnName="FcName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Clean_Pretreatment">
+      <EntityTypeMapping TypeName="CleanModel.Clean_Pretreatment">
+        <MappingFragment StoreEntitySet="Clean_Pretreatment">
+          <ScalarProperty Name="Row" ColumnName="Row" />
+          <ScalarProperty Name="CleanUser" ColumnName="CleanUser" />
+          <ScalarProperty Name="CleanCreateTime" ColumnName="CleanCreateTime" />
+          <ScalarProperty Name="CleanWorkStation" ColumnName="CleanWorkStation" />
+          <ScalarProperty Name="CleanStatus" ColumnName="CleanStatus" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Clean_Record">
+      <EntityTypeMapping TypeName="CleanModel.Clean_Record">
+        <MappingFragment StoreEntitySet="Clean_Record">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="CleanID" ColumnName="CleanID" />
+          <ScalarProperty Name="CardIp" ColumnName="CardIp" />
+          <ScalarProperty Name="CleanGroup" ColumnName="CleanGroup" />
+          <ScalarProperty Name="CardID" ColumnName="CardID" />
+          <ScalarProperty Name="CardName" ColumnName="CardName" />
+          <ScalarProperty Name="MarrorID" ColumnName="MarrorID" />
+          <ScalarProperty Name="MarrorName" ColumnName="MarrorName" />
+          <ScalarProperty Name="CleanType" ColumnName="CleanType" />
+          <ScalarProperty Name="CleanStatus" ColumnName="CleanStatus" />
+          <ScalarProperty Name="CleanCreateTime" ColumnName="CleanCreateTime" />
+          <ScalarProperty Name="CleanDate" ColumnName="CleanDate" />
+          <ScalarProperty Name="NowStep" ColumnName="NowStep" />
+          <ScalarProperty Name="NowStepName" ColumnName="NowStepName" />
+          <ScalarProperty Name="NowStepTime" ColumnName="NowStepTime" />
+          <ScalarProperty Name="CleanStart" ColumnName="CleanStart" />
+          <ScalarProperty Name="CleanStop" ColumnName="CleanStop" />
+          <ScalarProperty Name="CleanTime" ColumnName="CleanTime" />
+          <ScalarProperty Name="CleanCardName" ColumnName="CleanCardName" />
+          <ScalarProperty Name="CleanDetail" ColumnName="CleanDetail" />
+          <ScalarProperty Name="CleanAllTime" ColumnName="CleanAllTime" />
+          <ScalarProperty Name="UseStatus" ColumnName="UseStatus" />
+          <ScalarProperty Name="ZuofeiID" ColumnName="ZuofeiID" />
+          <ScalarProperty Name="ZuofeiTime" ColumnName="ZuofeiTime" />
+          <ScalarProperty Name="Endoscopic" ColumnName="Endoscopic" />
+          <ScalarProperty Name="PatientID" ColumnName="PatientID" />
+          <ScalarProperty Name="PatientName" ColumnName="PatientName" />
+          <ScalarProperty Name="Sex" ColumnName="Sex" />
+          <ScalarProperty Name="Age" ColumnName="Age" />
+          <ScalarProperty Name="ExamRoom" ColumnName="ExamRoom" />
+          <ScalarProperty Name="ExamDoctor" ColumnName="ExamDoctor" />
+          <ScalarProperty Name="ExamNurse" ColumnName="ExamNurse" />
+          <ScalarProperty Name="ExamDate" ColumnName="ExamDate" />
+          <ScalarProperty Name="ExamTime" ColumnName="ExamTime" />
+          <ScalarProperty Name="ExamComputer" ColumnName="ExamComputer" />
+          <ScalarProperty Name="ReportDoctor" ColumnName="ReportDoctor" />
+          <ScalarProperty Name="HP" ColumnName="HP" />
+          <ScalarProperty Name="Negative" ColumnName="Negative" />
+          <ScalarProperty Name="Report" ColumnName="Report" />
+          <ScalarProperty Name="Remark" ColumnName="Remark" />
+          <ScalarProperty Name="SevereTag" ColumnName="SevereTag" />
+          <ScalarProperty Name="OtherInfect" ColumnName="OtherInfect" />
+          <ScalarProperty Name="MarrorStatus" ColumnName="MarrorStatus" />
+          <ScalarProperty Name="MarrorType" ColumnName="MarrorType" />
+          <ScalarProperty Name="MarrorCleanPerson" ColumnName="MarrorCleanPerson" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Clean_RecordList">
+      <EntityTypeMapping TypeName="CleanModel.Clean_RecordList">
+        <MappingFragment StoreEntitySet="Clean_RecordList">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="CleanCard" ColumnName="CleanCard" />
+          <ScalarProperty Name="CleanIp" ColumnName="CleanIp" />
+          <ScalarProperty Name="StartTime" ColumnName="StartTime" />
+          <ScalarProperty Name="CleanPort" ColumnName="CleanPort" />
+          <ScalarProperty Name="StepTime" ColumnName="StepTime" />
+          <ScalarProperty Name="StepName" ColumnName="StepName" />
+          <ScalarProperty Name="StepNum" ColumnName="StepNum" />
+          <ScalarProperty Name="MaxNum" ColumnName="MaxNum" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Dic_Area">
+      <EntityTypeMapping TypeName="CleanModel.Dic_Area">
+        <MappingFragment StoreEntitySet="Dic_Area">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="AreaNo" ColumnName="AreaNo" />
+          <ScalarProperty Name="AreaName" ColumnName="AreaName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Dic_UserRole">
+      <EntityTypeMapping TypeName="CleanModel.Dic_UserRole">
+        <MappingFragment StoreEntitySet="Dic_UserRole">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="RoleNum" ColumnName="RoleNum" />
+          <ScalarProperty Name="RoleName" ColumnName="RoleName" />
+          <ScalarProperty Name="RoleAttr0" ColumnName="RoleAttr0" />
+          <ScalarProperty Name="RoleAttr1" ColumnName="RoleAttr1" />
+          <ScalarProperty Name="RoleAttr2" ColumnName="RoleAttr2" />
+          <ScalarProperty Name="RoleAttr3" ColumnName="RoleAttr3" />
+          <ScalarProperty Name="RoleAttr4" ColumnName="RoleAttr4" />
+          <ScalarProperty Name="RoleAttr5" ColumnName="RoleAttr5" />
+          <ScalarProperty Name="RoleAttr6" ColumnName="RoleAttr6" />
+          <ScalarProperty Name="RoleAttr7" ColumnName="RoleAttr7" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Dic_Workgroup">
+      <EntityTypeMapping TypeName="CleanModel.Dic_Workgroup">
+        <MappingFragment StoreEntitySet="Dic_Workgroup">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="WorkGroupNum" ColumnName="WorkGroupNum" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Endoscopic_Device">
+      <EntityTypeMapping TypeName="CleanModel.Endoscopic_Device">
+        <MappingFragment StoreEntitySet="Endoscopic_Device">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="DevName" ColumnName="DevName" />
+          <ScalarProperty Name="DevFac" ColumnName="DevFac" />
+          <ScalarProperty Name="Department" ColumnName="Department" />
+          <ScalarProperty Name="ExamRoom" ColumnName="ExamRoom" />
+          <ScalarProperty Name="DevRemark" ColumnName="DevRemark" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Endoscopic_Mirror">
+      <EntityTypeMapping TypeName="CleanModel.Endoscopic_Mirror">
+        <MappingFragment StoreEntitySet="Endoscopic_Mirror">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="MirrorID" ColumnName="MirrorID" />
+          <ScalarProperty Name="MirrorCardID" ColumnName="MirrorCardID" />
+          <ScalarProperty Name="DevName" ColumnName="DevName" />
+          <ScalarProperty Name="DevFac" ColumnName="DevFac" />
+          <ScalarProperty Name="Department" ColumnName="Department" />
+          <ScalarProperty Name="ExamRoom" ColumnName="ExamRoom" />
+          <ScalarProperty Name="Uses" ColumnName="Uses" />
+          <ScalarProperty Name="DevRemark" ColumnName="DevRemark" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Clean_CardDevice">
+      <EntityTypeMapping TypeName="CleanModel.Clean_CardDevice">
+        <MappingFragment StoreEntitySet="Clean_CardDevice">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="CardNo" ColumnName="CardNo" />
+          <ScalarProperty Name="CardName" ColumnName="CardName" />
+          <ScalarProperty Name="DevType" ColumnName="DevType" />
+          <ScalarProperty Name="StepCount" ColumnName="StepCount" />
+          <ScalarProperty Name="StepNumber" ColumnName="StepNumber" />
+          <ScalarProperty Name="StepName" ColumnName="StepName" />
+          <ScalarProperty Name="StepTime" ColumnName="StepTime" />
+          <ScalarProperty Name="StepType" ColumnName="StepType" />
+          <ScalarProperty Name="LastStepNumber" ColumnName="LastStepNumber" />
+          <ScalarProperty Name="LastStepName" ColumnName="LastStepName" />
+          <ScalarProperty Name="LastStepTime" ColumnName="LastStepTime" />
+          <ScalarProperty Name="DeviceName" ColumnName="DeviceName" />
+          <ScalarProperty Name="ClientIP" ColumnName="ClientIP" />
+          <ScalarProperty Name="ClientPort" ColumnName="ClientPort" />
+          <ScalarProperty Name="WorkStationIP" ColumnName="WorkStationIP" />
+          <ScalarProperty Name="CleanID" ColumnName="CleanID" />
+          <ScalarProperty Name="ServerIp" ColumnName="ServerIp" />
+          <ScalarProperty Name="ServerPort" ColumnName="ServerPort" />
+          <ScalarProperty Name="CleanGroup" ColumnName="CleanGroup" />
+          <ScalarProperty Name="StartedDate" ColumnName="StartedDate" />
+          <ScalarProperty Name="Stopped" ColumnName="Stopped" />
+          <ScalarProperty Name="StoppedDate" ColumnName="StoppedDate" />
+          <ScalarProperty Name="StopReason" ColumnName="StopReason" />
+          <ScalarProperty Name="HandlingMan" ColumnName="HandlingMan" />
+          <ScalarProperty Name="MsgIp" ColumnName="MsgIp" />
+          <ScalarProperty Name="Remark" ColumnName="Remark" />
+          <ScalarProperty Name="MarrorID" ColumnName="MarrorID" />
+          <ScalarProperty Name="MarrorName" ColumnName="MarrorName" />
+          <ScalarProperty Name="MarrorType" ColumnName="MarrorType" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Clean_User">
+      <EntityTypeMapping TypeName="CleanModel.Clean_User">
+        <MappingFragment StoreEntitySet="Clean_User">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+          <ScalarProperty Name="LoginName" ColumnName="LoginName" />
+          <ScalarProperty Name="CardID" ColumnName="CardID" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="RoleNum" ColumnName="RoleNum" />
+          <ScalarProperty Name="WorkGroupNum" ColumnName="WorkGroupNum" />
+          <ScalarProperty Name="Department" ColumnName="Department" />
+          <ScalarProperty Name="Signature" ColumnName="Signature" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

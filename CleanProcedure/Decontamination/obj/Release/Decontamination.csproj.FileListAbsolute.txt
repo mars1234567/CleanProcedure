@@ -1,0 +1,15 @@
+I:\clean\work\CleanProcedure\Decontamination\bin\Release\Decontamination.exe
+I:\clean\work\CleanProcedure\Decontamination\bin\Release\Decontamination.pdb
+I:\clean\work\CleanProcedure\Decontamination\bin\Release\CleanProcedure.dll
+I:\clean\work\CleanProcedure\Decontamination\bin\Release\EntityFramework.dll
+I:\clean\work\CleanProcedure\Decontamination\bin\Release\CleanProcedure.pdb
+I:\clean\work\CleanProcedure\Decontamination\bin\Release\EntityFramework.xml
+I:\clean\work\CleanProcedure\Decontamination\bin\Release\zh-Hans\EntityFramework.resources.dll
+I:\clean\work\CleanProcedure\Decontamination\obj\Release\Decontamination.csprojResolveAssemblyReference.cache
+I:\clean\work\CleanProcedure\Decontamination\obj\Release\Decontamination.Properties.Resources.resources
+I:\clean\work\CleanProcedure\Decontamination\obj\Release\Decontamination.csproj.GenerateResource.Cache
+I:\clean\work\CleanProcedure\Decontamination\obj\Release\Decontamination.exe
+I:\clean\work\CleanProcedure\Decontamination\obj\Release\Decontamination.pdb
+I:\clean\work\CleanProcedure\Decontamination\bin\Release\Decontamination.exe.config
+I:\clean\work\CleanProcedure\Decontamination\obj\Release\Decontamination.Resource1.resources
+I:\clean\work\CleanProcedure\Decontamination\obj\Release\Decontamination.CleanForm.resources

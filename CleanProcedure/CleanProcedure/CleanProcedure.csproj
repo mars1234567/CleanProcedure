@@ -1,0 +1,164 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{6F8B03F8-31EA-445B-9D3D-97B63AB352D9}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CleanProcedure</RootNamespace>
+    <AssemblyName>CleanProcedure</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=4.4.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\EntityFramework.5.0.0\lib\net40\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer">
+      <HintPath>..\packages\EntityFramework.6.1.0\lib\net40\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CardList.cs" />
+    <Compile Include="Clean.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Clean.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Clean.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Clean.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Clean.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Clean.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Clean_Card.cs">
+      <DependentUpon>Clean.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Clean_CardDevice.cs">
+      <DependentUpon>Clean.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Clean_Factory.cs">
+      <DependentUpon>Clean.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Clean_Pretreatment.cs">
+      <DependentUpon>Clean.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Clean_Record.cs">
+      <DependentUpon>Clean.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Clean_RecordList.cs">
+      <DependentUpon>Clean.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Clean_User.cs">
+      <DependentUpon>Clean.tt</DependentUpon>
+    </Compile>
+    <Compile Include="comm\appsettingcfg.cs" />
+    <Compile Include="comm\ConfigMgr.cs" />
+    <Compile Include="comm\DefaultCls.cs" />
+    <Compile Include="comm\LogHelper.cs" />
+    <Compile Include="comm\smessagequeue.cs" />
+    <Compile Include="Config_func.cs" />
+    <Compile Include="Dic_Area.cs">
+      <DependentUpon>Clean.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Dic_UserRole.cs">
+      <DependentUpon>Clean.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Dic_Workgroup.cs">
+      <DependentUpon>Clean.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Endoscopic_Device.cs">
+      <DependentUpon>Clean.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Endoscopic_Mirror.cs">
+      <DependentUpon>Clean.tt</DependentUpon>
+    </Compile>
+    <Compile Include="FinishedState.cs" />
+    <Compile Include="Monitor.cs" />
+    <Compile Include="PendingState.cs" />
+    <Compile Include="RunningState.cs" />
+    <Compile Include="StepNode.cs" />
+    <Compile Include="Task.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="State.cs" />
+    <Compile Include="TaskInfo.cs" />
+    <Compile Include="UDP\BufferManager.cs" />
+    <Compile Include="UDP\SocketAsyncEventArgsPool.cs" />
+    <Compile Include="UDP\ThreadPing.cs" />
+    <Compile Include="UDP\UdpReceiveSocket.cs" />
+    <Compile Include="UDP\UdpSendSocket.cs" />
+    <Compile Include="UDP\UdpServer.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+    <EntityDeploy Include="Clean.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>Clean.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="Clean.edmx.diagram">
+      <DependentUpon>Clean.edmx</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Clean.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Clean.edmx</DependentUpon>
+      <LastGenOutput>Clean.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Clean.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Clean.edmx</DependentUpon>
+      <LastGenOutput>Clean.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

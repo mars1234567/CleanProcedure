@@ -1,0 +1,11 @@
+I:\clean\work\CleanProcedure\CleanProcedure\bin\Release\CleanProcedure.dll.config
+I:\clean\work\CleanProcedure\CleanProcedure\bin\Release\CleanProcedure.dll
+I:\clean\work\CleanProcedure\CleanProcedure\bin\Release\CleanProcedure.pdb
+I:\clean\work\CleanProcedure\CleanProcedure\bin\Release\EntityFramework.dll
+I:\clean\work\CleanProcedure\CleanProcedure\bin\Release\EntityFramework.SqlServer.dll
+I:\clean\work\CleanProcedure\CleanProcedure\bin\Release\EntityFramework.xml
+I:\clean\work\CleanProcedure\CleanProcedure\bin\Release\EntityFramework.SqlServer.xml
+I:\clean\work\CleanProcedure\CleanProcedure\bin\Release\zh-Hans\EntityFramework.resources.dll
+I:\clean\work\CleanProcedure\CleanProcedure\obj\Release\CleanProcedure.dll
+I:\clean\work\CleanProcedure\CleanProcedure\obj\Release\CleanProcedure.pdb
+I:\clean\work\CleanProcedure\CleanProcedure\obj\Release\CleanProcedure.csprojResolveAssemblyReference.cache

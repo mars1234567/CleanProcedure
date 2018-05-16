@@ -1,0 +1,11 @@
+I:\clean\work\CleanProcedure\ConsoleApplication1\bin\Release\ConsoleApplication1.exe.config
+I:\clean\work\CleanProcedure\ConsoleApplication1\bin\Release\ConsoleApplication1.exe
+I:\clean\work\CleanProcedure\ConsoleApplication1\bin\Release\ConsoleApplication1.pdb
+I:\clean\work\CleanProcedure\ConsoleApplication1\bin\Release\CleanProcedure.dll
+I:\clean\work\CleanProcedure\ConsoleApplication1\bin\Release\EntityFramework.dll
+I:\clean\work\CleanProcedure\ConsoleApplication1\bin\Release\CleanProcedure.pdb
+I:\clean\work\CleanProcedure\ConsoleApplication1\bin\Release\EntityFramework.xml
+I:\clean\work\CleanProcedure\ConsoleApplication1\bin\Release\zh-Hans\EntityFramework.resources.dll
+I:\clean\work\CleanProcedure\ConsoleApplication1\obj\Release\ConsoleApplication1.csprojResolveAssemblyReference.cache
+I:\clean\work\CleanProcedure\ConsoleApplication1\obj\Release\ConsoleApplication1.exe
+I:\clean\work\CleanProcedure\ConsoleApplication1\obj\Release\ConsoleApplication1.pdb

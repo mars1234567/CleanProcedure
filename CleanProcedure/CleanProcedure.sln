@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.30501.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CleanProcedure", "CleanProcedure\CleanProcedure.csproj", "{6F8B03F8-31EA-445B-9D3D-97B63AB352D9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Decontamination", "Decontamination\Decontamination.csproj", "{3C0D21A0-5EA9-46CE-91ED-0C38CA527C34}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6F8B03F8-31EA-445B-9D3D-97B63AB352D9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6F8B03F8-31EA-445B-9D3D-97B63AB352D9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6F8B03F8-31EA-445B-9D3D-97B63AB352D9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6F8B03F8-31EA-445B-9D3D-97B63AB352D9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3C0D21A0-5EA9-46CE-91ED-0C38CA527C34}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3C0D21A0-5EA9-46CE-91ED-0C38CA527C34}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3C0D21A0-5EA9-46CE-91ED-0C38CA527C34}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3C0D21A0-5EA9-46CE-91ED-0C38CA527C34}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

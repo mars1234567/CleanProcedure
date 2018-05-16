@@ -1,0 +1,193 @@
+程序出现异常
+异常说明：System.Type--
+2018-05-15 11:24:06
+★异常类型：InvalidOperationException
+★异常消息：堆栈为空。
+★异常信息：   在 System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   在 System.Collections.Generic.Stack`1.Pop()
+   在 udp_csharp.SocketAsyncEventArgsPool.Pop() 位置 i:\clean\work\CleanProcedure\CleanProcedure\UDP\SocketAsyncEventArgsPool.cs:行号 41
+   在 udp_csharp.UdpSendSocket.Send(EndPoint remoteEndPoint) 位置 i:\clean\work\CleanProcedure\CleanProcedure\UDP\UdpSendSocket.cs:行号 71
+   在 udp_csharp.UdpServer.communicationRec_OnDataReceived(Object sender, SocketAsyncEventArgs e) 位置 i:\clean\work\CleanProcedure\CleanProcedure\UDP\UdpServer.cs:行号 98
+   在 udp_csharp.UdpReceiveSocket.processReceived(SocketAsyncEventArgs e) 位置 i:\clean\work\CleanProcedure\CleanProcedure\UDP\UdpReceiveSocket.cs:行号 115
+
+
+
+程序出现异常
+异常说明：System.Type--
+2018-05-15 13:33:01
+★异常类型：NullReferenceException
+★异常消息：未将对象引用设置到对象的实例。
+★异常信息：   在 CleanProcedure.Task.Running(String ClientIP, String card) 位置 i:\clean\work\CleanProcedure\CleanProcedure\Task.cs:行号 173
+   在 CleanProcedure.Task.Handle(String ClientIP, String card) 位置 i:\clean\work\CleanProcedure\CleanProcedure\Task.cs:行号 240
+   在 CleanProcedure.CleanManager.ProcessDelegate(QueueInfo info) 位置 i:\clean\work\CleanProcedure\Decontamination\CleanManager.cs:行号 64
+   在 audiotest.BusinessInfoHelper.ScanQueue() 位置 i:\clean\work\CleanProcedure\CleanProcedure\comm\smessagequeue.cs:行号 90
+
+
+
+程序出现异常
+异常说明：System.Type--
+2018-05-15 13:33:41
+★异常类型：ArgumentException
+★异常消息：已添加了具有相同键的项。
+★异常信息：   在 System.ThrowHelper.ThrowArgumentException(ExceptionResource resource)
+   在 System.Collections.Generic.Dictionary`2.Insert(TKey key, TValue value, Boolean add)
+   在 CleanProcedure.Task.Pending(String ClientIP, String card) 位置 i:\clean\work\CleanProcedure\CleanProcedure\Task.cs:行号 143
+   在 CleanProcedure.Task.Handle(String ClientIP, String card) 位置 i:\clean\work\CleanProcedure\CleanProcedure\Task.cs:行号 233
+   在 CleanProcedure.CleanManager.ProcessDelegate(QueueInfo info) 位置 i:\clean\work\CleanProcedure\Decontamination\CleanManager.cs:行号 64
+   在 audiotest.BusinessInfoHelper.ScanQueue() 位置 i:\clean\work\CleanProcedure\CleanProcedure\comm\smessagequeue.cs:行号 91
+
+
+
+程序出现异常
+异常说明：System.Type--
+2018-05-15 13:33:42
+★异常类型：ArgumentException
+★异常消息：已添加了具有相同键的项。
+★异常信息：   在 System.ThrowHelper.ThrowArgumentException(ExceptionResource resource)
+   在 System.Collections.Generic.Dictionary`2.Insert(TKey key, TValue value, Boolean add)
+   在 CleanProcedure.Task.Pending(String ClientIP, String card) 位置 i:\clean\work\CleanProcedure\CleanProcedure\Task.cs:行号 143
+   在 CleanProcedure.Task.Handle(String ClientIP, String card) 位置 i:\clean\work\CleanProcedure\CleanProcedure\Task.cs:行号 233
+   在 CleanProcedure.CleanManager.ProcessDelegate(QueueInfo info) 位置 i:\clean\work\CleanProcedure\Decontamination\CleanManager.cs:行号 64
+   在 audiotest.BusinessInfoHelper.ScanQueue() 位置 i:\clean\work\CleanProcedure\CleanProcedure\comm\smessagequeue.cs:行号 91
+
+
+
+程序出现异常
+异常说明：System.Type--
+2018-05-15 14:07:32
+★异常类型：ArgumentException
+★异常消息：已添加了具有相同键的项。
+★异常信息：   在 System.ThrowHelper.ThrowArgumentException(ExceptionResource resource)
+   在 System.Collections.Generic.Dictionary`2.Insert(TKey key, TValue value, Boolean add)
+   在 CleanProcedure.Task.Pending(String ClientIP, String card) 位置 i:\clean\work\CleanProcedure\CleanProcedure\Task.cs:行号 143
+   在 CleanProcedure.Task.Handle(String ClientIP, String card) 位置 i:\clean\work\CleanProcedure\CleanProcedure\Task.cs:行号 234
+   在 CleanProcedure.CleanManager.ProcessDelegate(QueueInfo info) 位置 i:\clean\work\CleanProcedure\Decontamination\CleanManager.cs:行号 64
+   在 audiotest.BusinessInfoHelper.ScanQueue() 位置 i:\clean\work\CleanProcedure\CleanProcedure\comm\smessagequeue.cs:行号 91
+
+
+
+程序出现异常
+异常说明：System.Type--
+2018-05-15 14:10:11
+★异常类型：ArgumentException
+★异常消息：已添加了具有相同键的项。
+★异常信息：   在 System.ThrowHelper.ThrowArgumentException(ExceptionResource resource)
+   在 System.Collections.Generic.Dictionary`2.Insert(TKey key, TValue value, Boolean add)
+   在 CleanProcedure.Task.Pending(String ClientIP, String card) 位置 i:\clean\work\CleanProcedure\CleanProcedure\Task.cs:行号 143
+   在 CleanProcedure.Task.Handle(String ClientIP, String card) 位置 i:\clean\work\CleanProcedure\CleanProcedure\Task.cs:行号 234
+   在 CleanProcedure.CleanManager.ProcessDelegate(QueueInfo info) 位置 i:\clean\work\CleanProcedure\Decontamination\CleanManager.cs:行号 64
+   在 audiotest.BusinessInfoHelper.ScanQueue() 位置 i:\clean\work\CleanProcedure\CleanProcedure\comm\smessagequeue.cs:行号 91
+
+
+
+程序出现异常
+异常说明：System.Type--
+2018-05-15 14:19:52
+★异常类型：ArgumentException
+★异常消息：已添加了具有相同键的项。
+★异常信息：   在 System.ThrowHelper.ThrowArgumentException(ExceptionResource resource)
+   在 System.Collections.Generic.Dictionary`2.Insert(TKey key, TValue value, Boolean add)
+   在 CleanProcedure.Task.Pending(String ClientIP, String card) 位置 i:\clean\work\CleanProcedure\CleanProcedure\Task.cs:行号 143
+   在 CleanProcedure.Task.Handle(String ClientIP, String card) 位置 i:\clean\work\CleanProcedure\CleanProcedure\Task.cs:行号 234
+   在 CleanProcedure.CleanManager.ProcessDelegate(QueueInfo info) 位置 i:\clean\work\CleanProcedure\Decontamination\CleanManager.cs:行号 64
+   在 audiotest.BusinessInfoHelper.ScanQueue() 位置 i:\clean\work\CleanProcedure\CleanProcedure\comm\smessagequeue.cs:行号 91
+
+
+
+程序出现异常
+异常说明：System.Type--
+2018-05-15 14:39:04
+★异常类型：ArgumentException
+★异常消息：已添加了具有相同键的项。
+★异常信息：   在 System.ThrowHelper.ThrowArgumentException(ExceptionResource resource)
+   在 System.Collections.Generic.Dictionary`2.Insert(TKey key, TValue value, Boolean add)
+   在 CleanProcedure.Task.Pending(String ClientIP, String card) 位置 i:\clean\work\CleanProcedure\CleanProcedure\Task.cs:行号 143
+   在 CleanProcedure.Task.Handle(String ClientIP, String card) 位置 i:\clean\work\CleanProcedure\CleanProcedure\Task.cs:行号 234
+   在 CleanProcedure.CleanManager.ProcessDelegate(QueueInfo info) 位置 i:\clean\work\CleanProcedure\Decontamination\CleanManager.cs:行号 64
+   在 audiotest.BusinessInfoHelper.ScanQueue() 位置 i:\clean\work\CleanProcedure\CleanProcedure\comm\smessagequeue.cs:行号 91
+
+
+
+程序出现异常
+异常说明：System.Type--
+2018-05-15 14:43:39
+★异常类型：ArgumentException
+★异常消息：已添加了具有相同键的项。
+★异常信息：   在 System.ThrowHelper.ThrowArgumentException(ExceptionResource resource)
+   在 System.Collections.Generic.Dictionary`2.Insert(TKey key, TValue value, Boolean add)
+   在 CleanProcedure.Task.Pending(String ClientIP, String card) 位置 i:\clean\work\CleanProcedure\CleanProcedure\Task.cs:行号 143
+   在 CleanProcedure.Task.Handle(String ClientIP, String card) 位置 i:\clean\work\CleanProcedure\CleanProcedure\Task.cs:行号 234
+   在 CleanProcedure.CleanManager.ProcessDelegate(QueueInfo info) 位置 i:\clean\work\CleanProcedure\Decontamination\CleanManager.cs:行号 64
+   在 audiotest.BusinessInfoHelper.ScanQueue() 位置 i:\clean\work\CleanProcedure\CleanProcedure\comm\smessagequeue.cs:行号 91
+
+
+
+程序出现异常
+异常说明：System.Type--
+2018-05-15 14:43:39
+★异常类型：ArgumentException
+★异常消息：已添加了具有相同键的项。
+★异常信息：   在 System.ThrowHelper.ThrowArgumentException(ExceptionResource resource)
+   在 System.Collections.Generic.Dictionary`2.Insert(TKey key, TValue value, Boolean add)
+   在 CleanProcedure.Task.Pending(String ClientIP, String card) 位置 i:\clean\work\CleanProcedure\CleanProcedure\Task.cs:行号 143
+   在 CleanProcedure.Task.Handle(String ClientIP, String card) 位置 i:\clean\work\CleanProcedure\CleanProcedure\Task.cs:行号 234
+   在 CleanProcedure.CleanManager.ProcessDelegate(QueueInfo info) 位置 i:\clean\work\CleanProcedure\Decontamination\CleanManager.cs:行号 64
+   在 audiotest.BusinessInfoHelper.ScanQueue() 位置 i:\clean\work\CleanProcedure\CleanProcedure\comm\smessagequeue.cs:行号 91
+
+
+
+程序出现异常
+异常说明：System.Type--
+2018-05-15 14:44:01
+★异常类型：InvalidOperationException
+★异常消息：线程间操作无效: 从不是创建控件“”的线程访问它。
+★异常信息：   在 System.Windows.Forms.Control.get_Handle()
+   在 System.Windows.Forms.ListView.FindItem(Boolean isTextSearch, String text, Boolean isPrefixSearch, Point pt, SearchDirectionHint dir, Int32 startIndex, Boolean includeSubItemsInSearch)
+   在 System.Windows.Forms.ListView.FindItemWithText(String text, Boolean includeSubItemsInSearch, Int32 startIndex, Boolean isPrefixSearch)
+   在 System.Windows.Forms.ListView.FindItemWithText(String text, Boolean includeSubItemsInSearch, Int32 startIndex)
+   在 Decontamination.PerformManager.StartTask(TaskInfo info) 位置 i:\clean\work\CleanProcedure\Decontamination\PerformManager.cs:行号 132
+
+
+
+程序出现异常
+异常说明：System.Type--
+2018-05-15 15:46:45
+★异常类型：ArgumentException
+★异常消息：已添加了具有相同键的项。
+★异常信息：   在 System.ThrowHelper.ThrowArgumentException(ExceptionResource resource)
+   在 System.Collections.Generic.Dictionary`2.Insert(TKey key, TValue value, Boolean add)
+   在 CleanProcedure.Task.Pending(String ClientIP, String card) 位置 i:\clean\work\CleanProcedure\CleanProcedure\Task.cs:行号 143
+   在 CleanProcedure.Task.Handle(String ClientIP, String card) 位置 i:\clean\work\CleanProcedure\CleanProcedure\Task.cs:行号 234
+   在 CleanProcedure.CleanManager.ProcessDelegate(QueueInfo info) 位置 i:\clean\work\CleanProcedure\Decontamination\CleanManager.cs:行号 64
+   在 audiotest.BusinessInfoHelper.ScanQueue() 位置 i:\clean\work\CleanProcedure\CleanProcedure\comm\smessagequeue.cs:行号 91
+
+
+
+程序出现异常
+异常说明：System.Type--
+2018-05-15 15:46:46
+★异常类型：ArgumentException
+★异常消息：已添加了具有相同键的项。
+★异常信息：   在 System.ThrowHelper.ThrowArgumentException(ExceptionResource resource)
+   在 System.Collections.Generic.Dictionary`2.Insert(TKey key, TValue value, Boolean add)
+   在 CleanProcedure.Task.Pending(String ClientIP, String card) 位置 i:\clean\work\CleanProcedure\CleanProcedure\Task.cs:行号 143
+   在 CleanProcedure.Task.Handle(String ClientIP, String card) 位置 i:\clean\work\CleanProcedure\CleanProcedure\Task.cs:行号 234
+   在 CleanProcedure.CleanManager.ProcessDelegate(QueueInfo info) 位置 i:\clean\work\CleanProcedure\Decontamination\CleanManager.cs:行号 64
+   在 audiotest.BusinessInfoHelper.ScanQueue() 位置 i:\clean\work\CleanProcedure\CleanProcedure\comm\smessagequeue.cs:行号 91
+
+
+
+程序出现异常
+异常说明：System.Type--
+2018-05-15 15:46:47
+★异常类型：ArgumentException
+★异常消息：已添加了具有相同键的项。
+★异常信息：   在 System.ThrowHelper.ThrowArgumentException(ExceptionResource resource)
+   在 System.Collections.Generic.Dictionary`2.Insert(TKey key, TValue value, Boolean add)
+   在 CleanProcedure.Task.Pending(String ClientIP, String card) 位置 i:\clean\work\CleanProcedure\CleanProcedure\Task.cs:行号 143
+   在 CleanProcedure.Task.Handle(String ClientIP, String card) 位置 i:\clean\work\CleanProcedure\CleanProcedure\Task.cs:行号 234
+   在 CleanProcedure.CleanManager.ProcessDelegate(QueueInfo info) 位置 i:\clean\work\CleanProcedure\Decontamination\CleanManager.cs:行号 64
+   在 audiotest.BusinessInfoHelper.ScanQueue() 位置 i:\clean\work\CleanProcedure\CleanProcedure\comm\smessagequeue.cs:行号 91
+
+
+

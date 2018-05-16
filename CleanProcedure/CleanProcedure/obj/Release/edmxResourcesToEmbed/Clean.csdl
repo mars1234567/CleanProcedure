@@ -1,0 +1,226 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="CleanModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+  <EntityType Name="Clean_Card">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="CardNo" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="DevType" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="CardID" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="CardName" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="CardType" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Department" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="ExamRoom" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="Uses" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="StartedDate" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="Stopped" Type="Boolean" Nullable="false" />
+    <Property Name="StoppedDate" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="StopReason" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="HandlingMan" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="DevRemark" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="Clean_Factory">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="DevType" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="FcName" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="Clean_Pretreatment">
+    <Key>
+      <PropertyRef Name="Row" />
+    </Key>
+    <Property Name="Row" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="CleanUser" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="CleanCreateTime" Type="DateTime" Precision="3" />
+    <Property Name="CleanWorkStation" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="CleanStatus" Type="Boolean" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Clean_Record">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="CleanID" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="CardIp" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="CleanGroup" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="CardID" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="CardName" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="MarrorID" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="MarrorName" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="CleanType" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="CleanStatus" Type="String" MaxLength="6" FixedLength="false" Unicode="true" />
+    <Property Name="CleanCreateTime" Type="DateTime" Precision="3" />
+    <Property Name="CleanDate" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="NowStep" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+    <Property Name="NowStepName" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="NowStepTime" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="CleanStart" Type="DateTime" Precision="3" />
+    <Property Name="CleanStop" Type="DateTime" Precision="3" />
+    <Property Name="CleanTime" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="CleanCardName" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="CleanDetail" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="CleanAllTime" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="UseStatus" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="ZuofeiID" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="ZuofeiTime" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Endoscopic" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="PatientID" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="PatientName" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="Sex" Type="String" MaxLength="4" FixedLength="false" Unicode="true" />
+    <Property Name="Age" Type="String" MaxLength="4" FixedLength="false" Unicode="true" />
+    <Property Name="ExamRoom" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="ExamDoctor" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="ExamNurse" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="ExamDate" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="ExamTime" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="ExamComputer" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="ReportDoctor" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="HP" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="Negative" Type="String" MaxLength="6" FixedLength="false" Unicode="true" />
+    <Property Name="Report" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Remark" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="SevereTag" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="OtherInfect" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="MarrorStatus" Type="Boolean" Nullable="false" />
+    <Property Name="MarrorType" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="MarrorCleanPerson" Type="String" MaxLength="40" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="Clean_RecordList">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="CleanCard" Type="String" MaxLength="20" FixedLength="true" Unicode="true" Nullable="false" />
+    <Property Name="CleanIp" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="StartTime" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="CleanPort" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="StepTime" Type="Int32" Nullable="false" />
+    <Property Name="StepName" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="StepNum" Type="Int32" Nullable="false" />
+    <Property Name="MaxNum" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Dic_Area">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="AreaNo" Type="Int32" />
+    <Property Name="AreaName" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="Dic_UserRole">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="RoleNum" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="RoleName" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="RoleAttr0" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="RoleAttr1" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="RoleAttr2" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="RoleAttr3" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="RoleAttr4" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="RoleAttr5" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="RoleAttr6" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="RoleAttr7" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="Dic_Workgroup">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="WorkGroupNum" Type="Int32" />
+    <Property Name="Name" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="Endoscopic_Device">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="DevName" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="DevFac" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="Department" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="ExamRoom" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="DevRemark" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="Endoscopic_Mirror">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="MirrorID" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="MirrorCardID" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="DevName" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="DevFac" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="Department" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="ExamRoom" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="Uses" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="DevRemark" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="Clean_CardDevice">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="CardNo" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="CardName" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="DevType" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="StepCount" Type="Int16" />
+    <Property Name="StepNumber" Type="Int16" />
+    <Property Name="StepName" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="StepTime" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="StepType" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="LastStepNumber" Type="Int16" />
+    <Property Name="LastStepName" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="LastStepTime" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="DeviceName" Type="String" MaxLength="40" FixedLength="false" Unicode="true" />
+    <Property Name="ClientIP" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="ClientPort" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="WorkStationIP" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="CleanID" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="ServerIp" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="ServerPort" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+    <Property Name="CleanGroup" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="StartedDate" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="Stopped" Type="Boolean" />
+    <Property Name="StoppedDate" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="StopReason" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="HandlingMan" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="MsgIp" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="Remark" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="MarrorID" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="MarrorName" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="MarrorType" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="Clean_User">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="UserID" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="LoginName" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="CardID" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="UserName" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="Password" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="RoleNum" Type="Int16" />
+    <Property Name="WorkGroupNum" Type="Int16" />
+    <Property Name="Department" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="Signature" Type="Binary" MaxLength="Max" FixedLength="false" />
+  </EntityType>
+  <EntityContainer Name="CleanProcedureEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Clean_Card" EntityType="Self.Clean_Card" />
+    <EntitySet Name="Clean_Factory" EntityType="Self.Clean_Factory" />
+    <EntitySet Name="Clean_Pretreatment" EntityType="Self.Clean_Pretreatment" />
+    <EntitySet Name="Clean_Record" EntityType="Self.Clean_Record" />
+    <EntitySet Name="Clean_RecordList" EntityType="Self.Clean_RecordList" />
+    <EntitySet Name="Dic_Area" EntityType="Self.Dic_Area" />
+    <EntitySet Name="Dic_UserRole" EntityType="Self.Dic_UserRole" />
+    <EntitySet Name="Dic_Workgroup" EntityType="Self.Dic_Workgroup" />
+    <EntitySet Name="Endoscopic_Device" EntityType="Self.Endoscopic_Device" />
+    <EntitySet Name="Endoscopic_Mirror" EntityType="Self.Endoscopic_Mirror" />
+    <EntitySet Name="Clean_CardDevice" EntityType="Self.Clean_CardDevice" />
+    <EntitySet Name="Clean_User" EntityType="Self.Clean_User" />
+  </EntityContainer>
+</Schema>

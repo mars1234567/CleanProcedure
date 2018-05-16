@@ -1,0 +1,759 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="2.0" xmlns:edmx="http://schemas.microsoft.com/ado/2008/10/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="CleanModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+        <EntityType Name="Clean_Card">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="CardNo" Type="nvarchar" MaxLength="50" />
+          <Property Name="DevType" Type="nvarchar" MaxLength="20" />
+          <Property Name="CardID" Type="nvarchar" MaxLength="20" />
+          <Property Name="CardName" Type="nvarchar" MaxLength="20" />
+          <Property Name="CardType" Type="nvarchar" MaxLength="50" />
+          <Property Name="Department" Type="nvarchar" MaxLength="20" />
+          <Property Name="ExamRoom" Type="nvarchar" MaxLength="20" />
+          <Property Name="Uses" Type="nvarchar" MaxLength="20" />
+          <Property Name="StartedDate" Type="nvarchar" MaxLength="10" />
+          <Property Name="Stopped" Type="bit" Nullable="false" />
+          <Property Name="StoppedDate" Type="varchar" MaxLength="10" />
+          <Property Name="StopReason" Type="varchar" MaxLength="20" />
+          <Property Name="HandlingMan" Type="varchar" MaxLength="20" />
+          <Property Name="DevRemark" Type="varchar" MaxLength="40" />
+        </EntityType>
+        <!--生成过程中发现错误:
+警告 6002: 表/视图“Clean.dbo.Clean_CardDevice”未定义主键。已推断出该键，并将定义创建为只读的表/视图。-->
+        <EntityType Name="Clean_CardDevice">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="CardNo" Type="nvarchar" MaxLength="20" />
+          <Property Name="CardName" Type="nvarchar" MaxLength="20" />
+          <Property Name="DevType" Type="nvarchar" MaxLength="20" />
+          <Property Name="StepCount" Type="smallint" />
+          <Property Name="StepNumber" Type="smallint" />
+          <Property Name="StepName" Type="nvarchar" MaxLength="20" />
+          <Property Name="StepTime" Type="nvarchar" MaxLength="20" />
+          <Property Name="StepType" Type="nvarchar" MaxLength="20" />
+          <Property Name="LastStepNumber" Type="smallint" />
+          <Property Name="LastStepName" Type="nvarchar" MaxLength="20" />
+          <Property Name="LastStepTime" Type="nvarchar" MaxLength="20" />
+          <Property Name="DeviceName" Type="nvarchar" MaxLength="40" />
+          <Property Name="ClientIP" Type="nvarchar" MaxLength="20" />
+          <Property Name="ClientPort" Type="nvarchar" MaxLength="10" />
+          <Property Name="WorkStationIP" Type="nvarchar" MaxLength="20" />
+          <Property Name="CleanID" Type="nvarchar" MaxLength="20" />
+          <Property Name="ServerIp" Type="varchar" MaxLength="20" />
+          <Property Name="ServerPort" Type="varchar" MaxLength="5" />
+          <Property Name="CleanGroup" Type="nvarchar" MaxLength="20" />
+          <Property Name="StartedDate" Type="nvarchar" MaxLength="10" />
+          <Property Name="Stopped" Type="bit" />
+          <Property Name="StoppedDate" Type="nvarchar" MaxLength="10" />
+          <Property Name="StopReason" Type="nvarchar" MaxLength="100" />
+          <Property Name="HandlingMan" Type="nvarchar" MaxLength="10" />
+          <Property Name="MsgIp" Type="nvarchar" MaxLength="20" />
+          <Property Name="Remark" Type="nvarchar" MaxLength="100" />
+          <Property Name="MarrorID" Type="nvarchar" MaxLength="20" />
+          <Property Name="MarrorName" Type="nvarchar" MaxLength="20" />
+          <Property Name="MarrorType" Type="nvarchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="Clean_Factory">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="DevType" Type="varchar" MaxLength="20" Nullable="false" />
+          <Property Name="FcName" Type="varchar" MaxLength="20" />
+        </EntityType>
+        <EntityType Name="Clean_Pretreatment">
+          <Key>
+            <PropertyRef Name="Row" />
+          </Key>
+          <Property Name="Row" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="CleanUser" Type="nvarchar" MaxLength="20" />
+          <Property Name="CleanCreateTime" Type="datetime" />
+          <Property Name="CleanWorkStation" Type="nvarchar" MaxLength="20" />
+          <Property Name="CleanStatus" Type="bit" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Clean_Record">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="CleanID" Type="nvarchar" MaxLength="20" Nullable="false" />
+          <Property Name="CardIp" Type="nvarchar" MaxLength="20" />
+          <Property Name="CleanGroup" Type="nvarchar" MaxLength="20" />
+          <Property Name="CardID" Type="nvarchar" MaxLength="20" />
+          <Property Name="CardName" Type="nvarchar" MaxLength="20" />
+          <Property Name="MarrorID" Type="nvarchar" MaxLength="20" />
+          <Property Name="MarrorName" Type="nvarchar" MaxLength="20" />
+          <Property Name="CleanType" Type="nvarchar" MaxLength="20" />
+          <Property Name="CleanStatus" Type="nvarchar" MaxLength="6" />
+          <Property Name="CleanCreateTime" Type="datetime" />
+          <Property Name="CleanDate" Type="varchar" MaxLength="10" />
+          <Property Name="NowStep" Type="varchar" MaxLength="5" />
+          <Property Name="NowStepName" Type="varchar" MaxLength="10" />
+          <Property Name="NowStepTime" Type="nvarchar" MaxLength="20" />
+          <Property Name="CleanStart" Type="datetime" />
+          <Property Name="CleanStop" Type="datetime" />
+          <Property Name="CleanTime" Type="varchar" MaxLength="10" />
+          <Property Name="CleanCardName" Type="nvarchar" MaxLength="200" />
+          <Property Name="CleanDetail" Type="nvarchar" MaxLength="100" />
+          <Property Name="CleanAllTime" Type="nvarchar" MaxLength="100" />
+          <Property Name="UseStatus" Type="nvarchar" MaxLength="20" />
+          <Property Name="ZuofeiID" Type="nvarchar" MaxLength="20" />
+          <Property Name="ZuofeiTime" Type="varchar" MaxLength="50" />
+          <Property Name="Endoscopic" Type="nvarchar" MaxLength="20" />
+          <Property Name="PatientID" Type="nvarchar" MaxLength="20" />
+          <Property Name="PatientName" Type="nvarchar" MaxLength="20" />
+          <Property Name="Sex" Type="nvarchar" MaxLength="4" />
+          <Property Name="Age" Type="nvarchar" MaxLength="4" />
+          <Property Name="ExamRoom" Type="nvarchar" MaxLength="20" />
+          <Property Name="ExamDoctor" Type="nvarchar" MaxLength="20" />
+          <Property Name="ExamNurse" Type="nvarchar" MaxLength="20" />
+          <Property Name="ExamDate" Type="nvarchar" MaxLength="20" />
+          <Property Name="ExamTime" Type="nvarchar" MaxLength="20" />
+          <Property Name="ExamComputer" Type="nvarchar" MaxLength="20" />
+          <Property Name="ReportDoctor" Type="nvarchar" MaxLength="20" />
+          <Property Name="HP" Type="nvarchar" MaxLength="20" />
+          <Property Name="Negative" Type="nvarchar" MaxLength="6" />
+          <Property Name="Report" Type="ntext" />
+          <Property Name="Remark" Type="nvarchar" MaxLength="200" />
+          <Property Name="SevereTag" Type="nvarchar" MaxLength="20" />
+          <Property Name="OtherInfect" Type="nvarchar" MaxLength="20" />
+          <Property Name="MarrorStatus" Type="bit" Nullable="false" />
+          <Property Name="MarrorType" Type="nvarchar" MaxLength="50" />
+          <Property Name="MarrorCleanPerson" Type="nvarchar" MaxLength="40" />
+        </EntityType>
+        <EntityType Name="Clean_RecordList">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="CleanCard" Type="nchar" MaxLength="20" Nullable="false" />
+          <Property Name="CleanIp" Type="nvarchar" MaxLength="20" Nullable="false" />
+          <Property Name="StartTime" Type="datetime" Nullable="false" />
+          <Property Name="CleanPort" Type="nvarchar" MaxLength="10" Nullable="false" />
+          <Property Name="StepTime" Type="int" Nullable="false" />
+          <Property Name="StepName" Type="nvarchar" MaxLength="20" Nullable="false" />
+          <Property Name="StepNum" Type="int" Nullable="false" />
+          <Property Name="MaxNum" Type="int" Nullable="false" />
+        </EntityType>
+        <!--生成过程中发现错误:
+警告 6002: 表/视图“Clean.dbo.Clean_User”未定义主键。已推断出该键，并将定义创建为只读的表/视图。-->
+        <EntityType Name="Clean_User">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="UserID" Type="nvarchar" MaxLength="20" />
+          <Property Name="LoginName" Type="nvarchar" MaxLength="20" />
+          <Property Name="CardID" Type="nvarchar" MaxLength="20" />
+          <Property Name="UserName" Type="nvarchar" MaxLength="20" />
+          <Property Name="Password" Type="nvarchar" MaxLength="20" />
+          <Property Name="RoleNum" Type="smallint" />
+          <Property Name="WorkGroupNum" Type="smallint" />
+          <Property Name="Department" Type="nvarchar" MaxLength="20" />
+          <Property Name="Signature" Type="image" />
+        </EntityType>
+        <EntityType Name="Dic_Area">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="AreaNo" Type="int" />
+          <Property Name="AreaName" Type="varchar" MaxLength="20" />
+        </EntityType>
+        <EntityType Name="Dic_UserRole">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="RoleNum" Type="varchar" MaxLength="20" />
+          <Property Name="RoleName" Type="varchar" MaxLength="20" />
+          <Property Name="RoleAttr0" Type="varchar" MaxLength="20" />
+          <Property Name="RoleAttr1" Type="varchar" MaxLength="20" />
+          <Property Name="RoleAttr2" Type="varchar" MaxLength="20" />
+          <Property Name="RoleAttr3" Type="varchar" MaxLength="20" />
+          <Property Name="RoleAttr4" Type="varchar" MaxLength="20" />
+          <Property Name="RoleAttr5" Type="varchar" MaxLength="20" />
+          <Property Name="RoleAttr6" Type="varchar" MaxLength="20" />
+          <Property Name="RoleAttr7" Type="varchar" MaxLength="20" />
+        </EntityType>
+        <EntityType Name="Dic_Workgroup">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="WorkGroupNum" Type="int" />
+          <Property Name="Name" Type="varchar" MaxLength="20" />
+        </EntityType>
+        <EntityType Name="Endoscopic_Device">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="DevName" Type="varchar" MaxLength="20" />
+          <Property Name="DevFac" Type="varchar" MaxLength="20" />
+          <Property Name="Department" Type="varchar" MaxLength="20" />
+          <Property Name="ExamRoom" Type="varchar" MaxLength="20" />
+          <Property Name="DevRemark" Type="varchar" MaxLength="40" />
+        </EntityType>
+        <EntityType Name="Endoscopic_Mirror">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="MirrorID" Type="varchar" MaxLength="20" />
+          <Property Name="MirrorCardID" Type="varchar" MaxLength="20" />
+          <Property Name="DevName" Type="varchar" MaxLength="20" />
+          <Property Name="DevFac" Type="varchar" MaxLength="20" />
+          <Property Name="Department" Type="varchar" MaxLength="20" />
+          <Property Name="ExamRoom" Type="varchar" MaxLength="20" />
+          <Property Name="Uses" Type="varchar" MaxLength="20" />
+          <Property Name="DevRemark" Type="varchar" MaxLength="40" />
+        </EntityType>
+        <EntityContainer Name="CleanModelStoreContainer">
+          <EntitySet Name="Clean_Card" EntityType="Self.Clean_Card" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Clean_Factory" EntityType="Self.Clean_Factory" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Clean_Pretreatment" EntityType="Self.Clean_Pretreatment" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Clean_Record" EntityType="Self.Clean_Record" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Clean_RecordList" EntityType="Self.Clean_RecordList" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Dic_Area" EntityType="Self.Dic_Area" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Dic_UserRole" EntityType="Self.Dic_UserRole" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Dic_Workgroup" EntityType="Self.Dic_Workgroup" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Endoscopic_Device" EntityType="Self.Endoscopic_Device" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Endoscopic_Mirror" EntityType="Self.Endoscopic_Mirror" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Clean_CardDevice" EntityType="Self.Clean_CardDevice" store:Type="Tables" store:Schema="dbo">
+            <DefiningQuery>SELECT 
+[Clean_CardDevice].[ID] AS [ID], 
+[Clean_CardDevice].[CardNo] AS [CardNo], 
+[Clean_CardDevice].[CardName] AS [CardName], 
+[Clean_CardDevice].[DevType] AS [DevType], 
+[Clean_CardDevice].[StepCount] AS [StepCount], 
+[Clean_CardDevice].[StepNumber] AS [StepNumber], 
+[Clean_CardDevice].[StepName] AS [StepName], 
+[Clean_CardDevice].[StepTime] AS [StepTime], 
+[Clean_CardDevice].[StepType] AS [StepType], 
+[Clean_CardDevice].[LastStepNumber] AS [LastStepNumber], 
+[Clean_CardDevice].[LastStepName] AS [LastStepName], 
+[Clean_CardDevice].[LastStepTime] AS [LastStepTime], 
+[Clean_CardDevice].[DeviceName] AS [DeviceName], 
+[Clean_CardDevice].[ClientIP] AS [ClientIP], 
+[Clean_CardDevice].[ClientPort] AS [ClientPort], 
+[Clean_CardDevice].[WorkStationIP] AS [WorkStationIP], 
+[Clean_CardDevice].[CleanID] AS [CleanID], 
+[Clean_CardDevice].[ServerIp] AS [ServerIp], 
+[Clean_CardDevice].[ServerPort] AS [ServerPort], 
+[Clean_CardDevice].[CleanGroup] AS [CleanGroup], 
+[Clean_CardDevice].[StartedDate] AS [StartedDate], 
+[Clean_CardDevice].[Stopped] AS [Stopped], 
+[Clean_CardDevice].[StoppedDate] AS [StoppedDate], 
+[Clean_CardDevice].[StopReason] AS [StopReason], 
+[Clean_CardDevice].[HandlingMan] AS [HandlingMan], 
+[Clean_CardDevice].[MsgIp] AS [MsgIp], 
+[Clean_CardDevice].[Remark] AS [Remark], 
+[Clean_CardDevice].[MarrorID] AS [MarrorID], 
+[Clean_CardDevice].[MarrorName] AS [MarrorName], 
+[Clean_CardDevice].[MarrorType] AS [MarrorType]
+FROM [dbo].[Clean_CardDevice] AS [Clean_CardDevice]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="Clean_User" EntityType="Self.Clean_User" store:Type="Tables" store:Schema="dbo">
+            <DefiningQuery>SELECT 
+[Clean_User].[ID] AS [ID], 
+[Clean_User].[UserID] AS [UserID], 
+[Clean_User].[LoginName] AS [LoginName], 
+[Clean_User].[CardID] AS [CardID], 
+[Clean_User].[UserName] AS [UserName], 
+[Clean_User].[Password] AS [Password], 
+[Clean_User].[RoleNum] AS [RoleNum], 
+[Clean_User].[WorkGroupNum] AS [WorkGroupNum], 
+[Clean_User].[Department] AS [Department], 
+[Clean_User].[Signature] AS [Signature]
+FROM [dbo].[Clean_User] AS [Clean_User]</DefiningQuery>
+          </EntitySet>
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="CleanModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+        <EntityType Name="Clean_Card">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="CardNo" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="DevType" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+          <Property Name="CardID" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+          <Property Name="CardName" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+          <Property Name="CardType" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Department" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+          <Property Name="ExamRoom" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+          <Property Name="Uses" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+          <Property Name="StartedDate" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+          <Property Name="Stopped" Type="Boolean" Nullable="false" />
+          <Property Name="StoppedDate" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="StopReason" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="HandlingMan" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="DevRemark" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="Clean_Factory">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="DevType" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="FcName" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="Clean_Pretreatment">
+          <Key>
+            <PropertyRef Name="Row" />
+          </Key>
+          <Property Name="Row" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="CleanUser" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+          <Property Name="CleanCreateTime" Type="DateTime" Precision="3" />
+          <Property Name="CleanWorkStation" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+          <Property Name="CleanStatus" Type="Boolean" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Clean_Record">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="CleanID" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="CardIp" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+          <Property Name="CleanGroup" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+          <Property Name="CardID" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+          <Property Name="CardName" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+          <Property Name="MarrorID" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+          <Property Name="MarrorName" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+          <Property Name="CleanType" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+          <Property Name="CleanStatus" Type="String" MaxLength="6" FixedLength="false" Unicode="true" />
+          <Property Name="CleanCreateTime" Type="DateTime" Precision="3" />
+          <Property Name="CleanDate" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="NowStep" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+          <Property Name="NowStepName" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="NowStepTime" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+          <Property Name="CleanStart" Type="DateTime" Precision="3" />
+          <Property Name="CleanStop" Type="DateTime" Precision="3" />
+          <Property Name="CleanTime" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="CleanCardName" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Name="CleanDetail" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="CleanAllTime" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="UseStatus" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+          <Property Name="ZuofeiID" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+          <Property Name="ZuofeiTime" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Endoscopic" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+          <Property Name="PatientID" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+          <Property Name="PatientName" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+          <Property Name="Sex" Type="String" MaxLength="4" FixedLength="false" Unicode="true" />
+          <Property Name="Age" Type="String" MaxLength="4" FixedLength="false" Unicode="true" />
+          <Property Name="ExamRoom" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+          <Property Name="ExamDoctor" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+          <Property Name="ExamNurse" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+          <Property Name="ExamDate" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+          <Property Name="ExamTime" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+          <Property Name="ExamComputer" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+          <Property Name="ReportDoctor" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+          <Property Name="HP" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+          <Property Name="Negative" Type="String" MaxLength="6" FixedLength="false" Unicode="true" />
+          <Property Name="Report" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Remark" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Name="SevereTag" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+          <Property Name="OtherInfect" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+          <Property Name="MarrorStatus" Type="Boolean" Nullable="false" />
+          <Property Name="MarrorType" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="MarrorCleanPerson" Type="String" MaxLength="40" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="Clean_RecordList">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="CleanCard" Type="String" MaxLength="20" FixedLength="true" Unicode="true" Nullable="false" />
+          <Property Name="CleanIp" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="StartTime" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="CleanPort" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="StepTime" Type="Int32" Nullable="false" />
+          <Property Name="StepName" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="StepNum" Type="Int32" Nullable="false" />
+          <Property Name="MaxNum" Type="Int32" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Dic_Area">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="AreaNo" Type="Int32" />
+          <Property Name="AreaName" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="Dic_UserRole">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="RoleNum" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="RoleName" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="RoleAttr0" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="RoleAttr1" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="RoleAttr2" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="RoleAttr3" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="RoleAttr4" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="RoleAttr5" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="RoleAttr6" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="RoleAttr7" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="Dic_Workgroup">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="WorkGroupNum" Type="Int32" />
+          <Property Name="Name" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="Endoscopic_Device">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="DevName" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="DevFac" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="Department" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="ExamRoom" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="DevRemark" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="Endoscopic_Mirror">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="MirrorID" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="MirrorCardID" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="DevName" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="DevFac" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="Department" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="ExamRoom" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="Uses" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="DevRemark" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="Clean_CardDevice">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="CardNo" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+          <Property Name="CardName" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+          <Property Name="DevType" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+          <Property Name="StepCount" Type="Int16" />
+          <Property Name="StepNumber" Type="Int16" />
+          <Property Name="StepName" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+          <Property Name="StepTime" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+          <Property Name="StepType" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+          <Property Name="LastStepNumber" Type="Int16" />
+          <Property Name="LastStepName" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+          <Property Name="LastStepTime" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+          <Property Name="DeviceName" Type="String" MaxLength="40" FixedLength="false" Unicode="true" />
+          <Property Name="ClientIP" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+          <Property Name="ClientPort" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+          <Property Name="WorkStationIP" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+          <Property Name="CleanID" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+          <Property Name="ServerIp" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="ServerPort" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+          <Property Name="CleanGroup" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+          <Property Name="StartedDate" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+          <Property Name="Stopped" Type="Boolean" />
+          <Property Name="StoppedDate" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+          <Property Name="StopReason" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="HandlingMan" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+          <Property Name="MsgIp" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+          <Property Name="Remark" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="MarrorID" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+          <Property Name="MarrorName" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+          <Property Name="MarrorType" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="Clean_User">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="UserID" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+          <Property Name="LoginName" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+          <Property Name="CardID" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+          <Property Name="UserName" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+          <Property Name="Password" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+          <Property Name="RoleNum" Type="Int16" />
+          <Property Name="WorkGroupNum" Type="Int16" />
+          <Property Name="Department" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+          <Property Name="Signature" Type="Binary" MaxLength="Max" FixedLength="false" />
+        </EntityType>
+        <EntityContainer Name="CleanProcedureEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Clean_Card" EntityType="Self.Clean_Card" />
+          <EntitySet Name="Clean_Factory" EntityType="Self.Clean_Factory" />
+          <EntitySet Name="Clean_Pretreatment" EntityType="Self.Clean_Pretreatment" />
+          <EntitySet Name="Clean_Record" EntityType="Self.Clean_Record" />
+          <EntitySet Name="Clean_RecordList" EntityType="Self.Clean_RecordList" />
+          <EntitySet Name="Dic_Area" EntityType="Self.Dic_Area" />
+          <EntitySet Name="Dic_UserRole" EntityType="Self.Dic_UserRole" />
+          <EntitySet Name="Dic_Workgroup" EntityType="Self.Dic_Workgroup" />
+          <EntitySet Name="Endoscopic_Device" EntityType="Self.Endoscopic_Device" />
+          <EntitySet Name="Endoscopic_Mirror" EntityType="Self.Endoscopic_Mirror" />
+          <EntitySet Name="Clean_CardDevice" EntityType="Self.Clean_CardDevice" />
+          <EntitySet Name="Clean_User" EntityType="Self.Clean_User" />
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="CleanModelStoreContainer" CdmEntityContainer="CleanProcedureEntities">
+          <EntitySetMapping Name="Clean_Card">
+            <EntityTypeMapping TypeName="CleanModel.Clean_Card">
+              <MappingFragment StoreEntitySet="Clean_Card">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="CardNo" ColumnName="CardNo" />
+                <ScalarProperty Name="DevType" ColumnName="DevType" />
+                <ScalarProperty Name="CardID" ColumnName="CardID" />
+                <ScalarProperty Name="CardName" ColumnName="CardName" />
+                <ScalarProperty Name="CardType" ColumnName="CardType" />
+                <ScalarProperty Name="Department" ColumnName="Department" />
+                <ScalarProperty Name="ExamRoom" ColumnName="ExamRoom" />
+                <ScalarProperty Name="Uses" ColumnName="Uses" />
+                <ScalarProperty Name="StartedDate" ColumnName="StartedDate" />
+                <ScalarProperty Name="Stopped" ColumnName="Stopped" />
+                <ScalarProperty Name="StoppedDate" ColumnName="StoppedDate" />
+                <ScalarProperty Name="StopReason" ColumnName="StopReason" />
+                <ScalarProperty Name="HandlingMan" ColumnName="HandlingMan" />
+                <ScalarProperty Name="DevRemark" ColumnName="DevRemark" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Clean_Factory">
+            <EntityTypeMapping TypeName="CleanModel.Clean_Factory">
+              <MappingFragment StoreEntitySet="Clean_Factory">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="DevType" ColumnName="DevType" />
+                <ScalarProperty Name="FcName" ColumnName="FcName" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Clean_Pretreatment">
+            <EntityTypeMapping TypeName="CleanModel.Clean_Pretreatment">
+              <MappingFragment StoreEntitySet="Clean_Pretreatment">
+                <ScalarProperty Name="Row" ColumnName="Row" />
+                <ScalarProperty Name="CleanUser" ColumnName="CleanUser" />
+                <ScalarProperty Name="CleanCreateTime" ColumnName="CleanCreateTime" />
+                <ScalarProperty Name="CleanWorkStation" ColumnName="CleanWorkStation" />
+                <ScalarProperty Name="CleanStatus" ColumnName="CleanStatus" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Clean_Record">
+            <EntityTypeMapping TypeName="CleanModel.Clean_Record">
+              <MappingFragment StoreEntitySet="Clean_Record">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="CleanID" ColumnName="CleanID" />
+                <ScalarProperty Name="CardIp" ColumnName="CardIp" />
+                <ScalarProperty Name="CleanGroup" ColumnName="CleanGroup" />
+                <ScalarProperty Name="CardID" ColumnName="CardID" />
+                <ScalarProperty Name="CardName" ColumnName="CardName" />
+                <ScalarProperty Name="MarrorID" ColumnName="MarrorID" />
+                <ScalarProperty Name="MarrorName" ColumnName="MarrorName" />
+                <ScalarProperty Name="CleanType" ColumnName="CleanType" />
+                <ScalarProperty Name="CleanStatus" ColumnName="CleanStatus" />
+                <ScalarProperty Name="CleanCreateTime" ColumnName="CleanCreateTime" />
+                <ScalarProperty Name="CleanDate" ColumnName="CleanDate" />
+                <ScalarProperty Name="NowStep" ColumnName="NowStep" />
+                <ScalarProperty Name="NowStepName" ColumnName="NowStepName" />
+                <ScalarProperty Name="NowStepTime" ColumnName="NowStepTime" />
+                <ScalarProperty Name="CleanStart" ColumnName="CleanStart" />
+                <ScalarProperty Name="CleanStop" ColumnName="CleanStop" />
+                <ScalarProperty Name="CleanTime" ColumnName="CleanTime" />
+                <ScalarProperty Name="CleanCardName" ColumnName="CleanCardName" />
+                <ScalarProperty Name="CleanDetail" ColumnName="CleanDetail" />
+                <ScalarProperty Name="CleanAllTime" ColumnName="CleanAllTime" />
+                <ScalarProperty Name="UseStatus" ColumnName="UseStatus" />
+                <ScalarProperty Name="ZuofeiID" ColumnName="ZuofeiID" />
+                <ScalarProperty Name="ZuofeiTime" ColumnName="ZuofeiTime" />
+                <ScalarProperty Name="Endoscopic" ColumnName="Endoscopic" />
+                <ScalarProperty Name="PatientID" ColumnName="PatientID" />
+                <ScalarProperty Name="PatientName" ColumnName="PatientName" />
+                <ScalarProperty Name="Sex" ColumnName="Sex" />
+                <ScalarProperty Name="Age" ColumnName="Age" />
+                <ScalarProperty Name="ExamRoom" ColumnName="ExamRoom" />
+                <ScalarProperty Name="ExamDoctor" ColumnName="ExamDoctor" />
+                <ScalarProperty Name="ExamNurse" ColumnName="ExamNurse" />
+                <ScalarProperty Name="ExamDate" ColumnName="ExamDate" />
+                <ScalarProperty Name="ExamTime" ColumnName="ExamTime" />
+                <ScalarProperty Name="ExamComputer" ColumnName="ExamComputer" />
+                <ScalarProperty Name="ReportDoctor" ColumnName="ReportDoctor" />
+                <ScalarProperty Name="HP" ColumnName="HP" />
+                <ScalarProperty Name="Negative" ColumnName="Negative" />
+                <ScalarProperty Name="Report" ColumnName="Report" />
+                <ScalarProperty Name="Remark" ColumnName="Remark" />
+                <ScalarProperty Name="SevereTag" ColumnName="SevereTag" />
+                <ScalarProperty Name="OtherInfect" ColumnName="OtherInfect" />
+                <ScalarProperty Name="MarrorStatus" ColumnName="MarrorStatus" />
+                <ScalarProperty Name="MarrorType" ColumnName="MarrorType" />
+                <ScalarProperty Name="MarrorCleanPerson" ColumnName="MarrorCleanPerson" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Clean_RecordList">
+            <EntityTypeMapping TypeName="CleanModel.Clean_RecordList">
+              <MappingFragment StoreEntitySet="Clean_RecordList">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="CleanCard" ColumnName="CleanCard" />
+                <ScalarProperty Name="CleanIp" ColumnName="CleanIp" />
+                <ScalarProperty Name="StartTime" ColumnName="StartTime" />
+                <ScalarProperty Name="CleanPort" ColumnName="CleanPort" />
+                <ScalarProperty Name="StepTime" ColumnName="StepTime" />
+                <ScalarProperty Name="StepName" ColumnName="StepName" />
+                <ScalarProperty Name="StepNum" ColumnName="StepNum" />
+                <ScalarProperty Name="MaxNum" ColumnName="MaxNum" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Dic_Area">
+            <EntityTypeMapping TypeName="CleanModel.Dic_Area">
+              <MappingFragment StoreEntitySet="Dic_Area">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="AreaNo" ColumnName="AreaNo" />
+                <ScalarProperty Name="AreaName" ColumnName="AreaName" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Dic_UserRole">
+            <EntityTypeMapping TypeName="CleanModel.Dic_UserRole">
+              <MappingFragment StoreEntitySet="Dic_UserRole">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="RoleNum" ColumnName="RoleNum" />
+                <ScalarProperty Name="RoleName" ColumnName="RoleName" />
+                <ScalarProperty Name="RoleAttr0" ColumnName="RoleAttr0" />
+                <ScalarProperty Name="RoleAttr1" ColumnName="RoleAttr1" />
+                <ScalarProperty Name="RoleAttr2" ColumnName="RoleAttr2" />
+                <ScalarProperty Name="RoleAttr3" ColumnName="RoleAttr3" />
+                <ScalarProperty Name="RoleAttr4" ColumnName="RoleAttr4" />
+                <ScalarProperty Name="RoleAttr5" ColumnName="RoleAttr5" />
+                <ScalarProperty Name="RoleAttr6" ColumnName="RoleAttr6" />
+                <ScalarProperty Name="RoleAttr7" ColumnName="RoleAttr7" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Dic_Workgroup">
+            <EntityTypeMapping TypeName="CleanModel.Dic_Workgroup">
+              <MappingFragment StoreEntitySet="Dic_Workgroup">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="WorkGroupNum" ColumnName="WorkGroupNum" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Endoscopic_Device">
+            <EntityTypeMapping TypeName="CleanModel.Endoscopic_Device">
+              <MappingFragment StoreEntitySet="Endoscopic_Device">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="DevName" ColumnName="DevName" />
+                <ScalarProperty Name="DevFac" ColumnName="DevFac" />
+                <ScalarProperty Name="Department" ColumnName="Department" />
+                <ScalarProperty Name="ExamRoom" ColumnName="ExamRoom" />
+                <ScalarProperty Name="DevRemark" ColumnName="DevRemark" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Endoscopic_Mirror">
+            <EntityTypeMapping TypeName="CleanModel.Endoscopic_Mirror">
+              <MappingFragment StoreEntitySet="Endoscopic_Mirror">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="MirrorID" ColumnName="MirrorID" />
+                <ScalarProperty Name="MirrorCardID" ColumnName="MirrorCardID" />
+                <ScalarProperty Name="DevName" ColumnName="DevName" />
+                <ScalarProperty Name="DevFac" ColumnName="DevFac" />
+                <ScalarProperty Name="Department" ColumnName="Department" />
+                <ScalarProperty Name="ExamRoom" ColumnName="ExamRoom" />
+                <ScalarProperty Name="Uses" ColumnName="Uses" />
+                <ScalarProperty Name="DevRemark" ColumnName="DevRemark" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Clean_CardDevice">
+            <EntityTypeMapping TypeName="CleanModel.Clean_CardDevice">
+              <MappingFragment StoreEntitySet="Clean_CardDevice">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="CardNo" ColumnName="CardNo" />
+                <ScalarProperty Name="CardName" ColumnName="CardName" />
+                <ScalarProperty Name="DevType" ColumnName="DevType" />
+                <ScalarProperty Name="StepCount" ColumnName="StepCount" />
+                <ScalarProperty Name="StepNumber" ColumnName="StepNumber" />
+                <ScalarProperty Name="StepName" ColumnName="StepName" />
+                <ScalarProperty Name="StepTime" ColumnName="StepTime" />
+                <ScalarProperty Name="StepType" ColumnName="StepType" />
+                <ScalarProperty Name="LastStepNumber" ColumnName="LastStepNumber" />
+                <ScalarProperty Name="LastStepName" ColumnName="LastStepName" />
+                <ScalarProperty Name="LastStepTime" ColumnName="LastStepTime" />
+                <ScalarProperty Name="DeviceName" ColumnName="DeviceName" />
+                <ScalarProperty Name="ClientIP" ColumnName="ClientIP" />
+                <ScalarProperty Name="ClientPort" ColumnName="ClientPort" />
+                <ScalarProperty Name="WorkStationIP" ColumnName="WorkStationIP" />
+                <ScalarProperty Name="CleanID" ColumnName="CleanID" />
+                <ScalarProperty Name="ServerIp" ColumnName="ServerIp" />
+                <ScalarProperty Name="ServerPort" ColumnName="ServerPort" />
+                <ScalarProperty Name="CleanGroup" ColumnName="CleanGroup" />
+                <ScalarProperty Name="StartedDate" ColumnName="StartedDate" />
+                <ScalarProperty Name="Stopped" ColumnName="Stopped" />
+                <ScalarProperty Name="StoppedDate" ColumnName="StoppedDate" />
+                <ScalarProperty Name="StopReason" ColumnName="StopReason" />
+                <ScalarProperty Name="HandlingMan" ColumnName="HandlingMan" />
+                <ScalarProperty Name="MsgIp" ColumnName="MsgIp" />
+                <ScalarProperty Name="Remark" ColumnName="Remark" />
+                <ScalarProperty Name="MarrorID" ColumnName="MarrorID" />
+                <ScalarProperty Name="MarrorName" ColumnName="MarrorName" />
+                <ScalarProperty Name="MarrorType" ColumnName="MarrorType" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Clean_User">
+            <EntityTypeMapping TypeName="CleanModel.Clean_User">
+              <MappingFragment StoreEntitySet="Clean_User">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="UserID" ColumnName="UserID" />
+                <ScalarProperty Name="LoginName" ColumnName="LoginName" />
+                <ScalarProperty Name="CardID" ColumnName="CardID" />
+                <ScalarProperty Name="UserName" ColumnName="UserName" />
+                <ScalarProperty Name="Password" ColumnName="Password" />
+                <ScalarProperty Name="RoleNum" ColumnName="RoleNum" />
+                <ScalarProperty Name="WorkGroupNum" ColumnName="WorkGroupNum" />
+                <ScalarProperty Name="Department" ColumnName="Department" />
+                <ScalarProperty Name="Signature" ColumnName="Signature" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2008/10/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="true" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="无" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

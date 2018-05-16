@@ -1,0 +1,10 @@
+I:\clean\work\CleanProcedure\CleanProcedure\bin\Debug\CleanProcedure.dll.config
+I:\clean\work\CleanProcedure\CleanProcedure\bin\Debug\CleanProcedure.dll
+I:\clean\work\CleanProcedure\CleanProcedure\bin\Debug\CleanProcedure.pdb
+I:\clean\work\CleanProcedure\CleanProcedure\bin\Debug\EntityFramework.dll
+I:\clean\work\CleanProcedure\CleanProcedure\bin\Debug\EntityFramework.SqlServer.dll
+I:\clean\work\CleanProcedure\CleanProcedure\bin\Debug\EntityFramework.xml
+I:\clean\work\CleanProcedure\CleanProcedure\bin\Debug\EntityFramework.SqlServer.xml
+I:\clean\work\CleanProcedure\CleanProcedure\bin\Debug\zh-Hans\EntityFramework.resources.dll
+I:\clean\work\CleanProcedure\CleanProcedure\obj\Debug\CleanProcedure.dll
+I:\clean\work\CleanProcedure\CleanProcedure\obj\Debug\CleanProcedure.pdb
