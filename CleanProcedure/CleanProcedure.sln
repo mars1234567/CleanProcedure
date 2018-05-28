@@ -7,6 +7,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CleanProcedure", "CleanProc
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Decontamination", "Decontamination\Decontamination.csproj", "{3C0D21A0-5EA9-46CE-91ED-0C38CA527C34}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MultiMap", "MultiMap\MultiMap.csproj", "{E5995C17-602D-4540-BF21-FBDE8CD40EDF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DeviceConfig", "DeviceConfig\DeviceConfig.csproj", "{BC177046-7F20-49C8-BDD0-F28D64660D45}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +25,14 @@ Global
 		{3C0D21A0-5EA9-46CE-91ED-0C38CA527C34}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3C0D21A0-5EA9-46CE-91ED-0C38CA527C34}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3C0D21A0-5EA9-46CE-91ED-0C38CA527C34}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E5995C17-602D-4540-BF21-FBDE8CD40EDF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E5995C17-602D-4540-BF21-FBDE8CD40EDF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E5995C17-602D-4540-BF21-FBDE8CD40EDF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E5995C17-602D-4540-BF21-FBDE8CD40EDF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BC177046-7F20-49C8-BDD0-F28D64660D45}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BC177046-7F20-49C8-BDD0-F28D64660D45}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BC177046-7F20-49C8-BDD0-F28D64660D45}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BC177046-7F20-49C8-BDD0-F28D64660D45}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

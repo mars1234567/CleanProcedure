@@ -94,6 +94,7 @@
     <Compile Include="comm\LogHelper.cs" />
     <Compile Include="comm\smessagequeue.cs" />
     <Compile Include="Config_func.cs" />
+    <Compile Include="DBmanager.cs" />
     <Compile Include="Dic_Area.cs">
       <DependentUpon>Clean.tt</DependentUpon>
     </Compile>
@@ -109,10 +110,7 @@
     <Compile Include="Endoscopic_Mirror.cs">
       <DependentUpon>Clean.tt</DependentUpon>
     </Compile>
-    <Compile Include="FinishedState.cs" />
     <Compile Include="Monitor.cs" />
-    <Compile Include="PendingState.cs" />
-    <Compile Include="RunningState.cs" />
     <Compile Include="StepNode.cs" />
     <Compile Include="Task.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -147,11 +145,18 @@
       <DependentUpon>Clean.edmx</DependentUpon>
       <LastGenOutput>Clean.Context.cs</LastGenOutput>
     </Content>
+    <Content Include="Clean.edmx.sql" />
     <Content Include="Clean.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>Clean.edmx</DependentUpon>
       <LastGenOutput>Clean.cs</LastGenOutput>
     </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\MultiMap\MultiMap.csproj">
+      <Project>{e5995c17-602d-4540-bf21-fbde8cd40edf}</Project>
+      <Name>MultiMap</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

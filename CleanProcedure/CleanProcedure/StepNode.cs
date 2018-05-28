@@ -30,6 +30,21 @@ namespace CleanProcedure
         {
             return (int)Step.StepNumber;
         }
+
+        public string GetStepName()
+        {
+            return Step.StepName;
+        }
+
+        public int GetTotalStepNum()
+        {
+            return (int)Step.StepCount;
+        }
+
+        public string GetPort()
+        {
+            return Step.ClientPort;
+        }
         public string GetCleanGroup()
         {
             return Step.CleanGroup;

@@ -9,6 +9,7 @@ using System.Linq;
 using System.Text;
 using System.Threading;
 using System.Windows.Forms;
+using CCWin.SkinControl;
 
 namespace Decontamination
 {
@@ -16,11 +17,11 @@ namespace Decontamination
     {
         private delegate void del_do_update(ProgressBar pb);
         private delegate void del_do_changetxt(LinkLabel l, string text);
-       
-        private Form ParentForm;
+
+        private System.Windows.Forms.Control ParentForm;
         Dictionary<string, EXListView> TaskList = new Dictionary<string, EXListView>();
-        private ConcurrentBag<ProgressBar> progressList = new ConcurrentBag<ProgressBar>();
-        public void SetCtrl(Form form)
+        private ConcurrentBag<SkinProgressBar> progressList = new ConcurrentBag<SkinProgressBar>();
+        public void SetCtrl(System.Windows.Forms.Control form)
         {
             ParentForm =  form;
 
@@ -63,13 +64,16 @@ namespace Decontamination
                     iTaskList.MyHighlightBrush = Brushes.Goldenrod;
                     iTaskList.GridLines = true;
                     iTaskList.Location = new Point(0, icount * height);
-                    iTaskList.Size = new Size(ParentForm.Size.Width, height - 10);
+                    iTaskList.Size = new Size(ParentForm.Size.Width, height - 3);
                     iTaskList.ControlPadding = 4;
 
-                    iTaskList.Columns.Add(new EXEditableColumnHeader("内镜", 120));
-                    iTaskList.Columns.Add(new EXEditableColumnHeader("洗消人员", 120));
+                    int colwidth = (ParentForm.Size.Width) / (item.Value.Count + 3);
+                    iTaskList.Columns.Add(new EXEditableColumnHeader("内镜", colwidth));
+                    iTaskList.Columns.Add(new EXEditableColumnHeader("洗消人员", colwidth));
+                    iTaskList.Columns.Add(new EXEditableColumnHeader("消息", colwidth));
+
                     foreach (StepInfo info in item.Value)
-                        iTaskList.Columns.Add(new EXColumnHeader(info.name, 120));
+                        iTaskList.Columns.Add(new EXColumnHeader(info.name, colwidth));
 
                     TaskList.Add(item.Key, iTaskList);
                     ParentForm.Controls.Add(iTaskList);
@@ -100,24 +104,24 @@ namespace Decontamination
                     //movie
                     EXListViewItem item = new EXListViewItem(info.Card);
                     item.SubItems.Add(info.CleanWorker);
-
-                    for (int i = 2; i < iTaskList.Columns.Count; i++)
+                    item.SubItems.Add(info.errorInfo);
+                    for (int i = 3; i < iTaskList.Columns.Count; i++)
                     {
                         EXControlListViewSubItem cs = new EXControlListViewSubItem();
-                        ProgressBar b = new ProgressBar();
+                        SkinProgressBar b = new SkinProgressBar();
                         b.Tag = item;
                         b.Minimum = 0;
-                        b.Maximum = 1000;
+                        b.Maximum = 100;
                         b.Step = 1;
                         item.SubItems.Add(cs);
                         iTaskList.AddControlToSubItem(b, cs);
                     }
 
                     iTaskList.Items.Add(item);
-
-                    EXControlListViewSubItem subitem = item.SubItems[info.Step + 1] as EXControlListViewSubItem;
-                    ProgressBar p = subitem.MyControl as ProgressBar;
-                    p.Maximum = info.Time;
+                    
+                    EXControlListViewSubItem subitem = item.SubItems[info.Step + 2] as EXControlListViewSubItem;
+                    SkinProgressBar p = subitem.MyControl as SkinProgressBar;
+                    p.Maximum = info.Time*10;
                     Thread th = new Thread(new ParameterizedThreadStart(UpdateProgressBarMethod));
                     th.IsBackground = true;
                     th.Start(p);
@@ -146,13 +150,26 @@ namespace Decontamination
                 {
 
                     ListViewItem foundItem = iTaskList.FindItemWithText(info.Card, true, 0);    //参数1：要查找的文本；参数2：是否子项也要查找；参数3：开始查找位置 
+                    if (info.errorInfo.Length > 0)
+                    {
+                        foundItem.SubItems[2].Text = info.errorInfo;
+                    }
+                    else
+                    {
+                        if (info.Step>1)
+                        {
+                            EXControlListViewSubItem Stopsubitem = foundItem.SubItems[info.Step + 1] as EXControlListViewSubItem;
+                            SkinProgressBar Stopp = Stopsubitem.MyControl as SkinProgressBar;
+                            progressList.Add(Stopp);
+                        }
 
-                    EXControlListViewSubItem subitem = foundItem.SubItems[info.Step + 1] as EXControlListViewSubItem;
-                    ProgressBar p = subitem.MyControl as ProgressBar;
-                    p.Maximum = info.Time;
-                    Thread th = new Thread(new ParameterizedThreadStart(UpdateProgressBarMethod));
-                    th.IsBackground = true;
-                    th.Start(p);
+                        EXControlListViewSubItem subitem = foundItem.SubItems[info.Step + 2] as EXControlListViewSubItem;
+                        SkinProgressBar p = subitem.MyControl as SkinProgressBar;
+                        p.Maximum = info.Time*10;
+                        Thread th = new Thread(new ParameterizedThreadStart(UpdateProgressBarMethod));
+                        th.IsBackground = true;
+                        th.Start(p);
+                    }
                 }
             }
             catch (Exception ex)
@@ -165,15 +182,20 @@ namespace Decontamination
         {
             try
             {
-                ProgressBar pp = (ProgressBar)pb;
-                if (pp.Value == pp.Maximum) pp.Value = 0;
+                SkinProgressBar pp = (SkinProgressBar)pb;
+                //int totalCount = pp.Maximum * 10;
+                //pp.Maximum = pp.Maximum * 10;
                 del_do_update delupdate = new del_do_update(do_update);
-                 
-                for (int i = pp.Value; i < pp.Maximum*10; i++)
+
+                for (int i = pp.Value; i < pp.Maximum; i++)
                 {
-                    ProgressBar endprog = progressList.FirstOrDefault(p => p == pp);
+                    SkinProgressBar endprog = progressList.FirstOrDefault(p => p == pp);
                     if (endprog == pp)
+                    {
+
                         return;
+                    }
+                        
                     pp.BeginInvoke(delupdate, new object[] { pp });
                     Thread.Sleep(6000);
                 }
@@ -184,21 +206,53 @@ namespace Decontamination
             }
 
         }
-        private void do_update(ProgressBar p)
+        private void do_update( ProgressBar p)
         {
             p.PerformStep();
+            int m = p.Value /10;
+            int s = (p.Value * 6) % 60;
+            p.Text = string.Format("%d:%d",m,s);
+             
         }
 
         public void Endupdate(TaskInfo info)
         {
             EXListView iTaskList = TaskList[info.Group];
-            ListViewItem foundItem = iTaskList.FindItemWithText(info.Card, false, 0);    //参数1：要查找的文本；参数2：是否子项也要查找；参数3：开始查找位置 
 
-            EXControlListViewSubItem subitem = foundItem.SubItems[info.Step + 1] as EXControlListViewSubItem;
-            ProgressBar p = subitem.MyControl as ProgressBar;
+            if (iTaskList.InvokeRequired)
+            {
+                UpdateTaskList updatedelegate = new UpdateTaskList(Endupdate);
+                ParentForm.Invoke(updatedelegate, new object[] { info });
+            }
+            else
+            {
 
-            progressList.Add(p);
+                ListViewItem foundItem = iTaskList.FindItemWithText(info.Card, false, 0);    //参数1：要查找的文本；参数2：是否子项也要查找；参数3：开始查找位置 
+
+                for (int i = 3; i < iTaskList.Columns.Count; i++)
+                {
+                    EXControlListViewSubItem subitem = foundItem.SubItems[i] as EXControlListViewSubItem;
+                    iTaskList.RemoveControlFromSubItem(subitem);
+                }
+
+                iTaskList.Items.Remove(foundItem);
+            }
         }
 
+        public void SizeChange()
+        {
+            int icount = 0;
+            int height = ParentForm.Size.Height / TaskList.Count;
+            foreach(var   item in TaskList)
+            {
+                EXListView iTaskList = item.Value;
+                iTaskList.Location = new Point(0, icount * height);
+                iTaskList.Size = new Size(ParentForm.Size.Width, height - 3);
+                int colwidth = (ParentForm.Size.Width  ) / iTaskList.Columns.Count -1;
+                foreach (ColumnHeader ch in iTaskList.Columns)
+                    ch.Width = colwidth;
+                icount++;
+            }
+        }
     }
 }

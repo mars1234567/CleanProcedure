@@ -3,10 +3,11 @@ using System.Windows.Forms;
 using System.Drawing;
 using System.Collections;
 using System.Runtime.InteropServices;
+using CCWin.SkinControl;
 
 namespace EXControls {
     
-    public class EXListView : ListView {
+    public class EXListView : SkinListView {
         
         private ListViewItem.ListViewSubItem _clickedsubitem; //clicked ListViewSubItem
         private ListViewItem _clickeditem; //clicked ListViewItem

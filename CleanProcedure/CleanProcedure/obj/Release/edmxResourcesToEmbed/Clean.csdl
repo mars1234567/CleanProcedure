@@ -101,6 +101,9 @@
     <Property Name="StepName" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
     <Property Name="StepNum" Type="Int32" Nullable="false" />
     <Property Name="MaxNum" Type="Int32" Nullable="false" />
+    <Property Name="WorkCard" Type="String" Nullable="false" FixedLength="true" MaxLength="20" Unicode="true" />
+    <Property Name="EndTime" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="Sequence" Type="Int32" Nullable="false" />
   </EntityType>
   <EntityType Name="Dic_Area">
     <Key>

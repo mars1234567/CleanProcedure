@@ -23,5 +23,8 @@ namespace CleanProcedure
         public string StepName { get; set; }
         public int StepNum { get; set; }
         public int MaxNum { get; set; }
+        public string WorkCard { get; set; }
+        public System.DateTime EndTime { get; set; }
+        public int Sequence { get; set; }
     }
 }

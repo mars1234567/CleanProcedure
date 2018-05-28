@@ -2,7 +2,7 @@
 <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
   <EntityContainerMapping StorageEntityContainer="CleanModelStoreContainer" CdmEntityContainer="CleanProcedureEntities">
     <EntitySetMapping Name="Clean_Card">
-      <EntityTypeMapping TypeName="CleanModel.Clean_Card">
+      <EntityTypeMapping TypeName="IsTypeOf(CleanModel.Clean_Card)">
         <MappingFragment StoreEntitySet="Clean_Card">
           <ScalarProperty Name="ID" ColumnName="ID" />
           <ScalarProperty Name="CardNo" ColumnName="CardNo" />
@@ -23,7 +23,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="Clean_Factory">
-      <EntityTypeMapping TypeName="CleanModel.Clean_Factory">
+      <EntityTypeMapping TypeName="IsTypeOf(CleanModel.Clean_Factory)">
         <MappingFragment StoreEntitySet="Clean_Factory">
           <ScalarProperty Name="ID" ColumnName="ID" />
           <ScalarProperty Name="DevType" ColumnName="DevType" />
@@ -32,7 +32,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="Clean_Pretreatment">
-      <EntityTypeMapping TypeName="CleanModel.Clean_Pretreatment">
+      <EntityTypeMapping TypeName="IsTypeOf(CleanModel.Clean_Pretreatment)">
         <MappingFragment StoreEntitySet="Clean_Pretreatment">
           <ScalarProperty Name="Row" ColumnName="Row" />
           <ScalarProperty Name="CleanUser" ColumnName="CleanUser" />
@@ -43,7 +43,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="Clean_Record">
-      <EntityTypeMapping TypeName="CleanModel.Clean_Record">
+      <EntityTypeMapping TypeName="IsTypeOf(CleanModel.Clean_Record)">
         <MappingFragment StoreEntitySet="Clean_Record">
           <ScalarProperty Name="ID" ColumnName="ID" />
           <ScalarProperty Name="CleanID" ColumnName="CleanID" />
@@ -94,7 +94,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="Clean_RecordList">
-      <EntityTypeMapping TypeName="CleanModel.Clean_RecordList">
+      <EntityTypeMapping TypeName="IsTypeOf(CleanModel.Clean_RecordList)">
         <MappingFragment StoreEntitySet="Clean_RecordList">
           <ScalarProperty Name="Id" ColumnName="Id" />
           <ScalarProperty Name="CleanCard" ColumnName="CleanCard" />
@@ -105,11 +105,14 @@
           <ScalarProperty Name="StepName" ColumnName="StepName" />
           <ScalarProperty Name="StepNum" ColumnName="StepNum" />
           <ScalarProperty Name="MaxNum" ColumnName="MaxNum" />
+          <ScalarProperty Name="WorkCard" ColumnName="WorkCard" />
+          <ScalarProperty Name="EndTime" ColumnName="EndTime" />
+          <ScalarProperty Name="Sequence" ColumnName="Sequence" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="Dic_Area">
-      <EntityTypeMapping TypeName="CleanModel.Dic_Area">
+      <EntityTypeMapping TypeName="IsTypeOf(CleanModel.Dic_Area)">
         <MappingFragment StoreEntitySet="Dic_Area">
           <ScalarProperty Name="ID" ColumnName="ID" />
           <ScalarProperty Name="AreaNo" ColumnName="AreaNo" />
@@ -118,7 +121,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="Dic_UserRole">
-      <EntityTypeMapping TypeName="CleanModel.Dic_UserRole">
+      <EntityTypeMapping TypeName="IsTypeOf(CleanModel.Dic_UserRole)">
         <MappingFragment StoreEntitySet="Dic_UserRole">
           <ScalarProperty Name="ID" ColumnName="ID" />
           <ScalarProperty Name="RoleNum" ColumnName="RoleNum" />
@@ -135,7 +138,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="Dic_Workgroup">
-      <EntityTypeMapping TypeName="CleanModel.Dic_Workgroup">
+      <EntityTypeMapping TypeName="IsTypeOf(CleanModel.Dic_Workgroup)">
         <MappingFragment StoreEntitySet="Dic_Workgroup">
           <ScalarProperty Name="ID" ColumnName="ID" />
           <ScalarProperty Name="WorkGroupNum" ColumnName="WorkGroupNum" />
@@ -144,7 +147,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="Endoscopic_Device">
-      <EntityTypeMapping TypeName="CleanModel.Endoscopic_Device">
+      <EntityTypeMapping TypeName="IsTypeOf(CleanModel.Endoscopic_Device)">
         <MappingFragment StoreEntitySet="Endoscopic_Device">
           <ScalarProperty Name="ID" ColumnName="ID" />
           <ScalarProperty Name="DevName" ColumnName="DevName" />
@@ -156,7 +159,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="Endoscopic_Mirror">
-      <EntityTypeMapping TypeName="CleanModel.Endoscopic_Mirror">
+      <EntityTypeMapping TypeName="IsTypeOf(CleanModel.Endoscopic_Mirror)">
         <MappingFragment StoreEntitySet="Endoscopic_Mirror">
           <ScalarProperty Name="ID" ColumnName="ID" />
           <ScalarProperty Name="MirrorID" ColumnName="MirrorID" />
@@ -171,7 +174,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="Clean_CardDevice">
-      <EntityTypeMapping TypeName="CleanModel.Clean_CardDevice">
+      <EntityTypeMapping TypeName="IsTypeOf(CleanModel.Clean_CardDevice)">
         <MappingFragment StoreEntitySet="Clean_CardDevice">
           <ScalarProperty Name="ID" ColumnName="ID" />
           <ScalarProperty Name="CardNo" ColumnName="CardNo" />
@@ -207,7 +210,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="Clean_User">
-      <EntityTypeMapping TypeName="CleanModel.Clean_User">
+      <EntityTypeMapping TypeName="IsTypeOf(CleanModel.Clean_User)">
         <MappingFragment StoreEntitySet="Clean_User">
           <ScalarProperty Name="ID" ColumnName="ID" />
           <ScalarProperty Name="UserID" ColumnName="UserID" />

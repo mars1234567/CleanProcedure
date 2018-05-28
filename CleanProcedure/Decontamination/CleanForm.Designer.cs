@@ -34,19 +34,98 @@ namespace Decontamination
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CleanForm));
+            this.tabManager = new CCWin.SkinControl.SkinTabControl();
+            this.tabmoniter = new CCWin.SkinControl.SkinTabPage();
+            this.tabsearch = new CCWin.SkinControl.SkinTabPage();
+            this.ListCleanedCard = new CCWin.SkinControl.SkinListView();
+            this.tabManager.SuspendLayout();
+            this.tabsearch.SuspendLayout();
             this.SuspendLayout();
+            // 
+            // tabManager
+            // 
+            this.tabManager.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.tabManager.AnimatorType = CCWin.SkinControl.AnimationType.HorizSlide;
+            this.tabManager.CloseRect = new System.Drawing.Rectangle(2, 2, 12, 12);
+            this.tabManager.Controls.Add(this.tabmoniter);
+            this.tabManager.Controls.Add(this.tabsearch);
+            this.tabManager.HeadBack = null;
+            this.tabManager.ImgTxtOffset = new System.Drawing.Point(0, 0);
+            this.tabManager.ItemSize = new System.Drawing.Size(70, 36);
+            this.tabManager.Location = new System.Drawing.Point(7, 40);
+            this.tabManager.Name = "tabManager";
+            this.tabManager.PageArrowDown = ((System.Drawing.Image)(resources.GetObject("tabManager.PageArrowDown")));
+            this.tabManager.PageArrowHover = ((System.Drawing.Image)(resources.GetObject("tabManager.PageArrowHover")));
+            this.tabManager.PageCloseHover = ((System.Drawing.Image)(resources.GetObject("tabManager.PageCloseHover")));
+            this.tabManager.PageCloseNormal = ((System.Drawing.Image)(resources.GetObject("tabManager.PageCloseNormal")));
+            this.tabManager.PageDown = ((System.Drawing.Image)(resources.GetObject("tabManager.PageDown")));
+            this.tabManager.PageHover = ((System.Drawing.Image)(resources.GetObject("tabManager.PageHover")));
+            this.tabManager.PageImagePosition = CCWin.SkinControl.SkinTabControl.ePageImagePosition.Left;
+            this.tabManager.PageNorml = null;
+            this.tabManager.SelectedIndex = 1;
+            this.tabManager.Size = new System.Drawing.Size(1187, 450);
+            this.tabManager.SizeMode = System.Windows.Forms.TabSizeMode.FillToRight;
+            this.tabManager.TabIndex = 0;
+            this.tabManager.SizeChanged += new System.EventHandler(this.tabManager_SizeChanged);
+            // 
+            // tabmoniter
+            // 
+            this.tabmoniter.BackColor = System.Drawing.Color.White;
+            this.tabmoniter.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tabmoniter.Location = new System.Drawing.Point(0, 36);
+            this.tabmoniter.Name = "tabmoniter";
+            this.tabmoniter.Size = new System.Drawing.Size(1187, 414);
+            this.tabmoniter.TabIndex = 0;
+            this.tabmoniter.TabItemImage = null;
+            this.tabmoniter.Text = "洗消监控";
+            // 
+            // tabsearch
+            // 
+            this.tabsearch.BackColor = System.Drawing.Color.White;
+            this.tabsearch.Controls.Add(this.ListCleanedCard);
+            this.tabsearch.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tabsearch.Location = new System.Drawing.Point(0, 36);
+            this.tabsearch.Name = "tabsearch";
+            this.tabsearch.Size = new System.Drawing.Size(1187, 414);
+            this.tabsearch.TabIndex = 1;
+            this.tabsearch.TabItemImage = null;
+            this.tabsearch.Text = "查询";
+            this.tabsearch.Click += new System.EventHandler(this.tabsearch_Click);
+            // 
+            // ListCleanedCard
+            // 
+            this.ListCleanedCard.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.ListCleanedCard.Location = new System.Drawing.Point(0, 0);
+            this.ListCleanedCard.Name = "ListCleanedCard";
+            this.ListCleanedCard.OwnerDraw = true;
+            this.ListCleanedCard.Size = new System.Drawing.Size(1187, 414);
+            this.ListCleanedCard.TabIndex = 0;
+            this.ListCleanedCard.UseCompatibleStateImageBehavior = false;
             // 
             // CleanForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(861, 559);
+            this.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.ClientSize = new System.Drawing.Size(1201, 497);
+            this.Controls.Add(this.tabManager);
+            this.ForeColor = System.Drawing.SystemColors.Desktop;
             this.Name = "CleanForm";
             this.Text = "内镜洗消追溯系统";
             this.Load += new System.EventHandler(this.Form1_Load);
+            this.tabManager.ResumeLayout(false);
+            this.tabsearch.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
+
+        private CCWin.SkinControl.SkinTabControl tabManager;
+        private CCWin.SkinControl.SkinTabPage tabmoniter;
+        private CCWin.SkinControl.SkinTabPage tabsearch;
+        private CCWin.SkinControl.SkinListView ListCleanedCard;
 
         //private void llbl_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         //{

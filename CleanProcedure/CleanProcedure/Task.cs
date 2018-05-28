@@ -1,4 +1,5 @@
-﻿using CA_sign;
+﻿using BK.Util;
+using CA_sign;
 using Decontamination;
 using System;
 using System.Collections.Generic;
@@ -19,14 +20,13 @@ namespace CleanProcedure
         public AccomplishTask TaskCallBack;
 
         //内镜当前步骤 key 为[CardNo] ，对应当前的状态
-        Dictionary<string, RunningState> CardList = new Dictionary<string, RunningState>();
+        Dictionary<string,  State> CardList = new Dictionary<string,  State>();
         //洗消步骤 KEY 为ClientIP,该步骤的设置
-        public Dictionary<string, StepNode> IPlist = new Dictionary<string, StepNode>();
-        //互斥器
-        public static Mutex mutex = new Mutex();
+        public MultimapBK<string, StepNode> IPlist = new MultimapBK<string, StepNode>();
 
+        Object locker = new Object();
         //刷卡器ip ，工作人员
-        Dictionary<string, PendingState> PendingList = new Dictionary<string, PendingState>();
+        Dictionary<string,  State> PendingList = new Dictionary<string, State>();
 
         //public delegate void UpdateTask(TaskInfo info);
 
@@ -109,9 +109,10 @@ namespace CleanProcedure
                             {
                                 if (it.StepNum < it.MaxNum)//消毒未完成记录
                                 {
-                                    RunningState mState = new RunningState();
-                                    mState.ClientIP = it.CleanIp;
-                                    mState.CardNo = cardname;
+                                    State mState = new State(it.WorkCard,it.CleanIp,it.StepTime);
+                                    mState.Binding(cardname);
+                                 
+
                                     CardList[cardname] = mState;
 
                                 }
@@ -119,7 +120,7 @@ namespace CleanProcedure
                         }
                     }
                 }
-
+                DBmanager.Instance.Start();
             }
             catch (Exception ex)
             {
@@ -140,76 +141,141 @@ namespace CleanProcedure
         {
             if (PendingList.ContainsKey(ClientIP))
             {
-                PendingList.Add(ClientIP, new PendingState(card));
+                PendingList.Add(ClientIP, new State(card, ClientIP));
             }
             else
             {
                 //工作人员卡是新的覆盖旧的
-                PendingList[ClientIP] = new PendingState(card);
+                PendingList[ClientIP] = new State(card, ClientIP);
             }
         }
 
-        public void Running(string ClientIP, string card)
+        public StepNode GetIpStep(string ClientIP,int lastStepNum)
         {
-            bool bConvert = false;
-            mutex.WaitOne();
-
-            if (CardList[card] == null)
+            StepNode current_node = IPlist.GetFirstItem(ClientIP);
+             
+            while (current_node != null)
             {
-                RunningState mState = new RunningState();
-                mState.ClientIP = ClientIP;
-                mState.CardNo = card;
-                mState.WorkCard = PendingList[ClientIP].WorkCard;
-                CardList[card] = mState;
-                bConvert = true;
+                int stepnum = current_node.GetStepNum();
+                if ((stepnum == lastStepNum + 1) || (stepnum == lastStepNum ))
+                    break;
+                else
+                    current_node = IPlist.Iterate(ClientIP);
             }
-
-            mutex.ReleaseMutex();
-
-            //获取当前刷卡器的步骤信息
-            StepNode curr_node = IPlist[ClientIP];
-            if (bConvert)
-            {
-                TaskInfo info = new TaskInfo(ClientIP, card, PendingList[ClientIP].WorkCard, curr_node.GetDur(), 1, curr_node.GetCleanGroup());
-                UpdateUIDelegate(info);
-            }
+            return current_node;
         }
-        public string  Step(string ClientIP, string card)
+        public bool BindingCard(string ClientIP, string card)
         {
-            string sRet= "";
-            DateTime currenttime = DateTime.Now;
+            bool bConvert = false;
 
             //获取当前刷卡器的步骤信息
-            StepNode curr_node = IPlist[ClientIP];
-
-            StepNode last_node = curr_node.GetLast();
-            //不能机洗跳手工
-            if (last_node.IsMachineWash()&&!curr_node.IsMachineWash())
+            StepNode curr_node = GetIpStep(ClientIP, 1);
+            if (curr_node != null)
             {
-                sRet = "不能机洗跳手工";
-                return sRet;
-            }
-            bool bConvert = false;
-            mutex.WaitOne();
-            //获取内镜卡上次的刷卡信息
-            RunningState mState = CardList[card];
-            //当前步骤的上一个刷卡器地址是否相同，即洗消顺序相同
-            if (last_node.StepIp().Equals(mState.ClientIP))
-            {
-                if (mState.IsFinish(last_node.GetDur()))
+                lock (locker)
                 {
-                    mState.Convert(ClientIP);
-                    bConvert = true;
+                    //绑卡过程,内镜卡不在洗消步骤中
+                    if (CardList[card] == null)
+                    {
+                        State mstate = PendingList[ClientIP];
+                        mstate.StepTime = curr_node.GetDur();
+                        mstate.Binding(card);
+                        mstate.UpdateMsgToDB(curr_node);
+                        CardList[card] = mstate;
+                        bConvert = true;
+                    }
                 }
             }
-            mutex.ReleaseMutex();
 
-            if(bConvert)
+
+            if (bConvert)
             {
-                TaskInfo info = new TaskInfo(ClientIP, card,mState.WorkCard, curr_node.GetDur(), curr_node.GetStepNum(), curr_node.GetCleanGroup());
+               //更新界面
+                TaskInfo info = new TaskInfo(ClientIP, card, PendingList[ClientIP].WorkCard, curr_node.GetDur(), 1, curr_node.GetCleanGroup(),"");
                 UpdateUIDelegate(info);
+
             }
-            return sRet;
+            return bConvert;
+        }
+        //洗消步骤切换
+        public bool  Step(string ClientIP, string card)
+        {
+            string sRet= "";
+            bool bFinish = false;
+            //bool bConvert = false;
+            DateTime currenttime = DateTime.Now;
+            //获取内镜卡上次的刷卡信息
+            State mState = CardList[card];
+            if (mState == null)
+            {
+                sRet = "";
+                return false;
+            }
+            else
+            {
+                //获取当前刷卡器的步骤信息
+                StepNode curr_node = GetIpStep(ClientIP, mState.StepNum);
+
+                if (curr_node == null)
+                    sRet = "刷卡步骤不对";
+                else
+                {
+                    StepNode last_node = curr_node.GetLast();
+
+                    //不能机洗跳手工
+                    if (last_node.IsMachineWash() && !curr_node.IsMachineWash())
+                    {
+                        sRet = "不能机洗跳手工";
+
+                    }
+                    else
+                    {
+
+                        //int stepTime = last_node.GetDur();
+
+                        lock (locker)
+                        {
+                            //当前步骤的上一个刷卡器地址是否相同，即洗消顺序相同
+                            if (last_node.StepIp().Equals(mState.ClientIP))
+                            {
+                                if (mState.IsTimeFinish())
+                                {
+                                    mState.Convert(ClientIP);
+                                    mState.StepTime = curr_node.GetDur();
+                                    mState.UpdateMsgToDB(curr_node);
+
+                                }
+                                else
+                                {
+                                    sRet = "洗消时间未到";
+
+                                }
+                            }
+                            else if (curr_node.StepIp().Equals(mState.ClientIP))//结束当前步骤
+                            {
+
+                                mState.UpdateMsgToDB(curr_node, true);
+                                if(curr_node.GetStepNum()==curr_node.GetTotalStepNum())
+                                     bFinish = true;
+                            }
+                            else
+                                sRet = "洗消步骤不对";
+
+                        }
+
+
+
+                    }
+                }
+
+                TaskInfo info = new TaskInfo(ClientIP, card, mState.WorkCard, curr_node.GetDur(), curr_node.GetStepNum(), curr_node.GetCleanGroup(), sRet);
+                if (bFinish)
+                    TaskCallBack(info);
+                else
+                    UpdateUIDelegate(info);
+
+                return bFinish;
+            }
         }
 
 
@@ -217,13 +283,14 @@ namespace CleanProcedure
         {
             //
 
-            //获取当前刷卡器配置
-            StepNode current_dev = IPlist[ClientIP];
-            StepNode current_last = current_dev.GetLast();
+            ////获取当前刷卡器配置
+            //StepNode current_dev = IPlist[ClientIP];
+            //StepNode current_last = current_dev.GetLast();
 
             //刷卡器为第一个步骤
-            if (current_last == null)
-            {
+            //if (current_last == null)
+            lock (locker)
+             {
                 //工作人员刷卡
                 if (IsWorkCard(card))
                 {
@@ -233,34 +300,37 @@ namespace CleanProcedure
                 //内镜刷卡
                 if (IsMCard(card))
                 {
-                    //工作人员卡已刷
+                    //绑卡步骤
                     if (PendingList.ContainsKey(ClientIP))
                     {
-                        string workDev = PendingList[ClientIP].WorkCard;
+                        //string workDev = PendingList[ClientIP].WorkCard;
                        
-                        Running(ClientIP, card);
-                        PendingList.Remove(ClientIP);
+                        if(BindingCard(ClientIP, card))
+                        //绑卡成功，从绑卡列表中删除
+                            PendingList.Remove(ClientIP);
                     }
-                    else
+                    else if (CardList.ContainsKey(card))  //内镜洗消步骤
                     {
 
+                        if (Step(ClientIP, card))
+                        {
+                            
+                         
+                                CardList.Remove(card);
+                           
+                        }
+                        //TaskInfo info = new TaskInfo();
+                        //m_updateTaskProc(info);
                     }
                 }
 
-            }
-            else
-            {
+             }
+            //else
+            //{
 
-                //内镜刷卡
-                if (CardList.ContainsKey(card))
-                {
 
-                    Step(ClientIP, card);
-                    //TaskInfo info = new TaskInfo();
-                    //m_updateTaskProc(info);
-                }
 
-            }
+            //}
             return "OK";
         }
 

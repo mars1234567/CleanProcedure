@@ -23,7 +23,7 @@ namespace audiotest
 
         public class BusinessInfoHelper
         {
-            #region 解决发布时含有优质媒体时，前台页面卡住的现象
+            #region 解决 卡住 socket接收线程的问题
             //原理：利用生产者消费者模式进行入列出列操作
 
             public readonly static BusinessInfoHelper Instance = new BusinessInfoHelper();

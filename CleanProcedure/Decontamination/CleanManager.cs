@@ -33,7 +33,7 @@ namespace CleanProcedure
 
         }
         //初始化界面，把洗消步骤显示到窗口
-        public void InitForm(Form form)
+        public void InitForm(Control form)
         {
             //消息对列的回调初始化
             BusinessInfoHelper.Instance.m_proc = ProcessDelegate;
@@ -71,6 +71,10 @@ namespace CleanProcedure
             string card = ConfigMgr.byteToHexStr(e.Buffer,e.BytesTransferred);
             BusinessInfoHelper.Instance.AddQueue(card, (e.RemoteEndPoint as IPEndPoint));
   
+        }
+        public void sizeChange()
+        {
+            perform.SizeChange();
         }
 
         

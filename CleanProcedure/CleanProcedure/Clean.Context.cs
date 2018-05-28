@@ -10,7 +10,6 @@
 namespace CleanProcedure
 {
     using System;
-    using System.Configuration;
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
@@ -20,15 +19,7 @@ namespace CleanProcedure
             : base("name=CleanProcedureEntities")
         {
         }
-        //使用自定义连接串
-        private static string GetEFConnctionString()
-        {
- 
-            string enString = ConfigurationManager.AppSettings["customConnString"];
-        //    string connString = SecurityHelper.DESDecrypt(enString);
-
-            return enString;
-        }
+    
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
             throw new UnintentionalCodeFirstException();

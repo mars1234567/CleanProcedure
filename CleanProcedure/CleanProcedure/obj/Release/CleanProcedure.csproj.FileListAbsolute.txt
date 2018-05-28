@@ -9,3 +9,16 @@ I:\clean\work\CleanProcedure\CleanProcedure\bin\Release\zh-Hans\EntityFramework.
 I:\clean\work\CleanProcedure\CleanProcedure\obj\Release\CleanProcedure.dll
 I:\clean\work\CleanProcedure\CleanProcedure\obj\Release\CleanProcedure.pdb
 I:\clean\work\CleanProcedure\CleanProcedure\obj\Release\CleanProcedure.csprojResolveAssemblyReference.cache
+F:\GitHub\CleanProcedure\CleanProcedure\obj\Release\CleanProcedure.csprojResolveAssemblyReference.cache
+F:\GitHub\CleanProcedure\CleanProcedure\obj\Release\CleanProcedure.dll
+F:\GitHub\CleanProcedure\CleanProcedure\bin\Release\CleanProcedure.dll.config
+F:\GitHub\CleanProcedure\CleanProcedure\bin\Release\CleanProcedure.dll
+F:\GitHub\CleanProcedure\CleanProcedure\bin\Release\CleanProcedure.pdb
+F:\GitHub\CleanProcedure\CleanProcedure\bin\Release\EntityFramework.dll
+F:\GitHub\CleanProcedure\CleanProcedure\bin\Release\EntityFramework.SqlServer.dll
+F:\GitHub\CleanProcedure\CleanProcedure\bin\Release\EntityFramework.xml
+F:\GitHub\CleanProcedure\CleanProcedure\bin\Release\EntityFramework.SqlServer.xml
+F:\GitHub\CleanProcedure\CleanProcedure\bin\Release\zh-Hans\EntityFramework.resources.dll
+F:\GitHub\CleanProcedure\CleanProcedure\obj\Release\CleanProcedure.pdb
+F:\GitHub\CleanProcedure\CleanProcedure\bin\Release\MultiMap.dll
+F:\GitHub\CleanProcedure\CleanProcedure\bin\Release\MultiMap.pdb
