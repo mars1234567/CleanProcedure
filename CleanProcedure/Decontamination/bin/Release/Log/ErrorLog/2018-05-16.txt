@@ -1,0 +1,493 @@
+程序出现异常
+异常说明：System.Type--
+2018-05-16 15:03:04
+★异常类型：SocketException
+★异常消息：在其上下文中，该请求的地址无效。
+★异常信息：   在 System.Net.Sockets.Socket.DoBind(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.Sockets.Socket.Bind(EndPoint localEP)
+   在 udp_csharp.UdpReceiveSocket..ctor(String ip, Int32 sport, Int32 cport) 位置 i:\clean\work\CleanProcedure\CleanProcedure\UDP\UdpReceiveSocket.cs:行号 45
+
+
+
+程序出现异常
+异常说明：System.Type--
+2018-05-16 15:03:04
+★异常类型：NullReferenceException
+★异常消息：未将对象引用设置到对象的实例。
+★异常信息：   在 System.Net.Sockets.Socket.ReceiveFromAsync(SocketAsyncEventArgs e)
+   在 udp_csharp.UdpReceiveSocket.StartReceive() 位置 i:\clean\work\CleanProcedure\CleanProcedure\UDP\UdpReceiveSocket.cs:行号 66
+
+
+
+程序出现异常
+异常说明：System.Type--
+2018-05-16 15:20:59
+★异常类型：SocketException
+★异常消息：在其上下文中，该请求的地址无效。
+★异常信息：   在 System.Net.Sockets.Socket.DoBind(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.Sockets.Socket.Bind(EndPoint localEP)
+   在 udp_csharp.UdpReceiveSocket..ctor(String ip, Int32 sport, Int32 cport) 位置 i:\clean\work\CleanProcedure\CleanProcedure\UDP\UdpReceiveSocket.cs:行号 45
+
+
+
+程序出现异常
+异常说明：System.Type--
+2018-05-16 15:20:59
+★异常类型：NullReferenceException
+★异常消息：未将对象引用设置到对象的实例。
+★异常信息：   在 System.Net.Sockets.Socket.ReceiveFromAsync(SocketAsyncEventArgs e)
+   在 udp_csharp.UdpReceiveSocket.StartReceive() 位置 i:\clean\work\CleanProcedure\CleanProcedure\UDP\UdpReceiveSocket.cs:行号 66
+
+
+
+程序出现异常
+异常说明：System.Type--
+2018-05-16 15:26:58
+★异常类型：SocketException
+★异常消息：在其上下文中，该请求的地址无效。
+★异常信息：   在 System.Net.Sockets.Socket.DoBind(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.Sockets.Socket.Bind(EndPoint localEP)
+   在 udp_csharp.UdpReceiveSocket..ctor(String ip, Int32 sport, Int32 cport) 位置 i:\clean\work\CleanProcedure\CleanProcedure\UDP\UdpReceiveSocket.cs:行号 45
+
+
+
+程序出现异常
+异常说明：System.Type--
+2018-05-16 15:26:58
+★异常类型：NullReferenceException
+★异常消息：未将对象引用设置到对象的实例。
+★异常信息：   在 System.Net.Sockets.Socket.ReceiveFromAsync(SocketAsyncEventArgs e)
+   在 udp_csharp.UdpReceiveSocket.StartReceive() 位置 i:\clean\work\CleanProcedure\CleanProcedure\UDP\UdpReceiveSocket.cs:行号 66
+
+
+
+程序出现异常
+异常说明：System.Type--
+2018-05-16 15:30:03
+★异常类型：SocketException
+★异常消息：在其上下文中，该请求的地址无效。
+★异常信息：   在 System.Net.Sockets.Socket.DoBind(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.Sockets.Socket.Bind(EndPoint localEP)
+   在 udp_csharp.UdpReceiveSocket..ctor(String ip, Int32 sport, Int32 cport) 位置 i:\clean\work\CleanProcedure\CleanProcedure\UDP\UdpReceiveSocket.cs:行号 45
+
+
+
+程序出现异常
+异常说明：System.Type--
+2018-05-16 15:30:03
+★异常类型：NullReferenceException
+★异常消息：未将对象引用设置到对象的实例。
+★异常信息：   在 System.Net.Sockets.Socket.ReceiveFromAsync(SocketAsyncEventArgs e)
+   在 udp_csharp.UdpReceiveSocket.StartReceive() 位置 i:\clean\work\CleanProcedure\CleanProcedure\UDP\UdpReceiveSocket.cs:行号 66
+
+
+
+程序出现异常
+异常说明：System.Type--
+2018-05-16 15:40:33
+★异常类型：SocketException
+★异常消息：在其上下文中，该请求的地址无效。
+★异常信息：   在 System.Net.Sockets.Socket.DoBind(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.Sockets.Socket.Bind(EndPoint localEP)
+   在 udp_csharp.UdpReceiveSocket..ctor(String ip, Int32 sport, Int32 cport) 位置 i:\clean\work\CleanProcedure\CleanProcedure\UDP\UdpReceiveSocket.cs:行号 45
+
+
+
+程序出现异常
+异常说明：System.Type--
+2018-05-16 15:40:33
+★异常类型：NullReferenceException
+★异常消息：未将对象引用设置到对象的实例。
+★异常信息：   在 System.Net.Sockets.Socket.ReceiveFromAsync(SocketAsyncEventArgs e)
+   在 udp_csharp.UdpReceiveSocket.StartReceive() 位置 i:\clean\work\CleanProcedure\CleanProcedure\UDP\UdpReceiveSocket.cs:行号 66
+
+
+
+程序出现异常
+异常说明：System.Type--
+2018-05-16 15:42:09
+★异常类型：SocketException
+★异常消息：在其上下文中，该请求的地址无效。
+★异常信息：   在 System.Net.Sockets.Socket.DoBind(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.Sockets.Socket.Bind(EndPoint localEP)
+   在 udp_csharp.UdpReceiveSocket..ctor(String ip, Int32 sport, Int32 cport) 位置 i:\clean\work\CleanProcedure\CleanProcedure\UDP\UdpReceiveSocket.cs:行号 45
+
+
+
+程序出现异常
+异常说明：System.Type--
+2018-05-16 15:42:09
+★异常类型：NullReferenceException
+★异常消息：未将对象引用设置到对象的实例。
+★异常信息：   在 System.Net.Sockets.Socket.ReceiveFromAsync(SocketAsyncEventArgs e)
+   在 udp_csharp.UdpReceiveSocket.StartReceive() 位置 i:\clean\work\CleanProcedure\CleanProcedure\UDP\UdpReceiveSocket.cs:行号 66
+
+
+
+程序出现异常
+异常说明：System.Type--
+2018-05-16 15:42:33
+★异常类型：SocketException
+★异常消息：在其上下文中，该请求的地址无效。
+★异常信息：   在 System.Net.Sockets.Socket.DoBind(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.Sockets.Socket.Bind(EndPoint localEP)
+   在 udp_csharp.UdpReceiveSocket..ctor(String ip, Int32 sport, Int32 cport) 位置 i:\clean\work\CleanProcedure\CleanProcedure\UDP\UdpReceiveSocket.cs:行号 45
+
+
+
+程序出现异常
+异常说明：System.Type--
+2018-05-16 15:42:33
+★异常类型：NullReferenceException
+★异常消息：未将对象引用设置到对象的实例。
+★异常信息：   在 System.Net.Sockets.Socket.ReceiveFromAsync(SocketAsyncEventArgs e)
+   在 udp_csharp.UdpReceiveSocket.StartReceive() 位置 i:\clean\work\CleanProcedure\CleanProcedure\UDP\UdpReceiveSocket.cs:行号 66
+
+
+
+程序出现异常
+异常说明：System.Type--
+2018-05-16 15:42:55
+★异常类型：SocketException
+★异常消息：在其上下文中，该请求的地址无效。
+★异常信息：   在 System.Net.Sockets.Socket.DoBind(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.Sockets.Socket.Bind(EndPoint localEP)
+   在 udp_csharp.UdpReceiveSocket..ctor(String ip, Int32 sport, Int32 cport) 位置 i:\clean\work\CleanProcedure\CleanProcedure\UDP\UdpReceiveSocket.cs:行号 45
+
+
+
+程序出现异常
+异常说明：System.Type--
+2018-05-16 15:42:55
+★异常类型：NullReferenceException
+★异常消息：未将对象引用设置到对象的实例。
+★异常信息：   在 System.Net.Sockets.Socket.ReceiveFromAsync(SocketAsyncEventArgs e)
+   在 udp_csharp.UdpReceiveSocket.StartReceive() 位置 i:\clean\work\CleanProcedure\CleanProcedure\UDP\UdpReceiveSocket.cs:行号 66
+
+
+
+程序出现异常
+异常说明：System.Type--
+2018-05-16 15:43:13
+★异常类型：SocketException
+★异常消息：在其上下文中，该请求的地址无效。
+★异常信息：   在 System.Net.Sockets.Socket.DoBind(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.Sockets.Socket.Bind(EndPoint localEP)
+   在 udp_csharp.UdpReceiveSocket..ctor(String ip, Int32 sport, Int32 cport) 位置 i:\clean\work\CleanProcedure\CleanProcedure\UDP\UdpReceiveSocket.cs:行号 45
+
+
+
+程序出现异常
+异常说明：System.Type--
+2018-05-16 15:43:13
+★异常类型：NullReferenceException
+★异常消息：未将对象引用设置到对象的实例。
+★异常信息：   在 System.Net.Sockets.Socket.ReceiveFromAsync(SocketAsyncEventArgs e)
+   在 udp_csharp.UdpReceiveSocket.StartReceive() 位置 i:\clean\work\CleanProcedure\CleanProcedure\UDP\UdpReceiveSocket.cs:行号 66
+
+
+
+程序出现异常
+异常说明：System.Type--
+2018-05-16 15:43:26
+★异常类型：SocketException
+★异常消息：在其上下文中，该请求的地址无效。
+★异常信息：   在 System.Net.Sockets.Socket.DoBind(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.Sockets.Socket.Bind(EndPoint localEP)
+   在 udp_csharp.UdpReceiveSocket..ctor(String ip, Int32 sport, Int32 cport) 位置 i:\clean\work\CleanProcedure\CleanProcedure\UDP\UdpReceiveSocket.cs:行号 45
+
+
+
+程序出现异常
+异常说明：System.Type--
+2018-05-16 15:43:26
+★异常类型：NullReferenceException
+★异常消息：未将对象引用设置到对象的实例。
+★异常信息：   在 System.Net.Sockets.Socket.ReceiveFromAsync(SocketAsyncEventArgs e)
+   在 udp_csharp.UdpReceiveSocket.StartReceive() 位置 i:\clean\work\CleanProcedure\CleanProcedure\UDP\UdpReceiveSocket.cs:行号 66
+
+
+
+程序出现异常
+异常说明：System.Type--
+2018-05-16 15:44:56
+★异常类型：SocketException
+★异常消息：在其上下文中，该请求的地址无效。
+★异常信息：   在 System.Net.Sockets.Socket.DoBind(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.Sockets.Socket.Bind(EndPoint localEP)
+   在 udp_csharp.UdpReceiveSocket..ctor(String ip, Int32 sport, Int32 cport) 位置 i:\clean\work\CleanProcedure\CleanProcedure\UDP\UdpReceiveSocket.cs:行号 45
+
+
+
+程序出现异常
+异常说明：System.Type--
+2018-05-16 15:44:56
+★异常类型：NullReferenceException
+★异常消息：未将对象引用设置到对象的实例。
+★异常信息：   在 System.Net.Sockets.Socket.ReceiveFromAsync(SocketAsyncEventArgs e)
+   在 udp_csharp.UdpReceiveSocket.StartReceive() 位置 i:\clean\work\CleanProcedure\CleanProcedure\UDP\UdpReceiveSocket.cs:行号 66
+
+
+
+程序出现异常
+异常说明：System.Type--
+2018-05-16 15:45:10
+★异常类型：SocketException
+★异常消息：在其上下文中，该请求的地址无效。
+★异常信息：   在 System.Net.Sockets.Socket.DoBind(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.Sockets.Socket.Bind(EndPoint localEP)
+   在 udp_csharp.UdpReceiveSocket..ctor(String ip, Int32 sport, Int32 cport) 位置 i:\clean\work\CleanProcedure\CleanProcedure\UDP\UdpReceiveSocket.cs:行号 45
+
+
+
+程序出现异常
+异常说明：System.Type--
+2018-05-16 15:45:10
+★异常类型：NullReferenceException
+★异常消息：未将对象引用设置到对象的实例。
+★异常信息：   在 System.Net.Sockets.Socket.ReceiveFromAsync(SocketAsyncEventArgs e)
+   在 udp_csharp.UdpReceiveSocket.StartReceive() 位置 i:\clean\work\CleanProcedure\CleanProcedure\UDP\UdpReceiveSocket.cs:行号 66
+
+
+
+程序出现异常
+异常说明：System.Type--
+2018-05-16 15:45:32
+★异常类型：SocketException
+★异常消息：在其上下文中，该请求的地址无效。
+★异常信息：   在 System.Net.Sockets.Socket.DoBind(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.Sockets.Socket.Bind(EndPoint localEP)
+   在 udp_csharp.UdpReceiveSocket..ctor(String ip, Int32 sport, Int32 cport) 位置 i:\clean\work\CleanProcedure\CleanProcedure\UDP\UdpReceiveSocket.cs:行号 45
+
+
+
+程序出现异常
+异常说明：System.Type--
+2018-05-16 15:45:32
+★异常类型：NullReferenceException
+★异常消息：未将对象引用设置到对象的实例。
+★异常信息：   在 System.Net.Sockets.Socket.ReceiveFromAsync(SocketAsyncEventArgs e)
+   在 udp_csharp.UdpReceiveSocket.StartReceive() 位置 i:\clean\work\CleanProcedure\CleanProcedure\UDP\UdpReceiveSocket.cs:行号 66
+
+
+
+程序出现异常
+异常说明：System.Type--
+2018-05-16 15:45:42
+★异常类型：SocketException
+★异常消息：在其上下文中，该请求的地址无效。
+★异常信息：   在 System.Net.Sockets.Socket.DoBind(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.Sockets.Socket.Bind(EndPoint localEP)
+   在 udp_csharp.UdpReceiveSocket..ctor(String ip, Int32 sport, Int32 cport) 位置 i:\clean\work\CleanProcedure\CleanProcedure\UDP\UdpReceiveSocket.cs:行号 45
+
+
+
+程序出现异常
+异常说明：System.Type--
+2018-05-16 15:45:42
+★异常类型：NullReferenceException
+★异常消息：未将对象引用设置到对象的实例。
+★异常信息：   在 System.Net.Sockets.Socket.ReceiveFromAsync(SocketAsyncEventArgs e)
+   在 udp_csharp.UdpReceiveSocket.StartReceive() 位置 i:\clean\work\CleanProcedure\CleanProcedure\UDP\UdpReceiveSocket.cs:行号 66
+
+
+
+程序出现异常
+异常说明：System.Type--
+2018-05-16 15:47:24
+★异常类型：SocketException
+★异常消息：在其上下文中，该请求的地址无效。
+★异常信息：   在 System.Net.Sockets.Socket.DoBind(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.Sockets.Socket.Bind(EndPoint localEP)
+   在 udp_csharp.UdpReceiveSocket..ctor(String ip, Int32 sport, Int32 cport) 位置 i:\clean\work\CleanProcedure\CleanProcedure\UDP\UdpReceiveSocket.cs:行号 45
+
+
+
+程序出现异常
+异常说明：System.Type--
+2018-05-16 15:47:24
+★异常类型：NullReferenceException
+★异常消息：未将对象引用设置到对象的实例。
+★异常信息：   在 System.Net.Sockets.Socket.ReceiveFromAsync(SocketAsyncEventArgs e)
+   在 udp_csharp.UdpReceiveSocket.StartReceive() 位置 i:\clean\work\CleanProcedure\CleanProcedure\UDP\UdpReceiveSocket.cs:行号 66
+
+
+
+程序出现异常
+异常说明：System.Type--
+2018-05-16 15:56:49
+★异常类型：SocketException
+★异常消息：在其上下文中，该请求的地址无效。
+★异常信息：   在 System.Net.Sockets.Socket.DoBind(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.Sockets.Socket.Bind(EndPoint localEP)
+   在 udp_csharp.UdpReceiveSocket..ctor(String ip, Int32 sport, Int32 cport) 位置 i:\clean\work\CleanProcedure\CleanProcedure\UDP\UdpReceiveSocket.cs:行号 45
+
+
+
+程序出现异常
+异常说明：System.Type--
+2018-05-16 15:56:49
+★异常类型：NullReferenceException
+★异常消息：未将对象引用设置到对象的实例。
+★异常信息：   在 System.Net.Sockets.Socket.ReceiveFromAsync(SocketAsyncEventArgs e)
+   在 udp_csharp.UdpReceiveSocket.StartReceive() 位置 i:\clean\work\CleanProcedure\CleanProcedure\UDP\UdpReceiveSocket.cs:行号 66
+
+
+
+程序出现异常
+异常说明：System.Type--
+2018-05-16 16:37:18
+★异常类型：ArgumentException
+★异常消息：无法将“EXListView”添加到 TabControl。  只有 TabPages 才能直接添加到 TabControls。
+★异常信息：   在 System.Windows.Forms.TabControl.ControlCollection.Add(Control value)
+   在 Decontamination.PerformManager.Init(Dictionary`2 infolist) 位置 f:\GitHub\CleanProcedure\Decontamination\PerformManager.cs:行号 78
+
+
+
+程序出现异常
+异常说明：System.Type--
+2018-05-16 16:37:18
+★异常类型：SocketException
+★异常消息：在其上下文中，该请求的地址无效。
+★异常信息：   在 System.Net.Sockets.Socket.DoBind(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.Sockets.Socket.Bind(EndPoint localEP)
+   在 udp_csharp.UdpReceiveSocket..ctor(String ip, Int32 sport, Int32 cport) 位置 i:\clean\work\CleanProcedure\CleanProcedure\UDP\UdpReceiveSocket.cs:行号 45
+
+
+
+程序出现异常
+异常说明：System.Type--
+2018-05-16 16:37:18
+★异常类型：NullReferenceException
+★异常消息：未将对象引用设置到对象的实例。
+★异常信息：   在 System.Net.Sockets.Socket.ReceiveFromAsync(SocketAsyncEventArgs e)
+   在 udp_csharp.UdpReceiveSocket.StartReceive() 位置 i:\clean\work\CleanProcedure\CleanProcedure\UDP\UdpReceiveSocket.cs:行号 66
+
+
+
+程序出现异常
+异常说明：System.Type--
+2018-05-16 16:40:08
+★异常类型：SocketException
+★异常消息：在其上下文中，该请求的地址无效。
+★异常信息：   在 System.Net.Sockets.Socket.DoBind(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.Sockets.Socket.Bind(EndPoint localEP)
+   在 udp_csharp.UdpReceiveSocket..ctor(String ip, Int32 sport, Int32 cport) 位置 i:\clean\work\CleanProcedure\CleanProcedure\UDP\UdpReceiveSocket.cs:行号 45
+
+
+
+程序出现异常
+异常说明：System.Type--
+2018-05-16 16:40:08
+★异常类型：NullReferenceException
+★异常消息：未将对象引用设置到对象的实例。
+★异常信息：   在 System.Net.Sockets.Socket.ReceiveFromAsync(SocketAsyncEventArgs e)
+   在 udp_csharp.UdpReceiveSocket.StartReceive() 位置 i:\clean\work\CleanProcedure\CleanProcedure\UDP\UdpReceiveSocket.cs:行号 66
+
+
+
+程序出现异常
+异常说明：System.Type--
+2018-05-16 16:40:29
+★异常类型：SocketException
+★异常消息：在其上下文中，该请求的地址无效。
+★异常信息：   在 System.Net.Sockets.Socket.DoBind(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.Sockets.Socket.Bind(EndPoint localEP)
+   在 udp_csharp.UdpReceiveSocket..ctor(String ip, Int32 sport, Int32 cport) 位置 i:\clean\work\CleanProcedure\CleanProcedure\UDP\UdpReceiveSocket.cs:行号 45
+
+
+
+程序出现异常
+异常说明：System.Type--
+2018-05-16 16:40:29
+★异常类型：NullReferenceException
+★异常消息：未将对象引用设置到对象的实例。
+★异常信息：   在 System.Net.Sockets.Socket.ReceiveFromAsync(SocketAsyncEventArgs e)
+   在 udp_csharp.UdpReceiveSocket.StartReceive() 位置 i:\clean\work\CleanProcedure\CleanProcedure\UDP\UdpReceiveSocket.cs:行号 66
+
+
+
+程序出现异常
+异常说明：System.Type--
+2018-05-16 16:55:20
+★异常类型：SocketException
+★异常消息：在其上下文中，该请求的地址无效。
+★异常信息：   在 System.Net.Sockets.Socket.DoBind(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.Sockets.Socket.Bind(EndPoint localEP)
+   在 udp_csharp.UdpReceiveSocket..ctor(String ip, Int32 sport, Int32 cport) 位置 i:\clean\work\CleanProcedure\CleanProcedure\UDP\UdpReceiveSocket.cs:行号 45
+
+
+
+程序出现异常
+异常说明：System.Type--
+2018-05-16 16:55:20
+★异常类型：NullReferenceException
+★异常消息：未将对象引用设置到对象的实例。
+★异常信息：   在 System.Net.Sockets.Socket.ReceiveFromAsync(SocketAsyncEventArgs e)
+   在 udp_csharp.UdpReceiveSocket.StartReceive() 位置 i:\clean\work\CleanProcedure\CleanProcedure\UDP\UdpReceiveSocket.cs:行号 66
+
+
+
+程序出现异常
+异常说明：System.Type--
+2018-05-16 16:56:49
+★异常类型：SocketException
+★异常消息：在其上下文中，该请求的地址无效。
+★异常信息：   在 System.Net.Sockets.Socket.DoBind(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.Sockets.Socket.Bind(EndPoint localEP)
+   在 udp_csharp.UdpReceiveSocket..ctor(String ip, Int32 sport, Int32 cport) 位置 i:\clean\work\CleanProcedure\CleanProcedure\UDP\UdpReceiveSocket.cs:行号 45
+
+
+
+程序出现异常
+异常说明：System.Type--
+2018-05-16 16:56:49
+★异常类型：NullReferenceException
+★异常消息：未将对象引用设置到对象的实例。
+★异常信息：   在 System.Net.Sockets.Socket.ReceiveFromAsync(SocketAsyncEventArgs e)
+   在 udp_csharp.UdpReceiveSocket.StartReceive() 位置 i:\clean\work\CleanProcedure\CleanProcedure\UDP\UdpReceiveSocket.cs:行号 66
+
+
+
+程序出现异常
+异常说明：System.Type--
+2018-05-16 16:58:01
+★异常类型：SocketException
+★异常消息：在其上下文中，该请求的地址无效。
+★异常信息：   在 System.Net.Sockets.Socket.DoBind(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.Sockets.Socket.Bind(EndPoint localEP)
+   在 udp_csharp.UdpReceiveSocket..ctor(String ip, Int32 sport, Int32 cport) 位置 i:\clean\work\CleanProcedure\CleanProcedure\UDP\UdpReceiveSocket.cs:行号 45
+
+
+
+程序出现异常
+异常说明：System.Type--
+2018-05-16 16:58:01
+★异常类型：NullReferenceException
+★异常消息：未将对象引用设置到对象的实例。
+★异常信息：   在 System.Net.Sockets.Socket.ReceiveFromAsync(SocketAsyncEventArgs e)
+   在 udp_csharp.UdpReceiveSocket.StartReceive() 位置 i:\clean\work\CleanProcedure\CleanProcedure\UDP\UdpReceiveSocket.cs:行号 66
+
+
+
+程序出现异常
+异常说明：System.Type--
+2018-05-16 16:59:54
+★异常类型：SocketException
+★异常消息：在其上下文中，该请求的地址无效。
+★异常信息：   在 System.Net.Sockets.Socket.DoBind(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.Sockets.Socket.Bind(EndPoint localEP)
+   在 udp_csharp.UdpReceiveSocket..ctor(String ip, Int32 sport, Int32 cport) 位置 i:\clean\work\CleanProcedure\CleanProcedure\UDP\UdpReceiveSocket.cs:行号 45
+
+
+
+程序出现异常
+异常说明：System.Type--
+2018-05-16 16:59:54
+★异常类型：NullReferenceException
+★异常消息：未将对象引用设置到对象的实例。
+★异常信息：   在 System.Net.Sockets.Socket.ReceiveFromAsync(SocketAsyncEventArgs e)
+   在 udp_csharp.UdpReceiveSocket.StartReceive() 位置 i:\clean\work\CleanProcedure\CleanProcedure\UDP\UdpReceiveSocket.cs:行号 66
+
+
+

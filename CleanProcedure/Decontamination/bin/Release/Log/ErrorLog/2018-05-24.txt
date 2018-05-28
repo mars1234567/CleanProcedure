@@ -1,0 +1,682 @@
+程序出现异常
+异常说明：System.Type--
+2018-05-24 09:06:19
+★异常类型：NullReferenceException
+★异常消息：未将对象引用设置到对象的实例。
+★异常信息：   在 CleanProcedure.Task.Step(String ClientIP, String card) 位置 f:\GitHub\CleanProcedure\CleanProcedure\Task.cs:行号 210
+   在 CleanProcedure.Task.Handle(String ClientIP, String card) 位置 f:\GitHub\CleanProcedure\CleanProcedure\Task.cs:行号 304
+   在 CleanProcedure.CleanManager.ProcessDelegate(QueueInfo info) 位置 f:\GitHub\CleanProcedure\Decontamination\CleanManager.cs:行号 64
+   在 audiotest.BusinessInfoHelper.ScanQueue() 位置 f:\GitHub\CleanProcedure\CleanProcedure\comm\smessagequeue.cs:行号 90
+
+
+
+程序出现异常
+异常说明：System.Type--
+2018-05-24 09:06:25
+★异常类型：ApplicationException
+★异常消息：从不同步的代码块中调用了对象同步方法。
+★异常信息：   在 System.Threading.Mutex.ReleaseMutex()
+   在 CleanProcedure.Task.BindingCard(String ClientIP, String card) 位置 f:\GitHub\CleanProcedure\CleanProcedure\Task.cs:行号 191
+   在 CleanProcedure.Task.Handle(String ClientIP, String card) 位置 f:\GitHub\CleanProcedure\CleanProcedure\Task.cs:行号 297
+   在 CleanProcedure.CleanManager.ProcessDelegate(QueueInfo info) 位置 f:\GitHub\CleanProcedure\Decontamination\CleanManager.cs:行号 64
+   在 audiotest.BusinessInfoHelper.ScanQueue() 位置 f:\GitHub\CleanProcedure\CleanProcedure\comm\smessagequeue.cs:行号 91
+
+
+
+程序出现异常
+异常说明：System.Type--
+2018-05-24 09:06:32
+★异常类型：ArgumentOutOfRangeException
+★异常消息：InvalidArgument=“0”的值对于“startIndex”无效。
+参数名: startIndex
+★异常信息：   在 System.Windows.Forms.ListView.FindItemWithText(String text, Boolean includeSubItemsInSearch, Int32 startIndex, Boolean isPrefixSearch)
+   在 System.Windows.Forms.ListView.FindItemWithText(String text, Boolean includeSubItemsInSearch, Int32 startIndex)
+   在 Decontamination.PerformManager.StartTask(TaskInfo info) 位置 f:\GitHub\CleanProcedure\Decontamination\PerformManager.cs:行号 152
+
+
+
+程序出现异常
+异常说明：System.Type--
+2018-05-24 09:06:41
+★异常类型：ArgumentException
+★异常消息：已添加了具有相同键的项。
+★异常信息：   在 System.ThrowHelper.ThrowArgumentException(ExceptionResource resource)
+   在 System.Collections.Generic.Dictionary`2.Insert(TKey key, TValue value, Boolean add)
+   在 CleanProcedure.Task.Pending(String ClientIP, String card) 位置 f:\GitHub\CleanProcedure\CleanProcedure\Task.cs:行号 145
+   在 CleanProcedure.Task.Handle(String ClientIP, String card) 位置 f:\GitHub\CleanProcedure\CleanProcedure\Task.cs:行号 290
+   在 CleanProcedure.CleanManager.ProcessDelegate(QueueInfo info) 位置 f:\GitHub\CleanProcedure\Decontamination\CleanManager.cs:行号 64
+   在 audiotest.BusinessInfoHelper.ScanQueue() 位置 f:\GitHub\CleanProcedure\CleanProcedure\comm\smessagequeue.cs:行号 91
+
+
+
+程序出现异常
+异常说明：System.Type--
+2018-05-24 09:06:50
+★异常类型：ArgumentException
+★异常消息：已添加了具有相同键的项。
+★异常信息：   在 System.ThrowHelper.ThrowArgumentException(ExceptionResource resource)
+   在 System.Collections.Generic.Dictionary`2.Insert(TKey key, TValue value, Boolean add)
+   在 CleanProcedure.Task.Pending(String ClientIP, String card) 位置 f:\GitHub\CleanProcedure\CleanProcedure\Task.cs:行号 145
+   在 CleanProcedure.Task.Handle(String ClientIP, String card) 位置 f:\GitHub\CleanProcedure\CleanProcedure\Task.cs:行号 290
+   在 CleanProcedure.CleanManager.ProcessDelegate(QueueInfo info) 位置 f:\GitHub\CleanProcedure\Decontamination\CleanManager.cs:行号 64
+   在 audiotest.BusinessInfoHelper.ScanQueue() 位置 f:\GitHub\CleanProcedure\CleanProcedure\comm\smessagequeue.cs:行号 91
+
+
+
+程序出现异常
+异常说明：System.Type--
+2018-05-24 09:07:20
+★异常类型：ArgumentException
+★异常消息：已添加了具有相同键的项。
+★异常信息：   在 System.ThrowHelper.ThrowArgumentException(ExceptionResource resource)
+   在 System.Collections.Generic.Dictionary`2.Insert(TKey key, TValue value, Boolean add)
+   在 CleanProcedure.Task.Pending(String ClientIP, String card) 位置 f:\GitHub\CleanProcedure\CleanProcedure\Task.cs:行号 145
+   在 CleanProcedure.Task.Handle(String ClientIP, String card) 位置 f:\GitHub\CleanProcedure\CleanProcedure\Task.cs:行号 290
+   在 CleanProcedure.CleanManager.ProcessDelegate(QueueInfo info) 位置 f:\GitHub\CleanProcedure\Decontamination\CleanManager.cs:行号 64
+   在 audiotest.BusinessInfoHelper.ScanQueue() 位置 f:\GitHub\CleanProcedure\CleanProcedure\comm\smessagequeue.cs:行号 91
+
+
+
+程序出现异常
+异常说明：System.Type--
+2018-05-24 09:07:24
+★异常类型：ArgumentException
+★异常消息：已添加了具有相同键的项。
+★异常信息：   在 System.ThrowHelper.ThrowArgumentException(ExceptionResource resource)
+   在 System.Collections.Generic.Dictionary`2.Insert(TKey key, TValue value, Boolean add)
+   在 CleanProcedure.Task.Pending(String ClientIP, String card) 位置 f:\GitHub\CleanProcedure\CleanProcedure\Task.cs:行号 145
+   在 CleanProcedure.Task.Handle(String ClientIP, String card) 位置 f:\GitHub\CleanProcedure\CleanProcedure\Task.cs:行号 290
+   在 CleanProcedure.CleanManager.ProcessDelegate(QueueInfo info) 位置 f:\GitHub\CleanProcedure\Decontamination\CleanManager.cs:行号 64
+   在 audiotest.BusinessInfoHelper.ScanQueue() 位置 f:\GitHub\CleanProcedure\CleanProcedure\comm\smessagequeue.cs:行号 91
+
+
+
+程序出现异常
+异常说明：System.Type--
+2018-05-24 09:07:33
+★异常类型：ApplicationException
+★异常消息：从不同步的代码块中调用了对象同步方法。
+★异常信息：   在 System.Threading.Mutex.ReleaseMutex()
+   在 CleanProcedure.Task.BindingCard(String ClientIP, String card) 位置 f:\GitHub\CleanProcedure\CleanProcedure\Task.cs:行号 191
+   在 CleanProcedure.Task.Handle(String ClientIP, String card) 位置 f:\GitHub\CleanProcedure\CleanProcedure\Task.cs:行号 297
+   在 CleanProcedure.CleanManager.ProcessDelegate(QueueInfo info) 位置 f:\GitHub\CleanProcedure\Decontamination\CleanManager.cs:行号 64
+   在 audiotest.BusinessInfoHelper.ScanQueue() 位置 f:\GitHub\CleanProcedure\CleanProcedure\comm\smessagequeue.cs:行号 91
+
+
+
+程序出现异常
+异常说明：System.Type--
+2018-05-24 09:07:36
+★异常类型：ApplicationException
+★异常消息：从不同步的代码块中调用了对象同步方法。
+★异常信息：   在 System.Threading.Mutex.ReleaseMutex()
+   在 CleanProcedure.Task.BindingCard(String ClientIP, String card) 位置 f:\GitHub\CleanProcedure\CleanProcedure\Task.cs:行号 191
+   在 CleanProcedure.Task.Handle(String ClientIP, String card) 位置 f:\GitHub\CleanProcedure\CleanProcedure\Task.cs:行号 297
+   在 CleanProcedure.CleanManager.ProcessDelegate(QueueInfo info) 位置 f:\GitHub\CleanProcedure\Decontamination\CleanManager.cs:行号 64
+   在 audiotest.BusinessInfoHelper.ScanQueue() 位置 f:\GitHub\CleanProcedure\CleanProcedure\comm\smessagequeue.cs:行号 91
+
+
+
+程序出现异常
+异常说明：System.Type--
+2018-05-24 09:25:01
+★异常类型：ArgumentException
+★异常消息：已添加了具有相同键的项。
+★异常信息：   在 System.ThrowHelper.ThrowArgumentException(ExceptionResource resource)
+   在 System.Collections.Generic.Dictionary`2.Insert(TKey key, TValue value, Boolean add)
+   在 CleanProcedure.Task.Pending(String ClientIP, String card) 位置 f:\GitHub\CleanProcedure\CleanProcedure\Task.cs:行号 145
+   在 CleanProcedure.Task.Handle(String ClientIP, String card) 位置 f:\GitHub\CleanProcedure\CleanProcedure\Task.cs:行号 290
+   在 CleanProcedure.CleanManager.ProcessDelegate(QueueInfo info) 位置 f:\GitHub\CleanProcedure\Decontamination\CleanManager.cs:行号 64
+   在 audiotest.BusinessInfoHelper.ScanQueue() 位置 f:\GitHub\CleanProcedure\CleanProcedure\comm\smessagequeue.cs:行号 91
+
+
+
+程序出现异常
+异常说明：System.Type--
+2018-05-24 09:25:11
+★异常类型：ApplicationException
+★异常消息：从不同步的代码块中调用了对象同步方法。
+★异常信息：   在 System.Threading.Mutex.ReleaseMutex()
+   在 CleanProcedure.Task.BindingCard(String ClientIP, String card) 位置 f:\GitHub\CleanProcedure\CleanProcedure\Task.cs:行号 191
+   在 CleanProcedure.Task.Handle(String ClientIP, String card) 位置 f:\GitHub\CleanProcedure\CleanProcedure\Task.cs:行号 297
+   在 CleanProcedure.CleanManager.ProcessDelegate(QueueInfo info) 位置 f:\GitHub\CleanProcedure\Decontamination\CleanManager.cs:行号 64
+   在 audiotest.BusinessInfoHelper.ScanQueue() 位置 f:\GitHub\CleanProcedure\CleanProcedure\comm\smessagequeue.cs:行号 91
+
+
+
+程序出现异常
+异常说明：System.Type--
+2018-05-24 09:25:52
+★异常类型：NullReferenceException
+★异常消息：未将对象引用设置到对象的实例。
+★异常信息：   在 CleanProcedure.Task.Step(String ClientIP, String card) 位置 f:\GitHub\CleanProcedure\CleanProcedure\Task.cs:行号 210
+   在 CleanProcedure.Task.Handle(String ClientIP, String card) 位置 f:\GitHub\CleanProcedure\CleanProcedure\Task.cs:行号 304
+   在 CleanProcedure.CleanManager.ProcessDelegate(QueueInfo info) 位置 f:\GitHub\CleanProcedure\Decontamination\CleanManager.cs:行号 64
+   在 audiotest.BusinessInfoHelper.ScanQueue() 位置 f:\GitHub\CleanProcedure\CleanProcedure\comm\smessagequeue.cs:行号 90
+
+
+
+程序出现异常
+异常说明：System.Type--
+2018-05-24 09:25:53
+★异常类型：NullReferenceException
+★异常消息：未将对象引用设置到对象的实例。
+★异常信息：   在 CleanProcedure.Task.Step(String ClientIP, String card) 位置 f:\GitHub\CleanProcedure\CleanProcedure\Task.cs:行号 210
+   在 CleanProcedure.Task.Handle(String ClientIP, String card) 位置 f:\GitHub\CleanProcedure\CleanProcedure\Task.cs:行号 304
+   在 CleanProcedure.CleanManager.ProcessDelegate(QueueInfo info) 位置 f:\GitHub\CleanProcedure\Decontamination\CleanManager.cs:行号 64
+   在 audiotest.BusinessInfoHelper.ScanQueue() 位置 f:\GitHub\CleanProcedure\CleanProcedure\comm\smessagequeue.cs:行号 90
+
+
+
+程序出现异常
+异常说明：System.Type--
+2018-05-24 09:25:54
+★异常类型：NullReferenceException
+★异常消息：未将对象引用设置到对象的实例。
+★异常信息：   在 CleanProcedure.Task.Step(String ClientIP, String card) 位置 f:\GitHub\CleanProcedure\CleanProcedure\Task.cs:行号 210
+   在 CleanProcedure.Task.Handle(String ClientIP, String card) 位置 f:\GitHub\CleanProcedure\CleanProcedure\Task.cs:行号 304
+   在 CleanProcedure.CleanManager.ProcessDelegate(QueueInfo info) 位置 f:\GitHub\CleanProcedure\Decontamination\CleanManager.cs:行号 64
+   在 audiotest.BusinessInfoHelper.ScanQueue() 位置 f:\GitHub\CleanProcedure\CleanProcedure\comm\smessagequeue.cs:行号 90
+
+
+
+程序出现异常
+异常说明：System.Type--
+2018-05-24 10:02:02
+★异常类型：NullReferenceException
+★异常消息：未将对象引用设置到对象的实例。
+★异常信息：   在 CleanProcedure.Task.Step(String ClientIP, String card) 位置 f:\GitHub\CleanProcedure\CleanProcedure\Task.cs:行号 209
+   在 CleanProcedure.Task.Handle(String ClientIP, String card) 位置 f:\GitHub\CleanProcedure\CleanProcedure\Task.cs:行号 303
+   在 CleanProcedure.CleanManager.ProcessDelegate(QueueInfo info) 位置 f:\GitHub\CleanProcedure\Decontamination\CleanManager.cs:行号 64
+   在 audiotest.BusinessInfoHelper.ScanQueue() 位置 f:\GitHub\CleanProcedure\CleanProcedure\comm\smessagequeue.cs:行号 90
+
+
+
+程序出现异常
+异常说明：System.Type--
+2018-05-24 10:16:10
+★异常类型：InvalidCastException
+★异常消息：无法将类型为“System.Windows.Forms.ProgressBar”的对象强制转换为类型“CCWin.SkinControl.SkinProgressBar”。
+★异常信息：   在 Decontamination.PerformManager.UpdateProgressBarMethod(Object pb) 位置 f:\GitHub\CleanProcedure\Decontamination\PerformManager.cs:行号 178
+
+
+
+程序出现异常
+异常说明：System.Type--
+2018-05-24 10:16:21
+★异常类型：NullReferenceException
+★异常消息：未将对象引用设置到对象的实例。
+★异常信息：   在 CleanProcedure.Task.Step(String ClientIP, String card) 位置 f:\GitHub\CleanProcedure\CleanProcedure\Task.cs:行号 225
+   在 CleanProcedure.Task.Handle(String ClientIP, String card) 位置 f:\GitHub\CleanProcedure\CleanProcedure\Task.cs:行号 311
+   在 CleanProcedure.CleanManager.ProcessDelegate(QueueInfo info) 位置 f:\GitHub\CleanProcedure\Decontamination\CleanManager.cs:行号 64
+   在 audiotest.BusinessInfoHelper.ScanQueue() 位置 f:\GitHub\CleanProcedure\CleanProcedure\comm\smessagequeue.cs:行号 90
+
+
+
+程序出现异常
+异常说明：System.Type--
+2018-05-24 10:16:23
+★异常类型：NullReferenceException
+★异常消息：未将对象引用设置到对象的实例。
+★异常信息：   在 CleanProcedure.Task.Step(String ClientIP, String card) 位置 f:\GitHub\CleanProcedure\CleanProcedure\Task.cs:行号 225
+   在 CleanProcedure.Task.Handle(String ClientIP, String card) 位置 f:\GitHub\CleanProcedure\CleanProcedure\Task.cs:行号 311
+   在 CleanProcedure.CleanManager.ProcessDelegate(QueueInfo info) 位置 f:\GitHub\CleanProcedure\Decontamination\CleanManager.cs:行号 64
+   在 audiotest.BusinessInfoHelper.ScanQueue() 位置 f:\GitHub\CleanProcedure\CleanProcedure\comm\smessagequeue.cs:行号 90
+
+
+
+程序出现异常
+异常说明：System.Type--
+2018-05-24 10:38:03
+★异常类型：ArgumentException
+★异常消息：已添加了具有相同键的项。
+★异常信息：   在 System.ThrowHelper.ThrowArgumentException(ExceptionResource resource)
+   在 System.Collections.Generic.Dictionary`2.Insert(TKey key, TValue value, Boolean add)
+   在 CleanProcedure.Task.Pending(String ClientIP, String card) 位置 f:\GitHub\CleanProcedure\CleanProcedure\Task.cs:行号 144
+   在 CleanProcedure.Task.Handle(String ClientIP, String card) 位置 f:\GitHub\CleanProcedure\CleanProcedure\Task.cs:行号 297
+   在 CleanProcedure.CleanManager.ProcessDelegate(QueueInfo info) 位置 f:\GitHub\CleanProcedure\Decontamination\CleanManager.cs:行号 64
+   在 audiotest.BusinessInfoHelper.ScanQueue() 位置 f:\GitHub\CleanProcedure\CleanProcedure\comm\smessagequeue.cs:行号 91
+
+
+
+程序出现异常
+异常说明：System.Type--
+2018-05-24 10:38:17
+★异常类型：InvalidCastException
+★异常消息：无法将类型为“System.Windows.Forms.ProgressBar”的对象强制转换为类型“CCWin.SkinControl.SkinProgressBar”。
+★异常信息：   在 Decontamination.PerformManager.UpdateProgressBarMethod(Object pb) 位置 f:\GitHub\CleanProcedure\Decontamination\PerformManager.cs:行号 178
+
+
+
+程序出现异常
+异常说明：System.Type--
+2018-05-24 10:41:19
+★异常类型：InvalidCastException
+★异常消息：无法将类型为“System.Windows.Forms.ProgressBar”的对象强制转换为类型“CCWin.SkinControl.SkinProgressBar”。
+★异常信息：   在 Decontamination.PerformManager.UpdateProgressBarMethod(Object pb) 位置 f:\GitHub\CleanProcedure\Decontamination\PerformManager.cs:行号 178
+
+
+
+程序出现异常
+异常说明：System.Type--
+2018-05-24 10:53:19
+★异常类型：NullReferenceException
+★异常消息：未将对象引用设置到对象的实例。
+★异常信息：   在 Decontamination.PerformManager.StartTask(TaskInfo info) 位置 f:\GitHub\CleanProcedure\Decontamination\PerformManager.cs:行号 161
+
+
+
+程序出现异常
+异常说明：System.Type--
+2018-05-24 10:53:22
+★异常类型：InvalidOperationException
+★异常消息：线程间操作无效: 从不是创建控件“”的线程访问它。
+★异常信息：   在 System.Windows.Forms.Control.get_Handle()
+   在 System.Windows.Forms.ListView.FindItem(Boolean isTextSearch, String text, Boolean isPrefixSearch, Point pt, SearchDirectionHint dir, Int32 startIndex, Boolean includeSubItemsInSearch)
+   在 System.Windows.Forms.ListView.FindItemWithText(String text, Boolean includeSubItemsInSearch, Int32 startIndex, Boolean isPrefixSearch)
+   在 System.Windows.Forms.ListView.FindItemWithText(String text, Boolean includeSubItemsInSearch, Int32 startIndex)
+   在 Decontamination.PerformManager.Endupdate(TaskInfo info) 位置 f:\GitHub\CleanProcedure\Decontamination\PerformManager.cs:行号 205
+   在 CleanProcedure.Task.Step(String ClientIP, String card) 位置 f:\GitHub\CleanProcedure\CleanProcedure\Task.cs:行号 270
+   在 CleanProcedure.Task.Handle(String ClientIP, String card) 位置 f:\GitHub\CleanProcedure\CleanProcedure\Task.cs:行号 311
+   在 CleanProcedure.CleanManager.ProcessDelegate(QueueInfo info) 位置 f:\GitHub\CleanProcedure\Decontamination\CleanManager.cs:行号 64
+   在 audiotest.BusinessInfoHelper.ScanQueue() 位置 f:\GitHub\CleanProcedure\CleanProcedure\comm\smessagequeue.cs:行号 91
+
+
+
+程序出现异常
+异常说明：System.Type--
+2018-05-24 10:53:25
+★异常类型：InvalidOperationException
+★异常消息：线程间操作无效: 从不是创建控件“”的线程访问它。
+★异常信息：   在 System.Windows.Forms.Control.get_Handle()
+   在 System.Windows.Forms.ListView.FindItem(Boolean isTextSearch, String text, Boolean isPrefixSearch, Point pt, SearchDirectionHint dir, Int32 startIndex, Boolean includeSubItemsInSearch)
+   在 System.Windows.Forms.ListView.FindItemWithText(String text, Boolean includeSubItemsInSearch, Int32 startIndex, Boolean isPrefixSearch)
+   在 System.Windows.Forms.ListView.FindItemWithText(String text, Boolean includeSubItemsInSearch, Int32 startIndex)
+   在 Decontamination.PerformManager.Endupdate(TaskInfo info) 位置 f:\GitHub\CleanProcedure\Decontamination\PerformManager.cs:行号 205
+   在 CleanProcedure.Task.Step(String ClientIP, String card) 位置 f:\GitHub\CleanProcedure\CleanProcedure\Task.cs:行号 270
+   在 CleanProcedure.Task.Handle(String ClientIP, String card) 位置 f:\GitHub\CleanProcedure\CleanProcedure\Task.cs:行号 311
+   在 CleanProcedure.CleanManager.ProcessDelegate(QueueInfo info) 位置 f:\GitHub\CleanProcedure\Decontamination\CleanManager.cs:行号 64
+   在 audiotest.BusinessInfoHelper.ScanQueue() 位置 f:\GitHub\CleanProcedure\CleanProcedure\comm\smessagequeue.cs:行号 91
+
+
+
+程序出现异常
+异常说明：System.Type--
+2018-05-24 13:45:13
+★异常类型：InvalidOperationException
+★异常消息：线程间操作无效: 从不是创建控件“”的线程访问它。
+★异常信息：   在 System.Windows.Forms.Control.get_Handle()
+   在 System.Windows.Forms.Control.SendMessage(Int32 msg, Int32 wparam, Int32 lparam)
+   在 System.Windows.Forms.ProgressBar.set_Maximum(Int32 value)
+   在 Decontamination.PerformManager.UpdateProgressBarMethod(Object pb) 位置 f:\GitHub\CleanProcedure\Decontamination\PerformManager.cs:行号 181
+
+
+
+程序出现异常
+异常说明：System.Type--
+2018-05-24 13:47:57
+★异常类型：InvalidOperationException
+★异常消息：线程间操作无效: 从不是创建控件“”的线程访问它。
+★异常信息：   在 System.Windows.Forms.Control.get_Handle()
+   在 System.Windows.Forms.Control.SendMessage(Int32 msg, Int32 wparam, Int32 lparam)
+   在 System.Windows.Forms.ProgressBar.set_Maximum(Int32 value)
+   在 Decontamination.PerformManager.UpdateProgressBarMethod(Object pb) 位置 f:\GitHub\CleanProcedure\Decontamination\PerformManager.cs:行号 181
+
+
+
+程序出现异常
+异常说明：System.Type--
+2018-05-24 13:58:24
+★异常类型：NullReferenceException
+★异常消息：未将对象引用设置到对象的实例。
+★异常信息：   在 CleanProcedure.Task.Step(String ClientIP, String card) 位置 f:\GitHub\CleanProcedure\CleanProcedure\Task.cs:行号 225
+   在 CleanProcedure.Task.Handle(String ClientIP, String card) 位置 f:\GitHub\CleanProcedure\CleanProcedure\Task.cs:行号 311
+   在 CleanProcedure.CleanManager.ProcessDelegate(QueueInfo info) 位置 f:\GitHub\CleanProcedure\Decontamination\CleanManager.cs:行号 64
+   在 audiotest.BusinessInfoHelper.ScanQueue() 位置 f:\GitHub\CleanProcedure\CleanProcedure\comm\smessagequeue.cs:行号 90
+
+
+
+程序出现异常
+异常说明：System.Type--
+2018-05-24 14:22:58
+★异常类型：ArgumentException
+★异常消息：已添加了具有相同键的项。
+★异常信息：   在 System.ThrowHelper.ThrowArgumentException(ExceptionResource resource)
+   在 System.Collections.Generic.Dictionary`2.Insert(TKey key, TValue value, Boolean add)
+   在 CleanProcedure.Task.Pending(String ClientIP, String card) 位置 f:\GitHub\CleanProcedure\CleanProcedure\Task.cs:行号 144
+   在 CleanProcedure.Task.Handle(String ClientIP, String card) 位置 f:\GitHub\CleanProcedure\CleanProcedure\Task.cs:行号 297
+   在 CleanProcedure.CleanManager.ProcessDelegate(QueueInfo info) 位置 f:\GitHub\CleanProcedure\Decontamination\CleanManager.cs:行号 64
+   在 audiotest.BusinessInfoHelper.ScanQueue() 位置 f:\GitHub\CleanProcedure\CleanProcedure\comm\smessagequeue.cs:行号 91
+
+
+
+程序出现异常
+异常说明：System.Type--
+2018-05-24 14:23:10
+★异常类型：NullReferenceException
+★异常消息：未将对象引用设置到对象的实例。
+★异常信息：   在 CleanProcedure.Task.Step(String ClientIP, String card) 位置 f:\GitHub\CleanProcedure\CleanProcedure\Task.cs:行号 225
+   在 CleanProcedure.Task.Handle(String ClientIP, String card) 位置 f:\GitHub\CleanProcedure\CleanProcedure\Task.cs:行号 311
+   在 CleanProcedure.CleanManager.ProcessDelegate(QueueInfo info) 位置 f:\GitHub\CleanProcedure\Decontamination\CleanManager.cs:行号 64
+   在 audiotest.BusinessInfoHelper.ScanQueue() 位置 f:\GitHub\CleanProcedure\CleanProcedure\comm\smessagequeue.cs:行号 90
+
+
+
+程序出现异常
+异常说明：System.Type--
+2018-05-24 14:23:17
+★异常类型：DbEntityValidationException
+★异常消息：对一个或多个实体的验证失败。有关详细信息，请参见“EntityValidationErrors”属性。
+★异常信息：   在 System.Data.Entity.Internal.InternalContext.SaveChanges()
+   在 System.Data.Entity.Internal.LazyInternalContext.SaveChanges()
+   在 System.Data.Entity.DbContext.SaveChanges()
+   在 CleanProcedure.DBmanager.ScanQueue() 位置 f:\GitHub\CleanProcedure\CleanProcedure\DBmanager.cs:行号 94
+
+
+
+程序出现异常
+异常说明：System.Type--
+2018-05-24 14:24:15
+★异常类型：DbEntityValidationException
+★异常消息：对一个或多个实体的验证失败。有关详细信息，请参见“EntityValidationErrors”属性。
+★异常信息：   在 System.Data.Entity.Internal.InternalContext.SaveChanges()
+   在 System.Data.Entity.Internal.LazyInternalContext.SaveChanges()
+   在 System.Data.Entity.DbContext.SaveChanges()
+   在 CleanProcedure.DBmanager.ScanQueue() 位置 f:\GitHub\CleanProcedure\CleanProcedure\DBmanager.cs:行号 94
+
+
+
+程序出现异常
+异常说明：System.Type--
+2018-05-24 14:26:12
+★异常类型：DbEntityValidationException
+★异常消息：对一个或多个实体的验证失败。有关详细信息，请参见“EntityValidationErrors”属性。
+★异常信息：   在 System.Data.Entity.Internal.InternalContext.SaveChanges()
+   在 System.Data.Entity.Internal.LazyInternalContext.SaveChanges()
+   在 System.Data.Entity.DbContext.SaveChanges()
+   在 CleanProcedure.DBmanager.ScanQueue() 位置 f:\GitHub\CleanProcedure\CleanProcedure\DBmanager.cs:行号 94
+
+
+
+程序出现异常
+异常说明：System.Type--
+2018-05-24 14:30:25
+★异常类型：ArgumentException
+★异常消息：已添加了具有相同键的项。
+★异常信息：   在 System.ThrowHelper.ThrowArgumentException(ExceptionResource resource)
+   在 System.Collections.Generic.Dictionary`2.Insert(TKey key, TValue value, Boolean add)
+   在 CleanProcedure.Task.Pending(String ClientIP, String card) 位置 f:\GitHub\CleanProcedure\CleanProcedure\Task.cs:行号 144
+   在 CleanProcedure.Task.Handle(String ClientIP, String card) 位置 f:\GitHub\CleanProcedure\CleanProcedure\Task.cs:行号 297
+   在 CleanProcedure.CleanManager.ProcessDelegate(QueueInfo info) 位置 f:\GitHub\CleanProcedure\Decontamination\CleanManager.cs:行号 64
+   在 audiotest.BusinessInfoHelper.ScanQueue() 位置 f:\GitHub\CleanProcedure\CleanProcedure\comm\smessagequeue.cs:行号 91
+
+
+
+程序出现异常
+异常说明：System.Type--
+2018-05-24 14:30:47
+★异常类型：DbEntityValidationException
+★异常消息：对一个或多个实体的验证失败。有关详细信息，请参见“EntityValidationErrors”属性。
+★异常信息：   在 System.Data.Entity.Internal.InternalContext.SaveChanges()
+   在 System.Data.Entity.Internal.LazyInternalContext.SaveChanges()
+   在 System.Data.Entity.DbContext.SaveChanges()
+   在 CleanProcedure.DBmanager.ScanQueue() 位置 f:\GitHub\CleanProcedure\CleanProcedure\DBmanager.cs:行号 94
+
+
+
+程序出现异常
+异常说明：System.Type--
+2018-05-24 14:52:23
+★异常类型：DbEntityValidationException
+★异常消息：对一个或多个实体的验证失败。有关详细信息，请参见“EntityValidationErrors”属性。
+★异常信息：   在 System.Data.Entity.Internal.InternalContext.SaveChanges()
+   在 System.Data.Entity.Internal.LazyInternalContext.SaveChanges()
+   在 System.Data.Entity.DbContext.SaveChanges()
+   在 CleanProcedure.DBmanager.ScanQueue() 位置 f:\GitHub\CleanProcedure\CleanProcedure\DBmanager.cs:行号 94
+
+
+
+程序出现异常
+异常说明：System.Type--
+2018-05-24 15:21:43
+★异常类型：DbEntityValidationException
+★异常消息：对一个或多个实体的验证失败。有关详细信息，请参见“EntityValidationErrors”属性。
+★异常信息：   在 System.Data.Entity.Internal.InternalContext.SaveChanges()
+   在 System.Data.Entity.Internal.LazyInternalContext.SaveChanges()
+   在 System.Data.Entity.DbContext.SaveChanges()
+   在 CleanProcedure.DBmanager.ScanQueue() 位置 f:\GitHub\CleanProcedure\CleanProcedure\DBmanager.cs:行号 94
+
+
+
+程序出现异常
+异常说明：System.Type--
+2018-05-24 15:23:04
+★异常类型：DbEntityValidationException
+★异常消息：对一个或多个实体的验证失败。有关详细信息，请参见“EntityValidationErrors”属性。
+★异常信息：   在 System.Data.Entity.Internal.InternalContext.SaveChanges()
+   在 System.Data.Entity.Internal.LazyInternalContext.SaveChanges()
+   在 System.Data.Entity.DbContext.SaveChanges()
+   在 CleanProcedure.DBmanager.ScanQueue() 位置 f:\GitHub\CleanProcedure\CleanProcedure\DBmanager.cs:行号 94
+
+
+
+程序出现异常
+异常说明：System.Type--
+2018-05-24 15:26:11
+★异常类型：InvalidOperationException
+★异常消息：线程间操作无效: 从不是创建控件“”的线程访问它。
+★异常信息：   在 System.Windows.Forms.Control.get_Handle()
+   在 System.Windows.Forms.ListView.FindItem(Boolean isTextSearch, String text, Boolean isPrefixSearch, Point pt, SearchDirectionHint dir, Int32 startIndex, Boolean includeSubItemsInSearch)
+   在 System.Windows.Forms.ListView.FindItemWithText(String text, Boolean includeSubItemsInSearch, Int32 startIndex, Boolean isPrefixSearch)
+   在 System.Windows.Forms.ListView.FindItemWithText(String text, Boolean includeSubItemsInSearch, Int32 startIndex)
+   在 Decontamination.PerformManager.Endupdate(TaskInfo info) 位置 f:\GitHub\CleanProcedure\Decontamination\PerformManager.cs:行号 206
+   在 CleanProcedure.Task.Step(String ClientIP, String card) 位置 f:\GitHub\CleanProcedure\CleanProcedure\Task.cs:行号 270
+   在 CleanProcedure.Task.Handle(String ClientIP, String card) 位置 f:\GitHub\CleanProcedure\CleanProcedure\Task.cs:行号 311
+   在 CleanProcedure.CleanManager.ProcessDelegate(QueueInfo info) 位置 f:\GitHub\CleanProcedure\Decontamination\CleanManager.cs:行号 64
+   在 audiotest.BusinessInfoHelper.ScanQueue() 位置 f:\GitHub\CleanProcedure\CleanProcedure\comm\smessagequeue.cs:行号 91
+
+
+
+程序出现异常
+异常说明：System.Type--
+2018-05-24 15:26:13
+★异常类型：InvalidOperationException
+★异常消息：线程间操作无效: 从不是创建控件“”的线程访问它。
+★异常信息：   在 System.Windows.Forms.Control.get_Handle()
+   在 System.Windows.Forms.ListView.FindItem(Boolean isTextSearch, String text, Boolean isPrefixSearch, Point pt, SearchDirectionHint dir, Int32 startIndex, Boolean includeSubItemsInSearch)
+   在 System.Windows.Forms.ListView.FindItemWithText(String text, Boolean includeSubItemsInSearch, Int32 startIndex, Boolean isPrefixSearch)
+   在 System.Windows.Forms.ListView.FindItemWithText(String text, Boolean includeSubItemsInSearch, Int32 startIndex)
+   在 Decontamination.PerformManager.Endupdate(TaskInfo info) 位置 f:\GitHub\CleanProcedure\Decontamination\PerformManager.cs:行号 206
+   在 CleanProcedure.Task.Step(String ClientIP, String card) 位置 f:\GitHub\CleanProcedure\CleanProcedure\Task.cs:行号 270
+   在 CleanProcedure.Task.Handle(String ClientIP, String card) 位置 f:\GitHub\CleanProcedure\CleanProcedure\Task.cs:行号 311
+   在 CleanProcedure.CleanManager.ProcessDelegate(QueueInfo info) 位置 f:\GitHub\CleanProcedure\Decontamination\CleanManager.cs:行号 64
+   在 audiotest.BusinessInfoHelper.ScanQueue() 位置 f:\GitHub\CleanProcedure\CleanProcedure\comm\smessagequeue.cs:行号 91
+
+
+
+程序出现异常
+异常说明：System.Type--
+2018-05-24 15:35:18
+★异常类型：ArgumentException
+★异常消息：已添加了具有相同键的项。
+★异常信息：   在 System.ThrowHelper.ThrowArgumentException(ExceptionResource resource)
+   在 System.Collections.Generic.Dictionary`2.Insert(TKey key, TValue value, Boolean add)
+   在 CleanProcedure.Task.Pending(String ClientIP, String card) 位置 f:\GitHub\CleanProcedure\CleanProcedure\Task.cs:行号 144
+   在 CleanProcedure.Task.Handle(String ClientIP, String card) 位置 f:\GitHub\CleanProcedure\CleanProcedure\Task.cs:行号 297
+   在 CleanProcedure.CleanManager.ProcessDelegate(QueueInfo info) 位置 f:\GitHub\CleanProcedure\Decontamination\CleanManager.cs:行号 64
+   在 audiotest.BusinessInfoHelper.ScanQueue() 位置 f:\GitHub\CleanProcedure\CleanProcedure\comm\smessagequeue.cs:行号 91
+
+
+
+程序出现异常
+异常说明：System.Type--
+2018-05-24 15:35:18
+★异常类型：ArgumentException
+★异常消息：已添加了具有相同键的项。
+★异常信息：   在 System.ThrowHelper.ThrowArgumentException(ExceptionResource resource)
+   在 System.Collections.Generic.Dictionary`2.Insert(TKey key, TValue value, Boolean add)
+   在 CleanProcedure.Task.Pending(String ClientIP, String card) 位置 f:\GitHub\CleanProcedure\CleanProcedure\Task.cs:行号 144
+   在 CleanProcedure.Task.Handle(String ClientIP, String card) 位置 f:\GitHub\CleanProcedure\CleanProcedure\Task.cs:行号 297
+   在 CleanProcedure.CleanManager.ProcessDelegate(QueueInfo info) 位置 f:\GitHub\CleanProcedure\Decontamination\CleanManager.cs:行号 64
+   在 audiotest.BusinessInfoHelper.ScanQueue() 位置 f:\GitHub\CleanProcedure\CleanProcedure\comm\smessagequeue.cs:行号 91
+
+
+
+程序出现异常
+异常说明：System.Type--
+2018-05-24 15:35:25
+★异常类型：DbUpdateException
+★异常消息：无法更新 EntitySet“Clean_RecordList”，因为它有一个 DefiningQuery，而 <ModificationFunctionMapping> 元素中没有支持当前操作的 <InsertFunction> 元素。
+★异常信息：   在 System.Data.Entity.Internal.InternalContext.SaveChanges()
+   在 System.Data.Entity.Internal.LazyInternalContext.SaveChanges()
+   在 System.Data.Entity.DbContext.SaveChanges()
+   在 CleanProcedure.DBmanager.ScanQueue() 位置 f:\GitHub\CleanProcedure\CleanProcedure\DBmanager.cs:行号 94
+
+
+
+程序出现异常
+异常说明：System.Type--
+2018-05-24 15:36:30
+★异常类型：DbUpdateException
+★异常消息：无法更新 EntitySet“Clean_RecordList”，因为它有一个 DefiningQuery，而 <ModificationFunctionMapping> 元素中没有支持当前操作的 <InsertFunction> 元素。
+★异常信息：   在 System.Data.Entity.Internal.InternalContext.SaveChanges()
+   在 System.Data.Entity.Internal.LazyInternalContext.SaveChanges()
+   在 System.Data.Entity.DbContext.SaveChanges()
+   在 CleanProcedure.DBmanager.ScanQueue() 位置 f:\GitHub\CleanProcedure\CleanProcedure\DBmanager.cs:行号 94
+
+
+
+程序出现异常
+异常说明：System.Type--
+2018-05-24 15:55:36
+★异常类型：DivideByZeroException
+★异常消息：尝试除以零。
+★异常信息：   在 Decontamination.PerformManager.Init(Dictionary`2 infolist) 位置 f:\GitHub\CleanProcedure\Decontamination\PerformManager.cs:行号 58
+
+
+
+程序出现异常
+异常说明：System.Type--
+2018-05-24 16:40:25
+★异常类型：NullReferenceException
+★异常消息：未将对象引用设置到对象的实例。
+★异常信息：   在 CleanProcedure.Task.Step(String ClientIP, String card) 位置 f:\GitHub\CleanProcedure\CleanProcedure\Task.cs:行号 268
+   在 CleanProcedure.Task.Handle(String ClientIP, String card) 位置 f:\GitHub\CleanProcedure\CleanProcedure\Task.cs:行号 311
+   在 CleanProcedure.CleanManager.ProcessDelegate(QueueInfo info) 位置 f:\GitHub\CleanProcedure\Decontamination\CleanManager.cs:行号 64
+   在 audiotest.BusinessInfoHelper.ScanQueue() 位置 f:\GitHub\CleanProcedure\CleanProcedure\comm\smessagequeue.cs:行号 90
+
+
+
+程序出现异常
+异常说明：System.Type--
+2018-05-24 16:40:27
+★异常类型：NullReferenceException
+★异常消息：未将对象引用设置到对象的实例。
+★异常信息：   在 CleanProcedure.Task.Step(String ClientIP, String card) 位置 f:\GitHub\CleanProcedure\CleanProcedure\Task.cs:行号 268
+   在 CleanProcedure.Task.Handle(String ClientIP, String card) 位置 f:\GitHub\CleanProcedure\CleanProcedure\Task.cs:行号 311
+   在 CleanProcedure.CleanManager.ProcessDelegate(QueueInfo info) 位置 f:\GitHub\CleanProcedure\Decontamination\CleanManager.cs:行号 64
+   在 audiotest.BusinessInfoHelper.ScanQueue() 位置 f:\GitHub\CleanProcedure\CleanProcedure\comm\smessagequeue.cs:行号 90
+
+
+
+程序出现异常
+异常说明：System.Type--
+2018-05-24 16:41:02
+★异常类型：NullReferenceException
+★异常消息：未将对象引用设置到对象的实例。
+★异常信息：   在 CleanProcedure.Task.Step(String ClientIP, String card) 位置 f:\GitHub\CleanProcedure\CleanProcedure\Task.cs:行号 268
+   在 CleanProcedure.Task.Handle(String ClientIP, String card) 位置 f:\GitHub\CleanProcedure\CleanProcedure\Task.cs:行号 311
+   在 CleanProcedure.CleanManager.ProcessDelegate(QueueInfo info) 位置 f:\GitHub\CleanProcedure\Decontamination\CleanManager.cs:行号 64
+   在 audiotest.BusinessInfoHelper.ScanQueue() 位置 f:\GitHub\CleanProcedure\CleanProcedure\comm\smessagequeue.cs:行号 90
+
+
+
+程序出现异常
+异常说明：System.Type--
+2018-05-24 16:47:18
+★异常类型：NullReferenceException
+★异常消息：未将对象引用设置到对象的实例。
+★异常信息：   在 CleanProcedure.Task.Step(String ClientIP, String card) 位置 f:\GitHub\CleanProcedure\CleanProcedure\Task.cs:行号 225
+   在 CleanProcedure.Task.Handle(String ClientIP, String card) 位置 f:\GitHub\CleanProcedure\CleanProcedure\Task.cs:行号 311
+   在 CleanProcedure.CleanManager.ProcessDelegate(QueueInfo info) 位置 f:\GitHub\CleanProcedure\Decontamination\CleanManager.cs:行号 64
+   在 audiotest.BusinessInfoHelper.ScanQueue() 位置 f:\GitHub\CleanProcedure\CleanProcedure\comm\smessagequeue.cs:行号 90
+
+
+
+程序出现异常
+异常说明：System.Type--
+2018-05-24 16:47:20
+★异常类型：NullReferenceException
+★异常消息：未将对象引用设置到对象的实例。
+★异常信息：   在 CleanProcedure.Task.Step(String ClientIP, String card) 位置 f:\GitHub\CleanProcedure\CleanProcedure\Task.cs:行号 225
+   在 CleanProcedure.Task.Handle(String ClientIP, String card) 位置 f:\GitHub\CleanProcedure\CleanProcedure\Task.cs:行号 311
+   在 CleanProcedure.CleanManager.ProcessDelegate(QueueInfo info) 位置 f:\GitHub\CleanProcedure\Decontamination\CleanManager.cs:行号 64
+   在 audiotest.BusinessInfoHelper.ScanQueue() 位置 f:\GitHub\CleanProcedure\CleanProcedure\comm\smessagequeue.cs:行号 90
+
+
+
+程序出现异常
+异常说明：System.Type--
+2018-05-24 16:50:35
+★异常类型：NullReferenceException
+★异常消息：未将对象引用设置到对象的实例。
+★异常信息：   在 CleanProcedure.Task.Step(String ClientIP, String card) 位置 f:\GitHub\CleanProcedure\CleanProcedure\Task.cs:行号 268
+   在 CleanProcedure.Task.Handle(String ClientIP, String card) 位置 f:\GitHub\CleanProcedure\CleanProcedure\Task.cs:行号 311
+   在 CleanProcedure.CleanManager.ProcessDelegate(QueueInfo info) 位置 f:\GitHub\CleanProcedure\Decontamination\CleanManager.cs:行号 64
+   在 audiotest.BusinessInfoHelper.ScanQueue() 位置 f:\GitHub\CleanProcedure\CleanProcedure\comm\smessagequeue.cs:行号 90
+
+
+
+程序出现异常
+异常说明：System.Type--
+2018-05-24 16:52:08
+★异常类型：NullReferenceException
+★异常消息：未将对象引用设置到对象的实例。
+★异常信息：   在 CleanProcedure.Task.Step(String ClientIP, String card) 位置 f:\GitHub\CleanProcedure\CleanProcedure\Task.cs:行号 268
+   在 CleanProcedure.Task.Handle(String ClientIP, String card) 位置 f:\GitHub\CleanProcedure\CleanProcedure\Task.cs:行号 311
+   在 CleanProcedure.CleanManager.ProcessDelegate(QueueInfo info) 位置 f:\GitHub\CleanProcedure\Decontamination\CleanManager.cs:行号 64
+   在 audiotest.BusinessInfoHelper.ScanQueue() 位置 f:\GitHub\CleanProcedure\CleanProcedure\comm\smessagequeue.cs:行号 90
+
+
+
+程序出现异常
+异常说明：System.Type--
+2018-05-24 16:57:39
+★异常类型：NullReferenceException
+★异常消息：未将对象引用设置到对象的实例。
+★异常信息：   在 CleanProcedure.Task.Step(String ClientIP, String card) 位置 f:\GitHub\CleanProcedure\CleanProcedure\Task.cs:行号 268
+   在 CleanProcedure.Task.Handle(String ClientIP, String card) 位置 f:\GitHub\CleanProcedure\CleanProcedure\Task.cs:行号 311
+   在 CleanProcedure.CleanManager.ProcessDelegate(QueueInfo info) 位置 f:\GitHub\CleanProcedure\Decontamination\CleanManager.cs:行号 64
+   在 audiotest.BusinessInfoHelper.ScanQueue() 位置 f:\GitHub\CleanProcedure\CleanProcedure\comm\smessagequeue.cs:行号 90
+
+
+
+程序出现异常
+异常说明：System.Type--
+2018-05-24 16:58:25
+★异常类型：NullReferenceException
+★异常消息：未将对象引用设置到对象的实例。
+★异常信息：   在 CleanProcedure.Task.Step(String ClientIP, String card) 位置 f:\GitHub\CleanProcedure\CleanProcedure\Task.cs:行号 268
+   在 CleanProcedure.Task.Handle(String ClientIP, String card) 位置 f:\GitHub\CleanProcedure\CleanProcedure\Task.cs:行号 311
+   在 CleanProcedure.CleanManager.ProcessDelegate(QueueInfo info) 位置 f:\GitHub\CleanProcedure\Decontamination\CleanManager.cs:行号 64
+   在 audiotest.BusinessInfoHelper.ScanQueue() 位置 f:\GitHub\CleanProcedure\CleanProcedure\comm\smessagequeue.cs:行号 90
+
+
+
+程序出现异常
+异常说明：System.Type--
+2018-05-24 17:13:42
+★异常类型：InvalidOperationException
+★异常消息：线程间操作无效: 从不是创建控件“”的线程访问它。
+★异常信息：   在 System.Windows.Forms.Control.get_Handle()
+   在 System.Windows.Forms.ListView.FindItem(Boolean isTextSearch, String text, Boolean isPrefixSearch, Point pt, SearchDirectionHint dir, Int32 startIndex, Boolean includeSubItemsInSearch)
+   在 System.Windows.Forms.ListView.FindItemWithText(String text, Boolean includeSubItemsInSearch, Int32 startIndex, Boolean isPrefixSearch)
+   在 System.Windows.Forms.ListView.FindItemWithText(String text, Boolean includeSubItemsInSearch, Int32 startIndex)
+   在 Decontamination.PerformManager.Endupdate(TaskInfo info) 位置 f:\GitHub\CleanProcedure\Decontamination\PerformManager.cs:行号 206
+   在 CleanProcedure.Task.Step(String ClientIP, String card) 位置 f:\GitHub\CleanProcedure\CleanProcedure\Task.cs:行号 270
+   在 CleanProcedure.Task.Handle(String ClientIP, String card) 位置 f:\GitHub\CleanProcedure\CleanProcedure\Task.cs:行号 311
+   在 CleanProcedure.CleanManager.ProcessDelegate(QueueInfo info) 位置 f:\GitHub\CleanProcedure\Decontamination\CleanManager.cs:行号 64
+   在 audiotest.BusinessInfoHelper.ScanQueue() 位置 f:\GitHub\CleanProcedure\CleanProcedure\comm\smessagequeue.cs:行号 91
+
+
+

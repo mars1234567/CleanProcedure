@@ -1,0 +1,11 @@
+F:\GitHub\CleanProcedure\DeviceConfig\bin\Release\DeviceConfig.exe.config
+F:\GitHub\CleanProcedure\DeviceConfig\bin\Release\DeviceConfig.exe
+F:\GitHub\CleanProcedure\DeviceConfig\bin\Release\DeviceConfig.pdb
+F:\GitHub\CleanProcedure\DeviceConfig\bin\Release\CSkin.dll
+F:\GitHub\CleanProcedure\DeviceConfig\bin\Release\CSkin.xml
+F:\GitHub\CleanProcedure\DeviceConfig\obj\Release\DeviceConfig.FormConfig.resources
+F:\GitHub\CleanProcedure\DeviceConfig\obj\Release\DeviceConfig.Properties.Resources.resources
+F:\GitHub\CleanProcedure\DeviceConfig\obj\Release\DeviceConfig.csproj.GenerateResource.Cache
+F:\GitHub\CleanProcedure\DeviceConfig\obj\Release\DeviceConfig.exe
+F:\GitHub\CleanProcedure\DeviceConfig\obj\Release\DeviceConfig.pdb
+F:\GitHub\CleanProcedure\DeviceConfig\obj\Release\DeviceConfig.csprojResolveAssemblyReference.cache
