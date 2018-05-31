@@ -78,6 +78,10 @@ namespace udp_csharp
 
       
         }
+        public void Send(byte[] content, EndPoint remoteEndPoint)
+        {
+            communicationSend.Send(content, remoteEndPoint);
+        }
 
         #region 事件
         void communicationRec_OnDataReceived(object sender, SocketAsyncEventArgs e)

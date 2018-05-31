@@ -225,5 +225,15 @@
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
+    <EntitySetMapping Name="CleanListView">
+      <EntityTypeMapping TypeName="CleanModel.CleanListView">
+        <MappingFragment StoreEntitySet="CleanListView">
+          <ScalarProperty Name="cleanprc" ColumnName="cleanprc" />
+          <ScalarProperty Name="WorkCard" ColumnName="WorkCard" />
+          <ScalarProperty Name="CleanCard" ColumnName="CleanCard" />
+          <ScalarProperty Name="Sequence" ColumnName="Sequence" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
   </EntityContainerMapping>
 </Mapping>

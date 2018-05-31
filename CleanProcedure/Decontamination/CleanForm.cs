@@ -28,7 +28,8 @@ namespace Decontamination
         private void Form1_Load(object sender, EventArgs e)
         {
             cm.InitForm(this.tabmoniter);//初始化界面
-           cm.Start();
+            cm.Start();
+            UpdateCleanCardListview();
         }
 
         private void tabManager_SizeChanged(object sender, EventArgs e)
@@ -41,8 +42,38 @@ namespace Decontamination
 
         }
 
+        private void ListCleanedCard_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tabManager_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+        public delegate void UpdateTaskList( );//声明一个更新主线程的委托
+        public void UpdateCleanCardListview()
+        {
+            if (ListCleanedCard.InvokeRequired)
+            {
+                UpdateTaskList updatedelegate = new UpdateTaskList(UpdateCleanCardListview);
+                ParentForm.Invoke(updatedelegate, new object[] { });
+            }
+            else
+            {
+                List<CleanListView> ul= new List<CleanListView>();
+                DataInfo.GetCleanListInfo(ref ul);
+                foreach(var i in ul)
+                {
+                  ListViewItem col =  ListCleanedCard.Items.Add(i.Sequence.ToString());
+                  col.SubItems.Add(i.CleanCard);
+                  col.SubItems.Add(i.WorkCard);
+                  col.SubItems.Add(i.cleanprc);
 
 
+                }
+            }
+        }
 
 
     }

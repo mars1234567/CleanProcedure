@@ -40,5 +40,59 @@ namespace udp_csharp.include
             }
             return returnStr.Trim();
         }
+       public static void IPtoHexStr(string ip,ref byte[] bytes,char P = '.' )
+        {
+            char[] separator = new char[] { P };
+            string[] items = ip.Split(separator);
+            int i = 0;
+            foreach(var item in items)
+            {
+                bytes[i] = byte.Parse(item);
+                i++;
+            }
+        }
+
+       public static void MACtoHexStr(string MAC, ref byte[] bytes,char P = '-')
+       {
+           char[] separator = new char[] { P };
+           string[] items = MAC.Split(separator);
+           int i = 0;
+           foreach (var item in items)
+           {
+               bytes[i] = byte.Parse(item);
+               i++;
+           }
+       }
+
+       /// <summary>
+       /// 字符串转16进制字节数组
+       /// </summary>
+       /// <param name="hexString"></param>
+       /// <returns></returns>
+       public static byte[] strToToHexByte(string num)
+       {
+          return System.Text.Encoding.Default.GetBytes(num);
+       }
+
+       
+/// <summary>
+        /// 从汉字转换到16进制
+        /// </summary>
+        /// <param name="s"></param>
+        /// <param name="charset">编码,如"utf-8","gb2312"</param>
+        /// <param name="fenge">是否每字符用逗号分隔</param>
+       /// <returns></returns>
+       public static byte[] ToHex(string s, string charset, bool fenge)
+        {
+            if ((s.Length % 2) != 0)
+            {
+                 s += " ";//空格
+                //throw new ArgumentException("s is not valid chinese string!");
+             }
+             System.Text.Encoding chs = System.Text.Encoding.GetEncoding(charset);
+            byte[] bytes = chs.GetBytes(s);
+            return bytes;
+         }
+
     }
 }

@@ -33,6 +33,9 @@ namespace CleanProcedure
         //public UpdateTask m_updateTaskProc = null;
        //工作人员列表
         List<string> Worker = new List<string>();
+
+        //隔夜内镜列表
+        List<string> YesterdayCard = new List<string>();
           public Task()
         {
             
@@ -104,18 +107,19 @@ namespace CleanProcedure
                         {
                             string cardname = item.Key;
                             Clean_RecordList it = item.OrderBy(p => p.StartTime).LastOrDefault();
-                            //2天内的消毒记录
-                            if (it.StartTime.Date.Equals(DateTime.Today.AddDays(-1)) || it.StartTime.Date.Equals(DateTime.Today))
+                            //昨天的消毒记录
+                            if (it.StartTime.Date.Equals(DateTime.Today.AddDays(-1)) /*|| it.StartTime.Date.Equals(DateTime.Today)*/)
                             {
-                                if (it.StepNum < it.MaxNum)//消毒未完成记录
-                                {
-                                    State mState = new State(it.WorkCard,it.CleanIp,it.StepTime);
-                                    mState.Binding(cardname);
+                                //if (it.StepNum < it.MaxNum)//消毒未完成记录
+                                //{
+                                //    State mState = new State(it.WorkCard,it.CleanIp,it.StepTime);
+                                //    mState.Binding(cardname);
                                  
 
-                                    CardList[cardname] = mState;
+                                //    CardList[cardname] = mState;
 
-                                }
+                                //}
+                                YesterdayCard.Add(it.CleanCard);
                             }
                         }
                     }
@@ -137,7 +141,7 @@ namespace CleanProcedure
         {
             return CardList.ContainsKey(card);
         }
-        public void Pending(string ClientIP, string card)
+        public string  Pending(string ClientIP, string card)
         {
             if (PendingList.ContainsKey(ClientIP))
             {
@@ -148,6 +152,7 @@ namespace CleanProcedure
                 //工作人员卡是新的覆盖旧的
                 PendingList[ClientIP] = new State(card, ClientIP);
             }
+            return "请刷内镜卡";
         }
 
         public StepNode GetIpStep(string ClientIP,int lastStepNum)
@@ -164,10 +169,10 @@ namespace CleanProcedure
             }
             return current_node;
         }
-        public bool BindingCard(string ClientIP, string card)
+        public bool BindingCard(string ClientIP, string card, ref string sResult)
         {
             bool bConvert = false;
-
+            
             //获取当前刷卡器的步骤信息
             StepNode curr_node = GetIpStep(ClientIP, 1);
             if (curr_node != null)
@@ -183,6 +188,11 @@ namespace CleanProcedure
                         mstate.UpdateMsgToDB(curr_node);
                         CardList[card] = mstate;
                         bConvert = true;
+                        sResult = "绑卡成功，开始";
+                    }
+                    else
+                    {
+                        sResult = "内镜卡正在洗消";
                     }
                 }
             }
@@ -198,9 +208,9 @@ namespace CleanProcedure
             return bConvert;
         }
         //洗消步骤切换
-        public bool  Step(string ClientIP, string card)
+        public bool Step(string ClientIP, string card, ref string sRet)
         {
-            string sRet= "";
+              sRet= "";
             bool bFinish = false;
             //bool bConvert = false;
             DateTime currenttime = DateTime.Now;
@@ -233,7 +243,7 @@ namespace CleanProcedure
 
                         //int stepTime = last_node.GetDur();
 
-                        lock (locker)
+                      //  lock (locker)
                         {
                             //当前步骤的上一个刷卡器地址是否相同，即洗消顺序相同
                             if (last_node.StepIp().Equals(mState.ClientIP))
@@ -243,7 +253,7 @@ namespace CleanProcedure
                                     mState.Convert(ClientIP);
                                     mState.StepTime = curr_node.GetDur();
                                     mState.UpdateMsgToDB(curr_node);
-
+                                    sRet = last_node.GetStepName() + "结束";
                                 }
                                 else
                                 {
@@ -257,6 +267,8 @@ namespace CleanProcedure
                                 mState.UpdateMsgToDB(curr_node, true);
                                 if(curr_node.GetStepNum()==curr_node.GetTotalStepNum())
                                      bFinish = true;
+
+                                sRet = "洗消步骤全部结束";
                             }
                             else
                                 sRet = "洗消步骤不对";
@@ -284,17 +296,18 @@ namespace CleanProcedure
             //
 
             ////获取当前刷卡器配置
-            //StepNode current_dev = IPlist[ClientIP];
+            StepNode current_dev = GetIpStep(ClientIP,1);
             //StepNode current_last = current_dev.GetLast();
 
             //刷卡器为第一个步骤
             //if (current_last == null)
+            string sResult = "";
             lock (locker)
              {
                 //工作人员刷卡
-                if (IsWorkCard(card))
+                 if ( IsWorkCard(card) && current_dev != null )
                 {
-                    Pending(ClientIP, card);
+                    sResult =  Pending(ClientIP, card);
                 }
 
                 //内镜刷卡
@@ -305,16 +318,15 @@ namespace CleanProcedure
                     {
                         //string workDev = PendingList[ClientIP].WorkCard;
                        
-                        if(BindingCard(ClientIP, card))
+                        if(BindingCard(ClientIP, card,ref sResult))
                         //绑卡成功，从绑卡列表中删除
                             PendingList.Remove(ClientIP);
                     }
                     else if (CardList.ContainsKey(card))  //内镜洗消步骤
                     {
 
-                        if (Step(ClientIP, card))
-                        {
-                            
+                        if (Step(ClientIP, card,ref sResult))
+                        {                           
                          
                                 CardList.Remove(card);
                            
@@ -325,13 +337,8 @@ namespace CleanProcedure
                 }
 
              }
-            //else
-            //{
 
-
-
-            //}
-            return "OK";
+            return sResult;
         }
 
     }

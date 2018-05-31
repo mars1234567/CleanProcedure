@@ -90,10 +90,11 @@ namespace CleanProcedure
                             //从队列中取出
                             Clean_RecordList queueinfo = ListQueue.Dequeue();
 
-                            Clean_RecordList find = db.Clean_RecordList.FirstOrDefault(model => model.Sequence == queueinfo.Sequence && model.StepNum == queueinfo.StepNum);
+                            Clean_RecordList find = db.Clean_RecordList.FirstOrDefault(model => model.Sequence == queueinfo.Sequence && model.StepNum == queueinfo.StepNum );
                             if (find != null)
                             {
-                                find.EndTime = queueinfo.EndTime;
+                                //if(find.MaxNum==find.StepNum)
+                                  find.EndTime = queueinfo.EndTime;
                             }
                             else
                                 db.Clean_RecordList.Add(queueinfo);

@@ -67,6 +67,9 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Clean.edmx</DependentUpon>
     </Compile>
+    <Compile Include="CleanListView.cs">
+      <DependentUpon>Clean.tt</DependentUpon>
+    </Compile>
     <Compile Include="Clean_Card.cs">
       <DependentUpon>Clean.tt</DependentUpon>
     </Compile>
@@ -94,6 +97,7 @@
     <Compile Include="comm\LogHelper.cs" />
     <Compile Include="comm\smessagequeue.cs" />
     <Compile Include="Config_func.cs" />
+    <Compile Include="DataInfo.cs" />
     <Compile Include="DBmanager.cs" />
     <Compile Include="Dic_Area.cs">
       <DependentUpon>Clean.tt</DependentUpon>
@@ -117,6 +121,7 @@
     <Compile Include="State.cs" />
     <Compile Include="TaskInfo.cs" />
     <Compile Include="UDP\BufferManager.cs" />
+    <Compile Include="UDP\CardConfigCtrl.cs" />
     <Compile Include="UDP\SocketAsyncEventArgsPool.cs" />
     <Compile Include="UDP\ThreadPing.cs" />
     <Compile Include="UDP\UdpReceiveSocket.cs" />

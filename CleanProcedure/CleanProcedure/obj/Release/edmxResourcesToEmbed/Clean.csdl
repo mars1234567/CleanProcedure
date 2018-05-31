@@ -225,5 +225,17 @@
     <EntitySet Name="Endoscopic_Mirror" EntityType="Self.Endoscopic_Mirror" />
     <EntitySet Name="Clean_CardDevice" EntityType="Self.Clean_CardDevice" />
     <EntitySet Name="Clean_User" EntityType="Self.Clean_User" />
+    <EntitySet Name="CleanListView" EntityType="CleanModel.CleanListView" />
   </EntityContainer>
+  <EntityType Name="CleanListView">
+    <Key>
+      <PropertyRef Name="Sequence" />
+      <PropertyRef Name="CleanCard" />
+      <PropertyRef Name="WorkCard" />
+    </Key>
+    <Property Name="Sequence" Type="Int32" Nullable="false" />
+    <Property Name="CleanCard" Type="String" Nullable="false" MaxLength="20" FixedLength="true" Unicode="true" />
+    <Property Name="WorkCard" Type="String" Nullable="false" MaxLength="20" FixedLength="true" Unicode="true" />
+    <Property Name="cleanprc" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+  </EntityType>
 </Schema>

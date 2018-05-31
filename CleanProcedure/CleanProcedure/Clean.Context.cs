@@ -37,5 +37,6 @@ namespace CleanProcedure
         public DbSet<Endoscopic_Mirror> Endoscopic_Mirror { get; set; }
         public DbSet<Clean_CardDevice> Clean_CardDevice { get; set; }
         public DbSet<Clean_User> Clean_User { get; set; }
+        public DbSet<CleanListView> CleanListView { get; set; }
     }
 }
