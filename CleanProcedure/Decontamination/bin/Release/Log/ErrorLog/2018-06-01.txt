@@ -1,0 +1,1440 @@
+程序出现异常
+异常说明：System.Type--
+2018-06-01 09:17:39
+★异常类型：InvalidOperationException
+★异常消息：堆栈为空。
+★异常信息：   在 System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   在 System.Collections.Generic.Stack`1.Pop()
+   在 udp_csharp.SocketAsyncEventArgsPool.Pop() 位置 f:\GitHub\CleanProcedure\CleanProcedure\UDP\SocketAsyncEventArgsPool.cs:行号 41
+   在 udp_csharp.UdpSendSocket.Send(Byte[] content, EndPoint remoteEndPoint) 位置 f:\GitHub\CleanProcedure\CleanProcedure\UDP\UdpSendSocket.cs:行号 84
+   在 udp_csharp.UdpServer.Send(Byte[] content, EndPoint remoteEndPoint) 位置 f:\GitHub\CleanProcedure\CleanProcedure\UDP\UdpServer.cs:行号 84
+   在 CleanProcedure.CleanManager.ProcessDelegate(QueueInfo info) 位置 f:\GitHub\CleanProcedure\Decontamination\CleanManager.cs:行号 67
+   在 audiotest.BusinessInfoHelper.ScanQueue() 位置 f:\GitHub\CleanProcedure\CleanProcedure\comm\smessagequeue.cs:行号 91
+
+
+
+程序出现异常
+异常说明：System.Type--
+2018-06-01 09:17:39
+★异常类型：ArgumentException
+★异常消息：已添加了具有相同键的项。
+★异常信息：   在 System.ThrowHelper.ThrowArgumentException(ExceptionResource resource)
+   在 System.Collections.Generic.Dictionary`2.Insert(TKey key, TValue value, Boolean add)
+   在 CleanProcedure.Task.Pending(String ClientIP, String card) 位置 f:\GitHub\CleanProcedure\CleanProcedure\Task.cs:行号 172
+   在 CleanProcedure.Task.Handle(String ClientIP, String card) 位置 f:\GitHub\CleanProcedure\CleanProcedure\Task.cs:行号 359
+   在 CleanProcedure.CleanManager.ProcessDelegate(QueueInfo info) 位置 f:\GitHub\CleanProcedure\Decontamination\CleanManager.cs:行号 61
+   在 audiotest.BusinessInfoHelper.ScanQueue() 位置 f:\GitHub\CleanProcedure\CleanProcedure\comm\smessagequeue.cs:行号 91
+
+
+
+程序出现异常
+异常说明：System.Type--
+2018-06-01 09:17:45
+★异常类型：InvalidOperationException
+★异常消息：堆栈为空。
+★异常信息：   在 System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   在 System.Collections.Generic.Stack`1.Pop()
+   在 udp_csharp.SocketAsyncEventArgsPool.Pop() 位置 f:\GitHub\CleanProcedure\CleanProcedure\UDP\SocketAsyncEventArgsPool.cs:行号 41
+   在 udp_csharp.UdpSendSocket.Send(Byte[] content, EndPoint remoteEndPoint) 位置 f:\GitHub\CleanProcedure\CleanProcedure\UDP\UdpSendSocket.cs:行号 84
+   在 udp_csharp.UdpServer.Send(Byte[] content, EndPoint remoteEndPoint) 位置 f:\GitHub\CleanProcedure\CleanProcedure\UDP\UdpServer.cs:行号 84
+   在 CleanProcedure.CleanManager.ProcessDelegate(QueueInfo info) 位置 f:\GitHub\CleanProcedure\Decontamination\CleanManager.cs:行号 67
+   在 audiotest.BusinessInfoHelper.ScanQueue() 位置 f:\GitHub\CleanProcedure\CleanProcedure\comm\smessagequeue.cs:行号 91
+
+
+
+程序出现异常
+异常说明：System.Type--
+2018-06-01 09:17:46
+★异常类型：NullReferenceException
+★异常消息：未将对象引用设置到对象的实例。
+★异常信息：   在 CleanProcedure.Task.Step(String ClientIP, String card, String& sRet) 位置 f:\GitHub\CleanProcedure\CleanProcedure\Task.cs:行号 285
+   在 CleanProcedure.Task.Handle(String ClientIP, String card) 位置 f:\GitHub\CleanProcedure\CleanProcedure\Task.cs:行号 377
+   在 CleanProcedure.CleanManager.ProcessDelegate(QueueInfo info) 位置 f:\GitHub\CleanProcedure\Decontamination\CleanManager.cs:行号 61
+   在 audiotest.BusinessInfoHelper.ScanQueue() 位置 f:\GitHub\CleanProcedure\CleanProcedure\comm\smessagequeue.cs:行号 90
+
+
+
+程序出现异常
+异常说明：System.Type--
+2018-06-01 09:43:34
+★异常类型：InvalidOperationException
+★异常消息：堆栈为空。
+★异常信息：   在 System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   在 System.Collections.Generic.Stack`1.Pop()
+   在 udp_csharp.SocketAsyncEventArgsPool.Pop() 位置 f:\GitHub\CleanProcedure\CleanProcedure\UDP\SocketAsyncEventArgsPool.cs:行号 41
+   在 udp_csharp.UdpSendSocket.Send(Byte[] content, EndPoint remoteEndPoint) 位置 f:\GitHub\CleanProcedure\CleanProcedure\UDP\UdpSendSocket.cs:行号 84
+   在 udp_csharp.UdpServer.Send(Byte[] content, EndPoint remoteEndPoint) 位置 f:\GitHub\CleanProcedure\CleanProcedure\UDP\UdpServer.cs:行号 84
+   在 CleanProcedure.CleanManager.ProcessDelegate(QueueInfo info) 位置 f:\GitHub\CleanProcedure\Decontamination\CleanManager.cs:行号 67
+   在 audiotest.BusinessInfoHelper.ScanQueue() 位置 f:\GitHub\CleanProcedure\CleanProcedure\comm\smessagequeue.cs:行号 91
+
+
+
+程序出现异常
+异常说明：System.Type--
+2018-06-01 09:43:40
+★异常类型：InvalidOperationException
+★异常消息：堆栈为空。
+★异常信息：   在 System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   在 System.Collections.Generic.Stack`1.Pop()
+   在 udp_csharp.SocketAsyncEventArgsPool.Pop() 位置 f:\GitHub\CleanProcedure\CleanProcedure\UDP\SocketAsyncEventArgsPool.cs:行号 41
+   在 udp_csharp.UdpSendSocket.Send(Byte[] content, EndPoint remoteEndPoint) 位置 f:\GitHub\CleanProcedure\CleanProcedure\UDP\UdpSendSocket.cs:行号 84
+   在 udp_csharp.UdpServer.Send(Byte[] content, EndPoint remoteEndPoint) 位置 f:\GitHub\CleanProcedure\CleanProcedure\UDP\UdpServer.cs:行号 84
+   在 CleanProcedure.CleanManager.ProcessDelegate(QueueInfo info) 位置 f:\GitHub\CleanProcedure\Decontamination\CleanManager.cs:行号 67
+   在 audiotest.BusinessInfoHelper.ScanQueue() 位置 f:\GitHub\CleanProcedure\CleanProcedure\comm\smessagequeue.cs:行号 91
+
+
+
+程序出现异常
+异常说明：System.Type--
+2018-06-01 09:43:42
+★异常类型：NullReferenceException
+★异常消息：未将对象引用设置到对象的实例。
+★异常信息：   在 CleanProcedure.Task.Step(String ClientIP, String card, String& sRet) 位置 f:\GitHub\CleanProcedure\CleanProcedure\Task.cs:行号 285
+   在 CleanProcedure.Task.Handle(String ClientIP, String card) 位置 f:\GitHub\CleanProcedure\CleanProcedure\Task.cs:行号 377
+   在 CleanProcedure.CleanManager.ProcessDelegate(QueueInfo info) 位置 f:\GitHub\CleanProcedure\Decontamination\CleanManager.cs:行号 61
+   在 audiotest.BusinessInfoHelper.ScanQueue() 位置 f:\GitHub\CleanProcedure\CleanProcedure\comm\smessagequeue.cs:行号 90
+
+
+
+程序出现异常
+异常说明：System.Type--
+2018-06-01 09:44:45
+★异常类型：InvalidOperationException
+★异常消息：堆栈为空。
+★异常信息：   在 System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   在 System.Collections.Generic.Stack`1.Pop()
+   在 udp_csharp.SocketAsyncEventArgsPool.Pop() 位置 f:\GitHub\CleanProcedure\CleanProcedure\UDP\SocketAsyncEventArgsPool.cs:行号 41
+   在 udp_csharp.UdpSendSocket.Send(Byte[] content, EndPoint remoteEndPoint) 位置 f:\GitHub\CleanProcedure\CleanProcedure\UDP\UdpSendSocket.cs:行号 84
+   在 udp_csharp.UdpServer.Send(Byte[] content, EndPoint remoteEndPoint) 位置 f:\GitHub\CleanProcedure\CleanProcedure\UDP\UdpServer.cs:行号 84
+   在 CleanProcedure.CleanManager.ProcessDelegate(QueueInfo info) 位置 f:\GitHub\CleanProcedure\Decontamination\CleanManager.cs:行号 67
+   在 audiotest.BusinessInfoHelper.ScanQueue() 位置 f:\GitHub\CleanProcedure\CleanProcedure\comm\smessagequeue.cs:行号 91
+
+
+
+程序出现异常
+异常说明：System.Type--
+2018-06-01 10:28:52
+★异常类型：InvalidOperationException
+★异常消息：堆栈为空。
+★异常信息：   在 System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   在 System.Collections.Generic.Stack`1.Pop()
+   在 udp_csharp.SocketAsyncEventArgsPool.Pop() 位置 f:\GitHub\CleanProcedure\CleanProcedure\UDP\SocketAsyncEventArgsPool.cs:行号 41
+   在 udp_csharp.UdpSendSocket.Send(Byte[] content, EndPoint remoteEndPoint) 位置 f:\GitHub\CleanProcedure\CleanProcedure\UDP\UdpSendSocket.cs:行号 84
+   在 udp_csharp.UdpServer.Send(Byte[] content, EndPoint remoteEndPoint) 位置 f:\GitHub\CleanProcedure\CleanProcedure\UDP\UdpServer.cs:行号 84
+   在 CleanProcedure.CleanManager.ProcessDelegate(QueueInfo info) 位置 f:\GitHub\CleanProcedure\Decontamination\CleanManager.cs:行号 67
+   在 audiotest.BusinessInfoHelper.ScanQueue() 位置 f:\GitHub\CleanProcedure\CleanProcedure\comm\smessagequeue.cs:行号 91
+
+
+
+程序出现异常
+异常说明：System.Type--
+2018-06-01 10:29:55
+★异常类型：InvalidOperationException
+★异常消息：堆栈为空。
+★异常信息：   在 System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   在 System.Collections.Generic.Stack`1.Pop()
+   在 udp_csharp.SocketAsyncEventArgsPool.Pop() 位置 f:\GitHub\CleanProcedure\CleanProcedure\UDP\SocketAsyncEventArgsPool.cs:行号 41
+   在 udp_csharp.UdpSendSocket.Send(Byte[] content, EndPoint remoteEndPoint) 位置 f:\GitHub\CleanProcedure\CleanProcedure\UDP\UdpSendSocket.cs:行号 84
+   在 udp_csharp.UdpServer.Send(Byte[] content, EndPoint remoteEndPoint) 位置 f:\GitHub\CleanProcedure\CleanProcedure\UDP\UdpServer.cs:行号 84
+   在 CleanProcedure.CleanManager.ProcessDelegate(QueueInfo info) 位置 f:\GitHub\CleanProcedure\Decontamination\CleanManager.cs:行号 67
+   在 audiotest.BusinessInfoHelper.ScanQueue() 位置 f:\GitHub\CleanProcedure\CleanProcedure\comm\smessagequeue.cs:行号 91
+
+
+
+程序出现异常
+异常说明：System.Type--
+2018-06-01 10:31:41
+★异常类型：InvalidOperationException
+★异常消息：堆栈为空。
+★异常信息：   在 System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   在 System.Collections.Generic.Stack`1.Pop()
+   在 udp_csharp.SocketAsyncEventArgsPool.Pop() 位置 f:\GitHub\CleanProcedure\CleanProcedure\UDP\SocketAsyncEventArgsPool.cs:行号 41
+   在 udp_csharp.UdpSendSocket.Send(Byte[] content, EndPoint remoteEndPoint) 位置 f:\GitHub\CleanProcedure\CleanProcedure\UDP\UdpSendSocket.cs:行号 84
+   在 udp_csharp.UdpServer.Send(Byte[] content, EndPoint remoteEndPoint) 位置 f:\GitHub\CleanProcedure\CleanProcedure\UDP\UdpServer.cs:行号 84
+   在 CleanProcedure.CleanManager.ProcessDelegate(QueueInfo info) 位置 f:\GitHub\CleanProcedure\Decontamination\CleanManager.cs:行号 67
+   在 audiotest.BusinessInfoHelper.ScanQueue() 位置 f:\GitHub\CleanProcedure\CleanProcedure\comm\smessagequeue.cs:行号 91
+
+
+
+程序出现异常
+异常说明：System.Type--
+2018-06-01 10:33:00
+★异常类型：InvalidOperationException
+★异常消息：堆栈为空。
+★异常信息：   在 System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   在 System.Collections.Generic.Stack`1.Pop()
+   在 udp_csharp.SocketAsyncEventArgsPool.Pop() 位置 f:\GitHub\CleanProcedure\CleanProcedure\UDP\SocketAsyncEventArgsPool.cs:行号 41
+   在 udp_csharp.UdpSendSocket.Send(Byte[] content, EndPoint remoteEndPoint) 位置 f:\GitHub\CleanProcedure\CleanProcedure\UDP\UdpSendSocket.cs:行号 84
+   在 udp_csharp.UdpServer.Send(Byte[] content, EndPoint remoteEndPoint) 位置 f:\GitHub\CleanProcedure\CleanProcedure\UDP\UdpServer.cs:行号 84
+   在 CleanProcedure.CleanManager.ProcessDelegate(QueueInfo info) 位置 f:\GitHub\CleanProcedure\Decontamination\CleanManager.cs:行号 67
+   在 audiotest.BusinessInfoHelper.ScanQueue() 位置 f:\GitHub\CleanProcedure\CleanProcedure\comm\smessagequeue.cs:行号 91
+
+
+
+程序出现异常
+异常说明：System.Type--
+2018-06-01 10:33:08
+★异常类型：InvalidOperationException
+★异常消息：堆栈为空。
+★异常信息：   在 System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   在 System.Collections.Generic.Stack`1.Pop()
+   在 udp_csharp.SocketAsyncEventArgsPool.Pop() 位置 f:\GitHub\CleanProcedure\CleanProcedure\UDP\SocketAsyncEventArgsPool.cs:行号 41
+   在 udp_csharp.UdpSendSocket.Send(Byte[] content, EndPoint remoteEndPoint) 位置 f:\GitHub\CleanProcedure\CleanProcedure\UDP\UdpSendSocket.cs:行号 84
+   在 udp_csharp.UdpServer.Send(Byte[] content, EndPoint remoteEndPoint) 位置 f:\GitHub\CleanProcedure\CleanProcedure\UDP\UdpServer.cs:行号 84
+   在 CleanProcedure.CleanManager.ProcessDelegate(QueueInfo info) 位置 f:\GitHub\CleanProcedure\Decontamination\CleanManager.cs:行号 67
+   在 audiotest.BusinessInfoHelper.ScanQueue() 位置 f:\GitHub\CleanProcedure\CleanProcedure\comm\smessagequeue.cs:行号 91
+
+
+
+程序出现异常
+异常说明：System.Type--
+2018-06-01 10:33:16
+★异常类型：InvalidOperationException
+★异常消息：堆栈为空。
+★异常信息：   在 System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   在 System.Collections.Generic.Stack`1.Pop()
+   在 udp_csharp.SocketAsyncEventArgsPool.Pop() 位置 f:\GitHub\CleanProcedure\CleanProcedure\UDP\SocketAsyncEventArgsPool.cs:行号 41
+   在 udp_csharp.UdpSendSocket.Send(Byte[] content, EndPoint remoteEndPoint) 位置 f:\GitHub\CleanProcedure\CleanProcedure\UDP\UdpSendSocket.cs:行号 84
+   在 udp_csharp.UdpServer.Send(Byte[] content, EndPoint remoteEndPoint) 位置 f:\GitHub\CleanProcedure\CleanProcedure\UDP\UdpServer.cs:行号 84
+   在 CleanProcedure.CleanManager.ProcessDelegate(QueueInfo info) 位置 f:\GitHub\CleanProcedure\Decontamination\CleanManager.cs:行号 67
+   在 audiotest.BusinessInfoHelper.ScanQueue() 位置 f:\GitHub\CleanProcedure\CleanProcedure\comm\smessagequeue.cs:行号 91
+
+
+
+程序出现异常
+异常说明：System.Type--
+2018-06-01 11:57:42
+★异常类型：InvalidOperationException
+★异常消息：堆栈为空。
+★异常信息：   在 System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   在 System.Collections.Generic.Stack`1.Pop()
+   在 udp_csharp.SocketAsyncEventArgsPool.Pop() 位置 f:\GitHub\CleanProcedure\CleanProcedure\UDP\SocketAsyncEventArgsPool.cs:行号 41
+   在 udp_csharp.UdpSendSocket.Send(Byte[] content, EndPoint remoteEndPoint) 位置 f:\GitHub\CleanProcedure\CleanProcedure\UDP\UdpSendSocket.cs:行号 84
+   在 udp_csharp.UdpServer.Send(Byte[] content, EndPoint remoteEndPoint) 位置 f:\GitHub\CleanProcedure\CleanProcedure\UDP\UdpServer.cs:行号 84
+   在 CleanProcedure.CleanManager.ProcessDelegate(QueueInfo info) 位置 f:\GitHub\CleanProcedure\Decontamination\CleanManager.cs:行号 67
+   在 audiotest.BusinessInfoHelper.ScanQueue() 位置 f:\GitHub\CleanProcedure\CleanProcedure\comm\smessagequeue.cs:行号 91
+
+
+
+程序出现异常
+异常说明：System.Type--
+2018-06-01 11:57:45
+★异常类型：InvalidOperationException
+★异常消息：堆栈为空。
+★异常信息：   在 System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   在 System.Collections.Generic.Stack`1.Pop()
+   在 udp_csharp.SocketAsyncEventArgsPool.Pop() 位置 f:\GitHub\CleanProcedure\CleanProcedure\UDP\SocketAsyncEventArgsPool.cs:行号 41
+   在 udp_csharp.UdpSendSocket.Send(Byte[] content, EndPoint remoteEndPoint) 位置 f:\GitHub\CleanProcedure\CleanProcedure\UDP\UdpSendSocket.cs:行号 84
+   在 udp_csharp.UdpServer.Send(Byte[] content, EndPoint remoteEndPoint) 位置 f:\GitHub\CleanProcedure\CleanProcedure\UDP\UdpServer.cs:行号 84
+   在 CleanProcedure.CleanManager.ProcessDelegate(QueueInfo info) 位置 f:\GitHub\CleanProcedure\Decontamination\CleanManager.cs:行号 67
+   在 audiotest.BusinessInfoHelper.ScanQueue() 位置 f:\GitHub\CleanProcedure\CleanProcedure\comm\smessagequeue.cs:行号 91
+
+
+
+程序出现异常
+异常说明：System.Type--
+2018-06-01 11:57:45
+★异常类型：InvalidCastException
+★异常消息：无法将类型为“CCWin.SkinControl.SkinProgressBar”的对象强制转换为类型“CCWin.SkinControl.SkinTextBox”。
+★异常信息：   在 Decontamination.PerformManager.UpdateProgressBarMethod(Object pb) 位置 f:\GitHub\CleanProcedure\Decontamination\PerformManager.cs:行号 186
+
+
+
+程序出现异常
+异常说明：System.Type--
+2018-06-01 11:59:48
+★异常类型：InvalidOperationException
+★异常消息：堆栈为空。
+★异常信息：   在 System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   在 System.Collections.Generic.Stack`1.Pop()
+   在 udp_csharp.SocketAsyncEventArgsPool.Pop() 位置 f:\GitHub\CleanProcedure\CleanProcedure\UDP\SocketAsyncEventArgsPool.cs:行号 41
+   在 udp_csharp.UdpSendSocket.Send(Byte[] content, EndPoint remoteEndPoint) 位置 f:\GitHub\CleanProcedure\CleanProcedure\UDP\UdpSendSocket.cs:行号 84
+   在 udp_csharp.UdpServer.Send(Byte[] content, EndPoint remoteEndPoint) 位置 f:\GitHub\CleanProcedure\CleanProcedure\UDP\UdpServer.cs:行号 84
+   在 CleanProcedure.CleanManager.ProcessDelegate(QueueInfo info) 位置 f:\GitHub\CleanProcedure\Decontamination\CleanManager.cs:行号 67
+   在 audiotest.BusinessInfoHelper.ScanQueue() 位置 f:\GitHub\CleanProcedure\CleanProcedure\comm\smessagequeue.cs:行号 91
+
+
+
+程序出现异常
+异常说明：System.Type--
+2018-06-01 11:59:53
+★异常类型：InvalidOperationException
+★异常消息：堆栈为空。
+★异常信息：   在 System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   在 System.Collections.Generic.Stack`1.Pop()
+   在 udp_csharp.SocketAsyncEventArgsPool.Pop() 位置 f:\GitHub\CleanProcedure\CleanProcedure\UDP\SocketAsyncEventArgsPool.cs:行号 41
+   在 udp_csharp.UdpSendSocket.Send(Byte[] content, EndPoint remoteEndPoint) 位置 f:\GitHub\CleanProcedure\CleanProcedure\UDP\UdpSendSocket.cs:行号 84
+   在 udp_csharp.UdpServer.Send(Byte[] content, EndPoint remoteEndPoint) 位置 f:\GitHub\CleanProcedure\CleanProcedure\UDP\UdpServer.cs:行号 84
+   在 CleanProcedure.CleanManager.ProcessDelegate(QueueInfo info) 位置 f:\GitHub\CleanProcedure\Decontamination\CleanManager.cs:行号 67
+   在 audiotest.BusinessInfoHelper.ScanQueue() 位置 f:\GitHub\CleanProcedure\CleanProcedure\comm\smessagequeue.cs:行号 91
+
+
+
+程序出现异常
+异常说明：System.Type--
+2018-06-01 11:59:54
+★异常类型：NullReferenceException
+★异常消息：未将对象引用设置到对象的实例。
+★异常信息：   在 CleanProcedure.Task.Step(String ClientIP, String card, String& sRet) 位置 f:\GitHub\CleanProcedure\CleanProcedure\Task.cs:行号 285
+   在 CleanProcedure.Task.Handle(String ClientIP, String card) 位置 f:\GitHub\CleanProcedure\CleanProcedure\Task.cs:行号 377
+   在 CleanProcedure.CleanManager.ProcessDelegate(QueueInfo info) 位置 f:\GitHub\CleanProcedure\Decontamination\CleanManager.cs:行号 61
+   在 audiotest.BusinessInfoHelper.ScanQueue() 位置 f:\GitHub\CleanProcedure\CleanProcedure\comm\smessagequeue.cs:行号 90
+
+
+
+程序出现异常
+异常说明：System.Type--
+2018-06-01 12:01:37
+★异常类型：InvalidOperationException
+★异常消息：堆栈为空。
+★异常信息：   在 System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   在 System.Collections.Generic.Stack`1.Pop()
+   在 udp_csharp.SocketAsyncEventArgsPool.Pop() 位置 f:\GitHub\CleanProcedure\CleanProcedure\UDP\SocketAsyncEventArgsPool.cs:行号 41
+   在 udp_csharp.UdpSendSocket.Send(Byte[] content, EndPoint remoteEndPoint) 位置 f:\GitHub\CleanProcedure\CleanProcedure\UDP\UdpSendSocket.cs:行号 84
+   在 udp_csharp.UdpServer.Send(Byte[] content, EndPoint remoteEndPoint) 位置 f:\GitHub\CleanProcedure\CleanProcedure\UDP\UdpServer.cs:行号 84
+   在 CleanProcedure.CleanManager.ProcessDelegate(QueueInfo info) 位置 f:\GitHub\CleanProcedure\Decontamination\CleanManager.cs:行号 67
+   在 audiotest.BusinessInfoHelper.ScanQueue() 位置 f:\GitHub\CleanProcedure\CleanProcedure\comm\smessagequeue.cs:行号 91
+
+
+
+程序出现异常
+异常说明：System.Type--
+2018-06-01 12:03:34
+★异常类型：InvalidOperationException
+★异常消息：堆栈为空。
+★异常信息：   在 System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   在 System.Collections.Generic.Stack`1.Pop()
+   在 udp_csharp.SocketAsyncEventArgsPool.Pop() 位置 f:\GitHub\CleanProcedure\CleanProcedure\UDP\SocketAsyncEventArgsPool.cs:行号 41
+   在 udp_csharp.UdpSendSocket.Send(Byte[] content, EndPoint remoteEndPoint) 位置 f:\GitHub\CleanProcedure\CleanProcedure\UDP\UdpSendSocket.cs:行号 84
+   在 udp_csharp.UdpServer.Send(Byte[] content, EndPoint remoteEndPoint) 位置 f:\GitHub\CleanProcedure\CleanProcedure\UDP\UdpServer.cs:行号 84
+   在 CleanProcedure.CleanManager.ProcessDelegate(QueueInfo info) 位置 f:\GitHub\CleanProcedure\Decontamination\CleanManager.cs:行号 67
+   在 audiotest.BusinessInfoHelper.ScanQueue() 位置 f:\GitHub\CleanProcedure\CleanProcedure\comm\smessagequeue.cs:行号 91
+
+
+
+程序出现异常
+异常说明：System.Type--
+2018-06-01 12:03:40
+★异常类型：InvalidOperationException
+★异常消息：堆栈为空。
+★异常信息：   在 System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   在 System.Collections.Generic.Stack`1.Pop()
+   在 udp_csharp.SocketAsyncEventArgsPool.Pop() 位置 f:\GitHub\CleanProcedure\CleanProcedure\UDP\SocketAsyncEventArgsPool.cs:行号 41
+   在 udp_csharp.UdpSendSocket.Send(Byte[] content, EndPoint remoteEndPoint) 位置 f:\GitHub\CleanProcedure\CleanProcedure\UDP\UdpSendSocket.cs:行号 84
+   在 udp_csharp.UdpServer.Send(Byte[] content, EndPoint remoteEndPoint) 位置 f:\GitHub\CleanProcedure\CleanProcedure\UDP\UdpServer.cs:行号 84
+   在 CleanProcedure.CleanManager.ProcessDelegate(QueueInfo info) 位置 f:\GitHub\CleanProcedure\Decontamination\CleanManager.cs:行号 67
+   在 audiotest.BusinessInfoHelper.ScanQueue() 位置 f:\GitHub\CleanProcedure\CleanProcedure\comm\smessagequeue.cs:行号 91
+
+
+
+程序出现异常
+异常说明：System.Type--
+2018-06-01 12:07:48
+★异常类型：InvalidOperationException
+★异常消息：堆栈为空。
+★异常信息：   在 System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   在 System.Collections.Generic.Stack`1.Pop()
+   在 udp_csharp.SocketAsyncEventArgsPool.Pop() 位置 f:\GitHub\CleanProcedure\CleanProcedure\UDP\SocketAsyncEventArgsPool.cs:行号 41
+   在 udp_csharp.UdpSendSocket.Send(Byte[] content, EndPoint remoteEndPoint) 位置 f:\GitHub\CleanProcedure\CleanProcedure\UDP\UdpSendSocket.cs:行号 84
+   在 udp_csharp.UdpServer.Send(Byte[] content, EndPoint remoteEndPoint) 位置 f:\GitHub\CleanProcedure\CleanProcedure\UDP\UdpServer.cs:行号 84
+   在 CleanProcedure.CleanManager.ProcessDelegate(QueueInfo info) 位置 f:\GitHub\CleanProcedure\Decontamination\CleanManager.cs:行号 67
+   在 audiotest.BusinessInfoHelper.ScanQueue() 位置 f:\GitHub\CleanProcedure\CleanProcedure\comm\smessagequeue.cs:行号 91
+
+
+
+程序出现异常
+异常说明：System.Type--
+2018-06-01 12:08:03
+★异常类型：InvalidOperationException
+★异常消息：堆栈为空。
+★异常信息：   在 System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   在 System.Collections.Generic.Stack`1.Pop()
+   在 udp_csharp.SocketAsyncEventArgsPool.Pop() 位置 f:\GitHub\CleanProcedure\CleanProcedure\UDP\SocketAsyncEventArgsPool.cs:行号 41
+   在 udp_csharp.UdpSendSocket.Send(Byte[] content, EndPoint remoteEndPoint) 位置 f:\GitHub\CleanProcedure\CleanProcedure\UDP\UdpSendSocket.cs:行号 84
+   在 udp_csharp.UdpServer.Send(Byte[] content, EndPoint remoteEndPoint) 位置 f:\GitHub\CleanProcedure\CleanProcedure\UDP\UdpServer.cs:行号 84
+   在 CleanProcedure.CleanManager.ProcessDelegate(QueueInfo info) 位置 f:\GitHub\CleanProcedure\Decontamination\CleanManager.cs:行号 67
+   在 audiotest.BusinessInfoHelper.ScanQueue() 位置 f:\GitHub\CleanProcedure\CleanProcedure\comm\smessagequeue.cs:行号 91
+
+
+
+程序出现异常
+异常说明：System.Type--
+2018-06-01 12:13:08
+★异常类型：ArgumentOutOfRangeException
+★异常消息：“0”的值对于“ImageSize.Width”无效。“ImageSize.Width”应介于 1 和 256 之间。
+参数名: ImageSize
+★异常信息：   在 System.Windows.Forms.ImageList.set_ImageSize(Size value)
+   在 Decontamination.PerformManager.Init(Dictionary`2 infolist) 位置 f:\GitHub\CleanProcedure\Decontamination\PerformManager.cs:行号 65
+
+
+
+程序出现异常
+异常说明：System.Type--
+2018-06-01 12:13:56
+★异常类型：InvalidOperationException
+★异常消息：堆栈为空。
+★异常信息：   在 System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   在 System.Collections.Generic.Stack`1.Pop()
+   在 udp_csharp.SocketAsyncEventArgsPool.Pop() 位置 f:\GitHub\CleanProcedure\CleanProcedure\UDP\SocketAsyncEventArgsPool.cs:行号 41
+   在 udp_csharp.UdpSendSocket.Send(Byte[] content, EndPoint remoteEndPoint) 位置 f:\GitHub\CleanProcedure\CleanProcedure\UDP\UdpSendSocket.cs:行号 84
+   在 udp_csharp.UdpServer.Send(Byte[] content, EndPoint remoteEndPoint) 位置 f:\GitHub\CleanProcedure\CleanProcedure\UDP\UdpServer.cs:行号 84
+   在 CleanProcedure.CleanManager.ProcessDelegate(QueueInfo info) 位置 f:\GitHub\CleanProcedure\Decontamination\CleanManager.cs:行号 67
+   在 audiotest.BusinessInfoHelper.ScanQueue() 位置 f:\GitHub\CleanProcedure\CleanProcedure\comm\smessagequeue.cs:行号 91
+
+
+
+程序出现异常
+异常说明：System.Type--
+2018-06-01 12:14:07
+★异常类型：InvalidOperationException
+★异常消息：堆栈为空。
+★异常信息：   在 System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   在 System.Collections.Generic.Stack`1.Pop()
+   在 udp_csharp.SocketAsyncEventArgsPool.Pop() 位置 f:\GitHub\CleanProcedure\CleanProcedure\UDP\SocketAsyncEventArgsPool.cs:行号 41
+   在 udp_csharp.UdpSendSocket.Send(Byte[] content, EndPoint remoteEndPoint) 位置 f:\GitHub\CleanProcedure\CleanProcedure\UDP\UdpSendSocket.cs:行号 84
+   在 udp_csharp.UdpServer.Send(Byte[] content, EndPoint remoteEndPoint) 位置 f:\GitHub\CleanProcedure\CleanProcedure\UDP\UdpServer.cs:行号 84
+   在 CleanProcedure.CleanManager.ProcessDelegate(QueueInfo info) 位置 f:\GitHub\CleanProcedure\Decontamination\CleanManager.cs:行号 67
+   在 audiotest.BusinessInfoHelper.ScanQueue() 位置 f:\GitHub\CleanProcedure\CleanProcedure\comm\smessagequeue.cs:行号 91
+
+
+
+程序出现异常
+异常说明：System.Type--
+2018-06-01 12:36:12
+★异常类型：InvalidOperationException
+★异常消息：堆栈为空。
+★异常信息：   在 System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   在 System.Collections.Generic.Stack`1.Pop()
+   在 udp_csharp.SocketAsyncEventArgsPool.Pop() 位置 f:\GitHub\CleanProcedure\CleanProcedure\UDP\SocketAsyncEventArgsPool.cs:行号 41
+   在 udp_csharp.UdpSendSocket.Send(Byte[] content, EndPoint remoteEndPoint) 位置 f:\GitHub\CleanProcedure\CleanProcedure\UDP\UdpSendSocket.cs:行号 84
+   在 udp_csharp.UdpServer.Send(Byte[] content, EndPoint remoteEndPoint) 位置 f:\GitHub\CleanProcedure\CleanProcedure\UDP\UdpServer.cs:行号 84
+   在 CleanProcedure.CleanManager.ProcessDelegate(QueueInfo info) 位置 f:\GitHub\CleanProcedure\Decontamination\CleanManager.cs:行号 67
+   在 audiotest.BusinessInfoHelper.ScanQueue() 位置 f:\GitHub\CleanProcedure\CleanProcedure\comm\smessagequeue.cs:行号 91
+
+
+
+程序出现异常
+异常说明：System.Type--
+2018-06-01 12:36:15
+★异常类型：ArgumentException
+★异常消息：已添加了具有相同键的项。
+★异常信息：   在 System.ThrowHelper.ThrowArgumentException(ExceptionResource resource)
+   在 System.Collections.Generic.Dictionary`2.Insert(TKey key, TValue value, Boolean add)
+   在 CleanProcedure.Task.Pending(String ClientIP, String card) 位置 f:\GitHub\CleanProcedure\CleanProcedure\Task.cs:行号 172
+   在 CleanProcedure.Task.Handle(String ClientIP, String card) 位置 f:\GitHub\CleanProcedure\CleanProcedure\Task.cs:行号 359
+   在 CleanProcedure.CleanManager.ProcessDelegate(QueueInfo info) 位置 f:\GitHub\CleanProcedure\Decontamination\CleanManager.cs:行号 61
+   在 audiotest.BusinessInfoHelper.ScanQueue() 位置 f:\GitHub\CleanProcedure\CleanProcedure\comm\smessagequeue.cs:行号 91
+
+
+
+程序出现异常
+异常说明：System.Type--
+2018-06-01 12:36:19
+★异常类型：InvalidOperationException
+★异常消息：堆栈为空。
+★异常信息：   在 System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   在 System.Collections.Generic.Stack`1.Pop()
+   在 udp_csharp.SocketAsyncEventArgsPool.Pop() 位置 f:\GitHub\CleanProcedure\CleanProcedure\UDP\SocketAsyncEventArgsPool.cs:行号 41
+   在 udp_csharp.UdpSendSocket.Send(Byte[] content, EndPoint remoteEndPoint) 位置 f:\GitHub\CleanProcedure\CleanProcedure\UDP\UdpSendSocket.cs:行号 84
+   在 udp_csharp.UdpServer.Send(Byte[] content, EndPoint remoteEndPoint) 位置 f:\GitHub\CleanProcedure\CleanProcedure\UDP\UdpServer.cs:行号 84
+   在 CleanProcedure.CleanManager.ProcessDelegate(QueueInfo info) 位置 f:\GitHub\CleanProcedure\Decontamination\CleanManager.cs:行号 67
+   在 audiotest.BusinessInfoHelper.ScanQueue() 位置 f:\GitHub\CleanProcedure\CleanProcedure\comm\smessagequeue.cs:行号 91
+
+
+
+程序出现异常
+异常说明：System.Type--
+2018-06-01 12:36:20
+★异常类型：NullReferenceException
+★异常消息：未将对象引用设置到对象的实例。
+★异常信息：   在 CleanProcedure.Task.Step(String ClientIP, String card, String& sRet) 位置 f:\GitHub\CleanProcedure\CleanProcedure\Task.cs:行号 285
+   在 CleanProcedure.Task.Handle(String ClientIP, String card) 位置 f:\GitHub\CleanProcedure\CleanProcedure\Task.cs:行号 377
+   在 CleanProcedure.CleanManager.ProcessDelegate(QueueInfo info) 位置 f:\GitHub\CleanProcedure\Decontamination\CleanManager.cs:行号 61
+   在 audiotest.BusinessInfoHelper.ScanQueue() 位置 f:\GitHub\CleanProcedure\CleanProcedure\comm\smessagequeue.cs:行号 90
+
+
+
+程序出现异常
+异常说明：System.Type--
+2018-06-01 12:45:55
+★异常类型：InvalidOperationException
+★异常消息：堆栈为空。
+★异常信息：   在 System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   在 System.Collections.Generic.Stack`1.Pop()
+   在 udp_csharp.SocketAsyncEventArgsPool.Pop() 位置 f:\GitHub\CleanProcedure\CleanProcedure\UDP\SocketAsyncEventArgsPool.cs:行号 41
+   在 udp_csharp.UdpSendSocket.Send(Byte[] content, EndPoint remoteEndPoint) 位置 f:\GitHub\CleanProcedure\CleanProcedure\UDP\UdpSendSocket.cs:行号 84
+   在 udp_csharp.UdpServer.Send(Byte[] content, EndPoint remoteEndPoint) 位置 f:\GitHub\CleanProcedure\CleanProcedure\UDP\UdpServer.cs:行号 84
+   在 CleanProcedure.CleanManager.ProcessDelegate(QueueInfo info) 位置 f:\GitHub\CleanProcedure\Decontamination\CleanManager.cs:行号 67
+   在 audiotest.BusinessInfoHelper.ScanQueue() 位置 f:\GitHub\CleanProcedure\CleanProcedure\comm\smessagequeue.cs:行号 91
+
+
+
+程序出现异常
+异常说明：System.Type--
+2018-06-01 12:46:05
+★异常类型：InvalidOperationException
+★异常消息：堆栈为空。
+★异常信息：   在 System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   在 System.Collections.Generic.Stack`1.Pop()
+   在 udp_csharp.SocketAsyncEventArgsPool.Pop() 位置 f:\GitHub\CleanProcedure\CleanProcedure\UDP\SocketAsyncEventArgsPool.cs:行号 41
+   在 udp_csharp.UdpSendSocket.Send(Byte[] content, EndPoint remoteEndPoint) 位置 f:\GitHub\CleanProcedure\CleanProcedure\UDP\UdpSendSocket.cs:行号 84
+   在 udp_csharp.UdpServer.Send(Byte[] content, EndPoint remoteEndPoint) 位置 f:\GitHub\CleanProcedure\CleanProcedure\UDP\UdpServer.cs:行号 84
+   在 CleanProcedure.CleanManager.ProcessDelegate(QueueInfo info) 位置 f:\GitHub\CleanProcedure\Decontamination\CleanManager.cs:行号 67
+   在 audiotest.BusinessInfoHelper.ScanQueue() 位置 f:\GitHub\CleanProcedure\CleanProcedure\comm\smessagequeue.cs:行号 91
+
+
+
+程序出现异常
+异常说明：System.Type--
+2018-06-01 15:05:18
+★异常类型：InvalidOperationException
+★异常消息：堆栈为空。
+★异常信息：   在 System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   在 System.Collections.Generic.Stack`1.Pop()
+   在 udp_csharp.SocketAsyncEventArgsPool.Pop() 位置 f:\GitHub\CleanProcedure\CleanProcedure\UDP\SocketAsyncEventArgsPool.cs:行号 41
+   在 udp_csharp.UdpSendSocket.Send(Byte[] content, EndPoint remoteEndPoint) 位置 f:\GitHub\CleanProcedure\CleanProcedure\UDP\UdpSendSocket.cs:行号 84
+   在 udp_csharp.UdpServer.Send(Byte[] content, EndPoint remoteEndPoint) 位置 f:\GitHub\CleanProcedure\CleanProcedure\UDP\UdpServer.cs:行号 84
+   在 CleanProcedure.CleanManager.ProcessDelegate(QueueInfo info) 位置 f:\GitHub\CleanProcedure\Decontamination\CleanManager.cs:行号 67
+   在 audiotest.BusinessInfoHelper.ScanQueue() 位置 f:\GitHub\CleanProcedure\CleanProcedure\comm\smessagequeue.cs:行号 91
+
+
+
+程序出现异常
+异常说明：System.Type--
+2018-06-01 15:05:38
+★异常类型：InvalidOperationException
+★异常消息：堆栈为空。
+★异常信息：   在 System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   在 System.Collections.Generic.Stack`1.Pop()
+   在 udp_csharp.SocketAsyncEventArgsPool.Pop() 位置 f:\GitHub\CleanProcedure\CleanProcedure\UDP\SocketAsyncEventArgsPool.cs:行号 41
+   在 udp_csharp.UdpSendSocket.Send(Byte[] content, EndPoint remoteEndPoint) 位置 f:\GitHub\CleanProcedure\CleanProcedure\UDP\UdpSendSocket.cs:行号 84
+   在 udp_csharp.UdpServer.Send(Byte[] content, EndPoint remoteEndPoint) 位置 f:\GitHub\CleanProcedure\CleanProcedure\UDP\UdpServer.cs:行号 84
+   在 CleanProcedure.CleanManager.ProcessDelegate(QueueInfo info) 位置 f:\GitHub\CleanProcedure\Decontamination\CleanManager.cs:行号 67
+   在 audiotest.BusinessInfoHelper.ScanQueue() 位置 f:\GitHub\CleanProcedure\CleanProcedure\comm\smessagequeue.cs:行号 91
+
+
+
+程序出现异常
+异常说明：System.Type--
+2018-06-01 15:06:21
+★异常类型：NullReferenceException
+★异常消息：未将对象引用设置到对象的实例。
+★异常信息：   在 CleanProcedure.Task.Step(String ClientIP, String card, String& sRet) 位置 f:\GitHub\CleanProcedure\CleanProcedure\Task.cs:行号 285
+   在 CleanProcedure.Task.Handle(String ClientIP, String card) 位置 f:\GitHub\CleanProcedure\CleanProcedure\Task.cs:行号 377
+   在 CleanProcedure.CleanManager.ProcessDelegate(QueueInfo info) 位置 f:\GitHub\CleanProcedure\Decontamination\CleanManager.cs:行号 61
+   在 audiotest.BusinessInfoHelper.ScanQueue() 位置 f:\GitHub\CleanProcedure\CleanProcedure\comm\smessagequeue.cs:行号 90
+
+
+
+程序出现异常
+异常说明：System.Type--
+2018-06-01 15:25:13
+★异常类型：InvalidOperationException
+★异常消息：堆栈为空。
+★异常信息：   在 System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   在 System.Collections.Generic.Stack`1.Pop()
+   在 udp_csharp.SocketAsyncEventArgsPool.Pop() 位置 f:\GitHub\CleanProcedure\CleanProcedure\UDP\SocketAsyncEventArgsPool.cs:行号 41
+   在 udp_csharp.UdpSendSocket.Send(Byte[] content, EndPoint remoteEndPoint) 位置 f:\GitHub\CleanProcedure\CleanProcedure\UDP\UdpSendSocket.cs:行号 84
+   在 udp_csharp.UdpServer.Send(Byte[] content, EndPoint remoteEndPoint) 位置 f:\GitHub\CleanProcedure\CleanProcedure\UDP\UdpServer.cs:行号 84
+   在 CleanProcedure.CleanManager.ProcessDelegate(QueueInfo info) 位置 f:\GitHub\CleanProcedure\Decontamination\CleanManager.cs:行号 67
+   在 audiotest.BusinessInfoHelper.ScanQueue() 位置 f:\GitHub\CleanProcedure\CleanProcedure\comm\smessagequeue.cs:行号 91
+
+
+
+程序出现异常
+异常说明：System.Type--
+2018-06-01 15:25:13
+★异常类型：NullReferenceException
+★异常消息：未将对象引用设置到对象的实例。
+★异常信息：   在 CleanProcedure.Task.BindingCard(String ClientIP, String card, String& sResult) 位置 f:\GitHub\CleanProcedure\CleanProcedure\Task.cs:行号 234
+   在 CleanProcedure.Task.Handle(String ClientIP, String card) 位置 f:\GitHub\CleanProcedure\CleanProcedure\Task.cs:行号 380
+   在 CleanProcedure.CleanManager.ProcessDelegate(QueueInfo info) 位置 f:\GitHub\CleanProcedure\Decontamination\CleanManager.cs:行号 61
+   在 audiotest.BusinessInfoHelper.ScanQueue() 位置 f:\GitHub\CleanProcedure\CleanProcedure\comm\smessagequeue.cs:行号 90
+
+
+
+程序出现异常
+异常说明：System.Type--
+2018-06-01 15:25:24
+★异常类型：InvalidOperationException
+★异常消息：堆栈为空。
+★异常信息：   在 System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   在 System.Collections.Generic.Stack`1.Pop()
+   在 udp_csharp.SocketAsyncEventArgsPool.Pop() 位置 f:\GitHub\CleanProcedure\CleanProcedure\UDP\SocketAsyncEventArgsPool.cs:行号 41
+   在 udp_csharp.UdpSendSocket.Send(Byte[] content, EndPoint remoteEndPoint) 位置 f:\GitHub\CleanProcedure\CleanProcedure\UDP\UdpSendSocket.cs:行号 84
+   在 udp_csharp.UdpServer.Send(Byte[] content, EndPoint remoteEndPoint) 位置 f:\GitHub\CleanProcedure\CleanProcedure\UDP\UdpServer.cs:行号 84
+   在 CleanProcedure.CleanManager.ProcessDelegate(QueueInfo info) 位置 f:\GitHub\CleanProcedure\Decontamination\CleanManager.cs:行号 67
+   在 audiotest.BusinessInfoHelper.ScanQueue() 位置 f:\GitHub\CleanProcedure\CleanProcedure\comm\smessagequeue.cs:行号 91
+
+
+
+程序出现异常
+异常说明：System.Type--
+2018-06-01 15:27:53
+★异常类型：InvalidOperationException
+★异常消息：堆栈为空。
+★异常信息：   在 System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   在 System.Collections.Generic.Stack`1.Pop()
+   在 udp_csharp.SocketAsyncEventArgsPool.Pop() 位置 f:\GitHub\CleanProcedure\CleanProcedure\UDP\SocketAsyncEventArgsPool.cs:行号 41
+   在 udp_csharp.UdpSendSocket.Send(Byte[] content, EndPoint remoteEndPoint) 位置 f:\GitHub\CleanProcedure\CleanProcedure\UDP\UdpSendSocket.cs:行号 84
+   在 udp_csharp.UdpServer.Send(Byte[] content, EndPoint remoteEndPoint) 位置 f:\GitHub\CleanProcedure\CleanProcedure\UDP\UdpServer.cs:行号 84
+   在 CleanProcedure.CleanManager.ProcessDelegate(QueueInfo info) 位置 f:\GitHub\CleanProcedure\Decontamination\CleanManager.cs:行号 67
+   在 audiotest.BusinessInfoHelper.ScanQueue() 位置 f:\GitHub\CleanProcedure\CleanProcedure\comm\smessagequeue.cs:行号 91
+
+
+
+程序出现异常
+异常说明：System.Type--
+2018-06-01 15:27:59
+★异常类型：NullReferenceException
+★异常消息：未将对象引用设置到对象的实例。
+★异常信息：   在 CleanProcedure.Task.BindingCard(String ClientIP, String card, String& sResult) 位置 f:\GitHub\CleanProcedure\CleanProcedure\Task.cs:行号 234
+   在 CleanProcedure.Task.Handle(String ClientIP, String card) 位置 f:\GitHub\CleanProcedure\CleanProcedure\Task.cs:行号 380
+   在 CleanProcedure.CleanManager.ProcessDelegate(QueueInfo info) 位置 f:\GitHub\CleanProcedure\Decontamination\CleanManager.cs:行号 61
+   在 audiotest.BusinessInfoHelper.ScanQueue() 位置 f:\GitHub\CleanProcedure\CleanProcedure\comm\smessagequeue.cs:行号 90
+
+
+
+程序出现异常
+异常说明：System.Type--
+2018-06-01 15:28:03
+★异常类型：InvalidOperationException
+★异常消息：堆栈为空。
+★异常信息：   在 System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   在 System.Collections.Generic.Stack`1.Pop()
+   在 udp_csharp.SocketAsyncEventArgsPool.Pop() 位置 f:\GitHub\CleanProcedure\CleanProcedure\UDP\SocketAsyncEventArgsPool.cs:行号 41
+   在 udp_csharp.UdpSendSocket.Send(Byte[] content, EndPoint remoteEndPoint) 位置 f:\GitHub\CleanProcedure\CleanProcedure\UDP\UdpSendSocket.cs:行号 84
+   在 udp_csharp.UdpServer.Send(Byte[] content, EndPoint remoteEndPoint) 位置 f:\GitHub\CleanProcedure\CleanProcedure\UDP\UdpServer.cs:行号 84
+   在 CleanProcedure.CleanManager.ProcessDelegate(QueueInfo info) 位置 f:\GitHub\CleanProcedure\Decontamination\CleanManager.cs:行号 67
+   在 audiotest.BusinessInfoHelper.ScanQueue() 位置 f:\GitHub\CleanProcedure\CleanProcedure\comm\smessagequeue.cs:行号 91
+
+
+
+程序出现异常
+异常说明：System.Type--
+2018-06-01 15:28:08
+★异常类型：InvalidOperationException
+★异常消息：堆栈为空。
+★异常信息：   在 System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   在 System.Collections.Generic.Stack`1.Pop()
+   在 udp_csharp.SocketAsyncEventArgsPool.Pop() 位置 f:\GitHub\CleanProcedure\CleanProcedure\UDP\SocketAsyncEventArgsPool.cs:行号 41
+   在 udp_csharp.UdpSendSocket.Send(Byte[] content, EndPoint remoteEndPoint) 位置 f:\GitHub\CleanProcedure\CleanProcedure\UDP\UdpSendSocket.cs:行号 84
+   在 udp_csharp.UdpServer.Send(Byte[] content, EndPoint remoteEndPoint) 位置 f:\GitHub\CleanProcedure\CleanProcedure\UDP\UdpServer.cs:行号 84
+   在 CleanProcedure.CleanManager.ProcessDelegate(QueueInfo info) 位置 f:\GitHub\CleanProcedure\Decontamination\CleanManager.cs:行号 67
+   在 audiotest.BusinessInfoHelper.ScanQueue() 位置 f:\GitHub\CleanProcedure\CleanProcedure\comm\smessagequeue.cs:行号 91
+
+
+
+程序出现异常
+异常说明：System.Type--
+2018-06-01 15:29:28
+★异常类型：InvalidOperationException
+★异常消息：堆栈为空。
+★异常信息：   在 System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   在 System.Collections.Generic.Stack`1.Pop()
+   在 udp_csharp.SocketAsyncEventArgsPool.Pop() 位置 f:\GitHub\CleanProcedure\CleanProcedure\UDP\SocketAsyncEventArgsPool.cs:行号 41
+   在 udp_csharp.UdpSendSocket.Send(Byte[] content, EndPoint remoteEndPoint) 位置 f:\GitHub\CleanProcedure\CleanProcedure\UDP\UdpSendSocket.cs:行号 84
+   在 udp_csharp.UdpServer.Send(Byte[] content, EndPoint remoteEndPoint) 位置 f:\GitHub\CleanProcedure\CleanProcedure\UDP\UdpServer.cs:行号 84
+   在 CleanProcedure.CleanManager.ProcessDelegate(QueueInfo info) 位置 f:\GitHub\CleanProcedure\Decontamination\CleanManager.cs:行号 67
+   在 audiotest.BusinessInfoHelper.ScanQueue() 位置 f:\GitHub\CleanProcedure\CleanProcedure\comm\smessagequeue.cs:行号 91
+
+
+
+程序出现异常
+异常说明：System.Type--
+2018-06-01 15:29:34
+★异常类型：NullReferenceException
+★异常消息：未将对象引用设置到对象的实例。
+★异常信息：   在 CleanProcedure.Task.BindingCard(String ClientIP, String card, String& sResult) 位置 f:\GitHub\CleanProcedure\CleanProcedure\Task.cs:行号 234
+   在 CleanProcedure.Task.Handle(String ClientIP, String card) 位置 f:\GitHub\CleanProcedure\CleanProcedure\Task.cs:行号 380
+   在 CleanProcedure.CleanManager.ProcessDelegate(QueueInfo info) 位置 f:\GitHub\CleanProcedure\Decontamination\CleanManager.cs:行号 61
+   在 audiotest.BusinessInfoHelper.ScanQueue() 位置 f:\GitHub\CleanProcedure\CleanProcedure\comm\smessagequeue.cs:行号 90
+
+
+
+程序出现异常
+异常说明：System.Type--
+2018-06-01 15:29:38
+★异常类型：InvalidOperationException
+★异常消息：堆栈为空。
+★异常信息：   在 System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   在 System.Collections.Generic.Stack`1.Pop()
+   在 udp_csharp.SocketAsyncEventArgsPool.Pop() 位置 f:\GitHub\CleanProcedure\CleanProcedure\UDP\SocketAsyncEventArgsPool.cs:行号 41
+   在 udp_csharp.UdpSendSocket.Send(Byte[] content, EndPoint remoteEndPoint) 位置 f:\GitHub\CleanProcedure\CleanProcedure\UDP\UdpSendSocket.cs:行号 84
+   在 udp_csharp.UdpServer.Send(Byte[] content, EndPoint remoteEndPoint) 位置 f:\GitHub\CleanProcedure\CleanProcedure\UDP\UdpServer.cs:行号 84
+   在 CleanProcedure.CleanManager.ProcessDelegate(QueueInfo info) 位置 f:\GitHub\CleanProcedure\Decontamination\CleanManager.cs:行号 67
+   在 audiotest.BusinessInfoHelper.ScanQueue() 位置 f:\GitHub\CleanProcedure\CleanProcedure\comm\smessagequeue.cs:行号 91
+
+
+
+程序出现异常
+异常说明：System.Type--
+2018-06-01 15:29:39
+★异常类型：InvalidOperationException
+★异常消息：堆栈为空。
+★异常信息：   在 System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   在 System.Collections.Generic.Stack`1.Pop()
+   在 udp_csharp.SocketAsyncEventArgsPool.Pop() 位置 f:\GitHub\CleanProcedure\CleanProcedure\UDP\SocketAsyncEventArgsPool.cs:行号 41
+   在 udp_csharp.UdpSendSocket.Send(Byte[] content, EndPoint remoteEndPoint) 位置 f:\GitHub\CleanProcedure\CleanProcedure\UDP\UdpSendSocket.cs:行号 84
+   在 udp_csharp.UdpServer.Send(Byte[] content, EndPoint remoteEndPoint) 位置 f:\GitHub\CleanProcedure\CleanProcedure\UDP\UdpServer.cs:行号 84
+   在 CleanProcedure.CleanManager.ProcessDelegate(QueueInfo info) 位置 f:\GitHub\CleanProcedure\Decontamination\CleanManager.cs:行号 67
+   在 audiotest.BusinessInfoHelper.ScanQueue() 位置 f:\GitHub\CleanProcedure\CleanProcedure\comm\smessagequeue.cs:行号 91
+
+
+
+程序出现异常
+异常说明：System.Type--
+2018-06-01 15:30:56
+★异常类型：InvalidOperationException
+★异常消息：堆栈为空。
+★异常信息：   在 System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   在 System.Collections.Generic.Stack`1.Pop()
+   在 udp_csharp.SocketAsyncEventArgsPool.Pop() 位置 f:\GitHub\CleanProcedure\CleanProcedure\UDP\SocketAsyncEventArgsPool.cs:行号 41
+   在 udp_csharp.UdpSendSocket.Send(Byte[] content, EndPoint remoteEndPoint) 位置 f:\GitHub\CleanProcedure\CleanProcedure\UDP\UdpSendSocket.cs:行号 84
+   在 udp_csharp.UdpServer.Send(Byte[] content, EndPoint remoteEndPoint) 位置 f:\GitHub\CleanProcedure\CleanProcedure\UDP\UdpServer.cs:行号 84
+   在 CleanProcedure.CleanManager.ProcessDelegate(QueueInfo info) 位置 f:\GitHub\CleanProcedure\Decontamination\CleanManager.cs:行号 67
+   在 audiotest.BusinessInfoHelper.ScanQueue() 位置 f:\GitHub\CleanProcedure\CleanProcedure\comm\smessagequeue.cs:行号 91
+
+
+
+程序出现异常
+异常说明：System.Type--
+2018-06-01 15:31:13
+★异常类型：NullReferenceException
+★异常消息：未将对象引用设置到对象的实例。
+★异常信息：   在 CleanProcedure.Task.BindingCard(String ClientIP, String card, String& sResult) 位置 f:\GitHub\CleanProcedure\CleanProcedure\Task.cs:行号 234
+   在 CleanProcedure.Task.Handle(String ClientIP, String card) 位置 f:\GitHub\CleanProcedure\CleanProcedure\Task.cs:行号 380
+   在 CleanProcedure.CleanManager.ProcessDelegate(QueueInfo info) 位置 f:\GitHub\CleanProcedure\Decontamination\CleanManager.cs:行号 61
+   在 audiotest.BusinessInfoHelper.ScanQueue() 位置 f:\GitHub\CleanProcedure\CleanProcedure\comm\smessagequeue.cs:行号 90
+
+
+
+程序出现异常
+异常说明：System.Type--
+2018-06-01 15:32:06
+★异常类型：InvalidOperationException
+★异常消息：堆栈为空。
+★异常信息：   在 System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   在 System.Collections.Generic.Stack`1.Pop()
+   在 udp_csharp.SocketAsyncEventArgsPool.Pop() 位置 f:\GitHub\CleanProcedure\CleanProcedure\UDP\SocketAsyncEventArgsPool.cs:行号 41
+   在 udp_csharp.UdpSendSocket.Send(Byte[] content, EndPoint remoteEndPoint) 位置 f:\GitHub\CleanProcedure\CleanProcedure\UDP\UdpSendSocket.cs:行号 84
+   在 udp_csharp.UdpServer.Send(Byte[] content, EndPoint remoteEndPoint) 位置 f:\GitHub\CleanProcedure\CleanProcedure\UDP\UdpServer.cs:行号 84
+   在 CleanProcedure.CleanManager.ProcessDelegate(QueueInfo info) 位置 f:\GitHub\CleanProcedure\Decontamination\CleanManager.cs:行号 67
+   在 audiotest.BusinessInfoHelper.ScanQueue() 位置 f:\GitHub\CleanProcedure\CleanProcedure\comm\smessagequeue.cs:行号 91
+
+
+
+程序出现异常
+异常说明：System.Type--
+2018-06-01 15:32:12
+★异常类型：ArgumentException
+★异常消息：已添加了具有相同键的项。
+★异常信息：   在 System.ThrowHelper.ThrowArgumentException(ExceptionResource resource)
+   在 System.Collections.Generic.Dictionary`2.Insert(TKey key, TValue value, Boolean add)
+   在 CleanProcedure.Task.Pending(String ClientIP, String card) 位置 f:\GitHub\CleanProcedure\CleanProcedure\Task.cs:行号 172
+   在 CleanProcedure.Task.Handle(String ClientIP, String card) 位置 f:\GitHub\CleanProcedure\CleanProcedure\Task.cs:行号 369
+   在 CleanProcedure.CleanManager.ProcessDelegate(QueueInfo info) 位置 f:\GitHub\CleanProcedure\Decontamination\CleanManager.cs:行号 61
+   在 audiotest.BusinessInfoHelper.ScanQueue() 位置 f:\GitHub\CleanProcedure\CleanProcedure\comm\smessagequeue.cs:行号 91
+
+
+
+程序出现异常
+异常说明：System.Type--
+2018-06-01 15:32:17
+★异常类型：ArgumentException
+★异常消息：已添加了具有相同键的项。
+★异常信息：   在 System.ThrowHelper.ThrowArgumentException(ExceptionResource resource)
+   在 System.Collections.Generic.Dictionary`2.Insert(TKey key, TValue value, Boolean add)
+   在 CleanProcedure.Task.Pending(String ClientIP, String card) 位置 f:\GitHub\CleanProcedure\CleanProcedure\Task.cs:行号 172
+   在 CleanProcedure.Task.Handle(String ClientIP, String card) 位置 f:\GitHub\CleanProcedure\CleanProcedure\Task.cs:行号 369
+   在 CleanProcedure.CleanManager.ProcessDelegate(QueueInfo info) 位置 f:\GitHub\CleanProcedure\Decontamination\CleanManager.cs:行号 61
+   在 audiotest.BusinessInfoHelper.ScanQueue() 位置 f:\GitHub\CleanProcedure\CleanProcedure\comm\smessagequeue.cs:行号 91
+
+
+
+程序出现异常
+异常说明：System.Type--
+2018-06-01 15:33:35
+★异常类型：NullReferenceException
+★异常消息：未将对象引用设置到对象的实例。
+★异常信息：   在 CleanProcedure.Task.BindingCard(String ClientIP, String card, String& sResult) 位置 f:\GitHub\CleanProcedure\CleanProcedure\Task.cs:行号 234
+   在 CleanProcedure.Task.Handle(String ClientIP, String card) 位置 f:\GitHub\CleanProcedure\CleanProcedure\Task.cs:行号 380
+   在 CleanProcedure.CleanManager.ProcessDelegate(QueueInfo info) 位置 f:\GitHub\CleanProcedure\Decontamination\CleanManager.cs:行号 61
+   在 audiotest.BusinessInfoHelper.ScanQueue() 位置 f:\GitHub\CleanProcedure\CleanProcedure\comm\smessagequeue.cs:行号 90
+
+
+
+程序出现异常
+异常说明：System.Type--
+2018-06-01 15:53:08
+★异常类型：InvalidOperationException
+★异常消息：堆栈为空。
+★异常信息：   在 System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   在 System.Collections.Generic.Stack`1.Pop()
+   在 udp_csharp.SocketAsyncEventArgsPool.Pop() 位置 f:\GitHub\CleanProcedure\CleanProcedure\UDP\SocketAsyncEventArgsPool.cs:行号 41
+   在 udp_csharp.UdpSendSocket.Send(Byte[] content, EndPoint remoteEndPoint) 位置 f:\GitHub\CleanProcedure\CleanProcedure\UDP\UdpSendSocket.cs:行号 84
+   在 udp_csharp.UdpServer.Send(Byte[] content, EndPoint remoteEndPoint) 位置 f:\GitHub\CleanProcedure\CleanProcedure\UDP\UdpServer.cs:行号 84
+   在 CleanProcedure.CleanManager.ProcessDelegate(QueueInfo info) 位置 f:\GitHub\CleanProcedure\Decontamination\CleanManager.cs:行号 67
+   在 audiotest.BusinessInfoHelper.ScanQueue() 位置 f:\GitHub\CleanProcedure\CleanProcedure\comm\smessagequeue.cs:行号 91
+
+
+
+程序出现异常
+异常说明：System.Type--
+2018-06-01 15:53:16
+★异常类型：NullReferenceException
+★异常消息：未将对象引用设置到对象的实例。
+★异常信息：   在 CleanProcedure.Task.BindingCard(String ClientIP, String card, String& sResult) 位置 f:\GitHub\CleanProcedure\CleanProcedure\Task.cs:行号 238
+   在 CleanProcedure.Task.Handle(String ClientIP, String card) 位置 f:\GitHub\CleanProcedure\CleanProcedure\Task.cs:行号 387
+   在 CleanProcedure.CleanManager.ProcessDelegate(QueueInfo info) 位置 f:\GitHub\CleanProcedure\Decontamination\CleanManager.cs:行号 61
+   在 audiotest.BusinessInfoHelper.ScanQueue() 位置 f:\GitHub\CleanProcedure\CleanProcedure\comm\smessagequeue.cs:行号 90
+
+
+
+程序出现异常
+异常说明：System.Type--
+2018-06-01 16:02:32
+★异常类型：NullReferenceException
+★异常消息：未将对象引用设置到对象的实例。
+★异常信息：   在 CleanProcedure.Task.InitProcedure() 位置 f:\GitHub\CleanProcedure\CleanProcedure\Task.cs:行号 94
+
+
+
+程序出现异常
+异常说明：System.Type--
+2018-06-01 16:02:55
+★异常类型：NullReferenceException
+★异常消息：未将对象引用设置到对象的实例。
+★异常信息：   在 CleanProcedure.Task.InitProcedure() 位置 f:\GitHub\CleanProcedure\CleanProcedure\Task.cs:行号 94
+
+
+
+程序出现异常
+异常说明：System.Type--
+2018-06-01 16:04:35
+★异常类型：InvalidOperationException
+★异常消息：堆栈为空。
+★异常信息：   在 System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   在 System.Collections.Generic.Stack`1.Pop()
+   在 udp_csharp.SocketAsyncEventArgsPool.Pop() 位置 f:\GitHub\CleanProcedure\CleanProcedure\UDP\SocketAsyncEventArgsPool.cs:行号 41
+   在 udp_csharp.UdpSendSocket.Send(Byte[] content, EndPoint remoteEndPoint) 位置 f:\GitHub\CleanProcedure\CleanProcedure\UDP\UdpSendSocket.cs:行号 84
+   在 udp_csharp.UdpServer.Send(Byte[] content, EndPoint remoteEndPoint) 位置 f:\GitHub\CleanProcedure\CleanProcedure\UDP\UdpServer.cs:行号 84
+   在 CleanProcedure.CleanManager.ProcessDelegate(QueueInfo info) 位置 f:\GitHub\CleanProcedure\Decontamination\CleanManager.cs:行号 67
+   在 audiotest.BusinessInfoHelper.ScanQueue() 位置 f:\GitHub\CleanProcedure\CleanProcedure\comm\smessagequeue.cs:行号 91
+
+
+
+程序出现异常
+异常说明：System.Type--
+2018-06-01 16:04:43
+★异常类型：InvalidOperationException
+★异常消息：堆栈为空。
+★异常信息：   在 System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   在 System.Collections.Generic.Stack`1.Pop()
+   在 udp_csharp.SocketAsyncEventArgsPool.Pop() 位置 f:\GitHub\CleanProcedure\CleanProcedure\UDP\SocketAsyncEventArgsPool.cs:行号 41
+   在 udp_csharp.UdpSendSocket.Send(Byte[] content, EndPoint remoteEndPoint) 位置 f:\GitHub\CleanProcedure\CleanProcedure\UDP\UdpSendSocket.cs:行号 84
+   在 udp_csharp.UdpServer.Send(Byte[] content, EndPoint remoteEndPoint) 位置 f:\GitHub\CleanProcedure\CleanProcedure\UDP\UdpServer.cs:行号 84
+   在 CleanProcedure.CleanManager.ProcessDelegate(QueueInfo info) 位置 f:\GitHub\CleanProcedure\Decontamination\CleanManager.cs:行号 67
+   在 audiotest.BusinessInfoHelper.ScanQueue() 位置 f:\GitHub\CleanProcedure\CleanProcedure\comm\smessagequeue.cs:行号 91
+
+
+
+程序出现异常
+异常说明：System.Type--
+2018-06-01 16:05:05
+★异常类型：InvalidOperationException
+★异常消息：堆栈为空。
+★异常信息：   在 System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   在 System.Collections.Generic.Stack`1.Pop()
+   在 udp_csharp.SocketAsyncEventArgsPool.Pop() 位置 f:\GitHub\CleanProcedure\CleanProcedure\UDP\SocketAsyncEventArgsPool.cs:行号 41
+   在 udp_csharp.UdpSendSocket.Send(Byte[] content, EndPoint remoteEndPoint) 位置 f:\GitHub\CleanProcedure\CleanProcedure\UDP\UdpSendSocket.cs:行号 84
+   在 udp_csharp.UdpServer.Send(Byte[] content, EndPoint remoteEndPoint) 位置 f:\GitHub\CleanProcedure\CleanProcedure\UDP\UdpServer.cs:行号 84
+   在 CleanProcedure.CleanManager.ProcessDelegate(QueueInfo info) 位置 f:\GitHub\CleanProcedure\Decontamination\CleanManager.cs:行号 67
+   在 audiotest.BusinessInfoHelper.ScanQueue() 位置 f:\GitHub\CleanProcedure\CleanProcedure\comm\smessagequeue.cs:行号 91
+
+
+
+程序出现异常
+异常说明：System.Type--
+2018-06-01 16:06:12
+★异常类型：InvalidOperationException
+★异常消息：堆栈为空。
+★异常信息：   在 System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   在 System.Collections.Generic.Stack`1.Pop()
+   在 udp_csharp.SocketAsyncEventArgsPool.Pop() 位置 f:\GitHub\CleanProcedure\CleanProcedure\UDP\SocketAsyncEventArgsPool.cs:行号 41
+   在 udp_csharp.UdpSendSocket.Send(Byte[] content, EndPoint remoteEndPoint) 位置 f:\GitHub\CleanProcedure\CleanProcedure\UDP\UdpSendSocket.cs:行号 84
+   在 udp_csharp.UdpServer.Send(Byte[] content, EndPoint remoteEndPoint) 位置 f:\GitHub\CleanProcedure\CleanProcedure\UDP\UdpServer.cs:行号 84
+   在 CleanProcedure.CleanManager.ProcessDelegate(QueueInfo info) 位置 f:\GitHub\CleanProcedure\Decontamination\CleanManager.cs:行号 67
+   在 audiotest.BusinessInfoHelper.ScanQueue() 位置 f:\GitHub\CleanProcedure\CleanProcedure\comm\smessagequeue.cs:行号 91
+
+
+
+程序出现异常
+异常说明：System.Type--
+2018-06-01 16:09:21
+★异常类型：InvalidOperationException
+★异常消息：堆栈为空。
+★异常信息：   在 System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   在 System.Collections.Generic.Stack`1.Pop()
+   在 udp_csharp.SocketAsyncEventArgsPool.Pop() 位置 f:\GitHub\CleanProcedure\CleanProcedure\UDP\SocketAsyncEventArgsPool.cs:行号 41
+   在 udp_csharp.UdpSendSocket.Send(Byte[] content, EndPoint remoteEndPoint) 位置 f:\GitHub\CleanProcedure\CleanProcedure\UDP\UdpSendSocket.cs:行号 84
+   在 udp_csharp.UdpServer.Send(Byte[] content, EndPoint remoteEndPoint) 位置 f:\GitHub\CleanProcedure\CleanProcedure\UDP\UdpServer.cs:行号 84
+   在 CleanProcedure.CleanManager.ProcessDelegate(QueueInfo info) 位置 f:\GitHub\CleanProcedure\Decontamination\CleanManager.cs:行号 67
+   在 audiotest.BusinessInfoHelper.ScanQueue() 位置 f:\GitHub\CleanProcedure\CleanProcedure\comm\smessagequeue.cs:行号 91
+
+
+
+程序出现异常
+异常说明：System.Type--
+2018-06-01 16:09:27
+★异常类型：InvalidOperationException
+★异常消息：堆栈为空。
+★异常信息：   在 System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   在 System.Collections.Generic.Stack`1.Pop()
+   在 udp_csharp.SocketAsyncEventArgsPool.Pop() 位置 f:\GitHub\CleanProcedure\CleanProcedure\UDP\SocketAsyncEventArgsPool.cs:行号 41
+   在 udp_csharp.UdpSendSocket.Send(Byte[] content, EndPoint remoteEndPoint) 位置 f:\GitHub\CleanProcedure\CleanProcedure\UDP\UdpSendSocket.cs:行号 84
+   在 udp_csharp.UdpServer.Send(Byte[] content, EndPoint remoteEndPoint) 位置 f:\GitHub\CleanProcedure\CleanProcedure\UDP\UdpServer.cs:行号 84
+   在 CleanProcedure.CleanManager.ProcessDelegate(QueueInfo info) 位置 f:\GitHub\CleanProcedure\Decontamination\CleanManager.cs:行号 67
+   在 audiotest.BusinessInfoHelper.ScanQueue() 位置 f:\GitHub\CleanProcedure\CleanProcedure\comm\smessagequeue.cs:行号 91
+
+
+
+程序出现异常
+异常说明：System.Type--
+2018-06-01 16:09:41
+★异常类型：InvalidOperationException
+★异常消息：堆栈为空。
+★异常信息：   在 System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   在 System.Collections.Generic.Stack`1.Pop()
+   在 udp_csharp.SocketAsyncEventArgsPool.Pop() 位置 f:\GitHub\CleanProcedure\CleanProcedure\UDP\SocketAsyncEventArgsPool.cs:行号 41
+   在 udp_csharp.UdpSendSocket.Send(Byte[] content, EndPoint remoteEndPoint) 位置 f:\GitHub\CleanProcedure\CleanProcedure\UDP\UdpSendSocket.cs:行号 84
+   在 udp_csharp.UdpServer.Send(Byte[] content, EndPoint remoteEndPoint) 位置 f:\GitHub\CleanProcedure\CleanProcedure\UDP\UdpServer.cs:行号 84
+   在 CleanProcedure.CleanManager.ProcessDelegate(QueueInfo info) 位置 f:\GitHub\CleanProcedure\Decontamination\CleanManager.cs:行号 67
+   在 audiotest.BusinessInfoHelper.ScanQueue() 位置 f:\GitHub\CleanProcedure\CleanProcedure\comm\smessagequeue.cs:行号 91
+
+
+
+程序出现异常
+异常说明：System.Type--
+2018-06-01 16:10:08
+★异常类型：InvalidOperationException
+★异常消息：堆栈为空。
+★异常信息：   在 System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   在 System.Collections.Generic.Stack`1.Pop()
+   在 udp_csharp.SocketAsyncEventArgsPool.Pop() 位置 f:\GitHub\CleanProcedure\CleanProcedure\UDP\SocketAsyncEventArgsPool.cs:行号 41
+   在 udp_csharp.UdpSendSocket.Send(Byte[] content, EndPoint remoteEndPoint) 位置 f:\GitHub\CleanProcedure\CleanProcedure\UDP\UdpSendSocket.cs:行号 84
+   在 udp_csharp.UdpServer.Send(Byte[] content, EndPoint remoteEndPoint) 位置 f:\GitHub\CleanProcedure\CleanProcedure\UDP\UdpServer.cs:行号 84
+   在 CleanProcedure.CleanManager.ProcessDelegate(QueueInfo info) 位置 f:\GitHub\CleanProcedure\Decontamination\CleanManager.cs:行号 67
+   在 audiotest.BusinessInfoHelper.ScanQueue() 位置 f:\GitHub\CleanProcedure\CleanProcedure\comm\smessagequeue.cs:行号 91
+
+
+
+程序出现异常
+异常说明：System.Type--
+2018-06-01 16:10:12
+★异常类型：InvalidOperationException
+★异常消息：堆栈为空。
+★异常信息：   在 System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   在 System.Collections.Generic.Stack`1.Pop()
+   在 udp_csharp.SocketAsyncEventArgsPool.Pop() 位置 f:\GitHub\CleanProcedure\CleanProcedure\UDP\SocketAsyncEventArgsPool.cs:行号 41
+   在 udp_csharp.UdpSendSocket.Send(Byte[] content, EndPoint remoteEndPoint) 位置 f:\GitHub\CleanProcedure\CleanProcedure\UDP\UdpSendSocket.cs:行号 84
+   在 udp_csharp.UdpServer.Send(Byte[] content, EndPoint remoteEndPoint) 位置 f:\GitHub\CleanProcedure\CleanProcedure\UDP\UdpServer.cs:行号 84
+   在 CleanProcedure.CleanManager.ProcessDelegate(QueueInfo info) 位置 f:\GitHub\CleanProcedure\Decontamination\CleanManager.cs:行号 67
+   在 audiotest.BusinessInfoHelper.ScanQueue() 位置 f:\GitHub\CleanProcedure\CleanProcedure\comm\smessagequeue.cs:行号 91
+
+
+
+程序出现异常
+异常说明：System.Type--
+2018-06-01 16:11:52
+★异常类型：InvalidOperationException
+★异常消息：堆栈为空。
+★异常信息：   在 System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   在 System.Collections.Generic.Stack`1.Pop()
+   在 udp_csharp.SocketAsyncEventArgsPool.Pop() 位置 f:\GitHub\CleanProcedure\CleanProcedure\UDP\SocketAsyncEventArgsPool.cs:行号 41
+   在 udp_csharp.UdpSendSocket.Send(Byte[] content, EndPoint remoteEndPoint) 位置 f:\GitHub\CleanProcedure\CleanProcedure\UDP\UdpSendSocket.cs:行号 84
+   在 udp_csharp.UdpServer.Send(Byte[] content, EndPoint remoteEndPoint) 位置 f:\GitHub\CleanProcedure\CleanProcedure\UDP\UdpServer.cs:行号 84
+   在 CleanProcedure.CleanManager.ProcessDelegate(QueueInfo info) 位置 f:\GitHub\CleanProcedure\Decontamination\CleanManager.cs:行号 67
+   在 audiotest.BusinessInfoHelper.ScanQueue() 位置 f:\GitHub\CleanProcedure\CleanProcedure\comm\smessagequeue.cs:行号 91
+
+
+
+程序出现异常
+异常说明：System.Type--
+2018-06-01 16:26:07
+★异常类型：InvalidOperationException
+★异常消息：堆栈为空。
+★异常信息：   在 System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   在 System.Collections.Generic.Stack`1.Pop()
+   在 udp_csharp.SocketAsyncEventArgsPool.Pop() 位置 f:\GitHub\CleanProcedure\CleanProcedure\UDP\SocketAsyncEventArgsPool.cs:行号 41
+   在 udp_csharp.UdpSendSocket.Send(Byte[] content, EndPoint remoteEndPoint) 位置 f:\GitHub\CleanProcedure\CleanProcedure\UDP\UdpSendSocket.cs:行号 84
+   在 udp_csharp.UdpServer.Send(Byte[] content, EndPoint remoteEndPoint) 位置 f:\GitHub\CleanProcedure\CleanProcedure\UDP\UdpServer.cs:行号 84
+   在 CleanProcedure.CleanManager.ProcessDelegate(QueueInfo info) 位置 f:\GitHub\CleanProcedure\Decontamination\CleanManager.cs:行号 67
+   在 audiotest.BusinessInfoHelper.ScanQueue() 位置 f:\GitHub\CleanProcedure\CleanProcedure\comm\smessagequeue.cs:行号 91
+
+
+
+程序出现异常
+异常说明：System.Type--
+2018-06-01 16:26:08
+★异常类型：ArgumentException
+★异常消息：已添加了具有相同键的项。
+★异常信息：   在 System.ThrowHelper.ThrowArgumentException(ExceptionResource resource)
+   在 System.Collections.Generic.Dictionary`2.Insert(TKey key, TValue value, Boolean add)
+   在 CleanProcedure.Task.Pending(String ClientIP, String card) 位置 f:\GitHub\CleanProcedure\CleanProcedure\Task.cs:行号 177
+   在 CleanProcedure.Task.Handle(String ClientIP, String card) 位置 f:\GitHub\CleanProcedure\CleanProcedure\Task.cs:行号 377
+   在 CleanProcedure.CleanManager.ProcessDelegate(QueueInfo info) 位置 f:\GitHub\CleanProcedure\Decontamination\CleanManager.cs:行号 61
+   在 audiotest.BusinessInfoHelper.ScanQueue() 位置 f:\GitHub\CleanProcedure\CleanProcedure\comm\smessagequeue.cs:行号 91
+
+
+
+程序出现异常
+异常说明：System.Type--
+2018-06-01 16:26:15
+★异常类型：InvalidOperationException
+★异常消息：堆栈为空。
+★异常信息：   在 System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   在 System.Collections.Generic.Stack`1.Pop()
+   在 udp_csharp.SocketAsyncEventArgsPool.Pop() 位置 f:\GitHub\CleanProcedure\CleanProcedure\UDP\SocketAsyncEventArgsPool.cs:行号 41
+   在 udp_csharp.UdpSendSocket.Send(Byte[] content, EndPoint remoteEndPoint) 位置 f:\GitHub\CleanProcedure\CleanProcedure\UDP\UdpSendSocket.cs:行号 84
+   在 udp_csharp.UdpServer.Send(Byte[] content, EndPoint remoteEndPoint) 位置 f:\GitHub\CleanProcedure\CleanProcedure\UDP\UdpServer.cs:行号 84
+   在 CleanProcedure.CleanManager.ProcessDelegate(QueueInfo info) 位置 f:\GitHub\CleanProcedure\Decontamination\CleanManager.cs:行号 67
+   在 audiotest.BusinessInfoHelper.ScanQueue() 位置 f:\GitHub\CleanProcedure\CleanProcedure\comm\smessagequeue.cs:行号 91
+
+
+
+程序出现异常
+异常说明：System.Type--
+2018-06-01 16:27:15
+★异常类型：InvalidOperationException
+★异常消息：堆栈为空。
+★异常信息：   在 System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   在 System.Collections.Generic.Stack`1.Pop()
+   在 udp_csharp.SocketAsyncEventArgsPool.Pop() 位置 f:\GitHub\CleanProcedure\CleanProcedure\UDP\SocketAsyncEventArgsPool.cs:行号 41
+   在 udp_csharp.UdpSendSocket.Send(Byte[] content, EndPoint remoteEndPoint) 位置 f:\GitHub\CleanProcedure\CleanProcedure\UDP\UdpSendSocket.cs:行号 84
+   在 udp_csharp.UdpServer.Send(Byte[] content, EndPoint remoteEndPoint) 位置 f:\GitHub\CleanProcedure\CleanProcedure\UDP\UdpServer.cs:行号 84
+   在 CleanProcedure.CleanManager.ProcessDelegate(QueueInfo info) 位置 f:\GitHub\CleanProcedure\Decontamination\CleanManager.cs:行号 67
+   在 audiotest.BusinessInfoHelper.ScanQueue() 位置 f:\GitHub\CleanProcedure\CleanProcedure\comm\smessagequeue.cs:行号 91
+
+
+
+程序出现异常
+异常说明：System.Type--
+2018-06-01 16:27:17
+★异常类型：InvalidOperationException
+★异常消息：堆栈为空。
+★异常信息：   在 System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   在 System.Collections.Generic.Stack`1.Pop()
+   在 udp_csharp.SocketAsyncEventArgsPool.Pop() 位置 f:\GitHub\CleanProcedure\CleanProcedure\UDP\SocketAsyncEventArgsPool.cs:行号 41
+   在 udp_csharp.UdpSendSocket.Send(Byte[] content, EndPoint remoteEndPoint) 位置 f:\GitHub\CleanProcedure\CleanProcedure\UDP\UdpSendSocket.cs:行号 84
+   在 udp_csharp.UdpServer.Send(Byte[] content, EndPoint remoteEndPoint) 位置 f:\GitHub\CleanProcedure\CleanProcedure\UDP\UdpServer.cs:行号 84
+   在 CleanProcedure.CleanManager.ProcessDelegate(QueueInfo info) 位置 f:\GitHub\CleanProcedure\Decontamination\CleanManager.cs:行号 67
+   在 audiotest.BusinessInfoHelper.ScanQueue() 位置 f:\GitHub\CleanProcedure\CleanProcedure\comm\smessagequeue.cs:行号 91
+
+
+
+程序出现异常
+异常说明：System.Type--
+2018-06-01 16:29:06
+★异常类型：InvalidOperationException
+★异常消息：堆栈为空。
+★异常信息：   在 System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   在 System.Collections.Generic.Stack`1.Pop()
+   在 udp_csharp.SocketAsyncEventArgsPool.Pop() 位置 f:\GitHub\CleanProcedure\CleanProcedure\UDP\SocketAsyncEventArgsPool.cs:行号 41
+   在 udp_csharp.UdpSendSocket.Send(Byte[] content, EndPoint remoteEndPoint) 位置 f:\GitHub\CleanProcedure\CleanProcedure\UDP\UdpSendSocket.cs:行号 84
+   在 udp_csharp.UdpServer.Send(Byte[] content, EndPoint remoteEndPoint) 位置 f:\GitHub\CleanProcedure\CleanProcedure\UDP\UdpServer.cs:行号 84
+   在 CleanProcedure.CleanManager.ProcessDelegate(QueueInfo info) 位置 f:\GitHub\CleanProcedure\Decontamination\CleanManager.cs:行号 67
+   在 audiotest.BusinessInfoHelper.ScanQueue() 位置 f:\GitHub\CleanProcedure\CleanProcedure\comm\smessagequeue.cs:行号 91
+
+
+
+程序出现异常
+异常说明：System.Type--
+2018-06-01 16:29:09
+★异常类型：InvalidOperationException
+★异常消息：堆栈为空。
+★异常信息：   在 System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   在 System.Collections.Generic.Stack`1.Pop()
+   在 udp_csharp.SocketAsyncEventArgsPool.Pop() 位置 f:\GitHub\CleanProcedure\CleanProcedure\UDP\SocketAsyncEventArgsPool.cs:行号 41
+   在 udp_csharp.UdpSendSocket.Send(Byte[] content, EndPoint remoteEndPoint) 位置 f:\GitHub\CleanProcedure\CleanProcedure\UDP\UdpSendSocket.cs:行号 84
+   在 udp_csharp.UdpServer.Send(Byte[] content, EndPoint remoteEndPoint) 位置 f:\GitHub\CleanProcedure\CleanProcedure\UDP\UdpServer.cs:行号 84
+   在 CleanProcedure.CleanManager.ProcessDelegate(QueueInfo info) 位置 f:\GitHub\CleanProcedure\Decontamination\CleanManager.cs:行号 67
+   在 audiotest.BusinessInfoHelper.ScanQueue() 位置 f:\GitHub\CleanProcedure\CleanProcedure\comm\smessagequeue.cs:行号 91
+
+
+
+程序出现异常
+异常说明：System.Type--
+2018-06-01 16:29:18
+★异常类型：InvalidOperationException
+★异常消息：堆栈为空。
+★异常信息：   在 System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   在 System.Collections.Generic.Stack`1.Pop()
+   在 udp_csharp.SocketAsyncEventArgsPool.Pop() 位置 f:\GitHub\CleanProcedure\CleanProcedure\UDP\SocketAsyncEventArgsPool.cs:行号 41
+   在 udp_csharp.UdpSendSocket.Send(Byte[] content, EndPoint remoteEndPoint) 位置 f:\GitHub\CleanProcedure\CleanProcedure\UDP\UdpSendSocket.cs:行号 84
+   在 udp_csharp.UdpServer.Send(Byte[] content, EndPoint remoteEndPoint) 位置 f:\GitHub\CleanProcedure\CleanProcedure\UDP\UdpServer.cs:行号 84
+   在 CleanProcedure.CleanManager.ProcessDelegate(QueueInfo info) 位置 f:\GitHub\CleanProcedure\Decontamination\CleanManager.cs:行号 67
+   在 audiotest.BusinessInfoHelper.ScanQueue() 位置 f:\GitHub\CleanProcedure\CleanProcedure\comm\smessagequeue.cs:行号 91
+
+
+
+程序出现异常
+异常说明：System.Type--
+2018-06-01 16:29:22
+★异常类型：InvalidOperationException
+★异常消息：堆栈为空。
+★异常信息：   在 System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   在 System.Collections.Generic.Stack`1.Pop()
+   在 udp_csharp.SocketAsyncEventArgsPool.Pop() 位置 f:\GitHub\CleanProcedure\CleanProcedure\UDP\SocketAsyncEventArgsPool.cs:行号 41
+   在 udp_csharp.UdpSendSocket.Send(Byte[] content, EndPoint remoteEndPoint) 位置 f:\GitHub\CleanProcedure\CleanProcedure\UDP\UdpSendSocket.cs:行号 84
+   在 udp_csharp.UdpServer.Send(Byte[] content, EndPoint remoteEndPoint) 位置 f:\GitHub\CleanProcedure\CleanProcedure\UDP\UdpServer.cs:行号 84
+   在 CleanProcedure.CleanManager.ProcessDelegate(QueueInfo info) 位置 f:\GitHub\CleanProcedure\Decontamination\CleanManager.cs:行号 67
+   在 audiotest.BusinessInfoHelper.ScanQueue() 位置 f:\GitHub\CleanProcedure\CleanProcedure\comm\smessagequeue.cs:行号 91
+
+
+
+程序出现异常
+异常说明：System.Type--
+2018-06-01 16:34:44
+★异常类型：InvalidOperationException
+★异常消息：堆栈为空。
+★异常信息：   在 System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   在 System.Collections.Generic.Stack`1.Pop()
+   在 udp_csharp.SocketAsyncEventArgsPool.Pop() 位置 f:\GitHub\CleanProcedure\CleanProcedure\UDP\SocketAsyncEventArgsPool.cs:行号 41
+   在 udp_csharp.UdpSendSocket.Send(Byte[] content, EndPoint remoteEndPoint) 位置 f:\GitHub\CleanProcedure\CleanProcedure\UDP\UdpSendSocket.cs:行号 84
+   在 udp_csharp.UdpServer.Send(Byte[] content, EndPoint remoteEndPoint) 位置 f:\GitHub\CleanProcedure\CleanProcedure\UDP\UdpServer.cs:行号 84
+   在 CleanProcedure.CleanManager.ProcessDelegate(QueueInfo info) 位置 f:\GitHub\CleanProcedure\Decontamination\CleanManager.cs:行号 67
+   在 audiotest.BusinessInfoHelper.ScanQueue() 位置 f:\GitHub\CleanProcedure\CleanProcedure\comm\smessagequeue.cs:行号 91
+
+
+
+程序出现异常
+异常说明：System.Type--
+2018-06-01 16:35:10
+★异常类型：InvalidOperationException
+★异常消息：堆栈为空。
+★异常信息：   在 System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   在 System.Collections.Generic.Stack`1.Pop()
+   在 udp_csharp.SocketAsyncEventArgsPool.Pop() 位置 f:\GitHub\CleanProcedure\CleanProcedure\UDP\SocketAsyncEventArgsPool.cs:行号 41
+   在 udp_csharp.UdpSendSocket.Send(Byte[] content, EndPoint remoteEndPoint) 位置 f:\GitHub\CleanProcedure\CleanProcedure\UDP\UdpSendSocket.cs:行号 84
+   在 udp_csharp.UdpServer.Send(Byte[] content, EndPoint remoteEndPoint) 位置 f:\GitHub\CleanProcedure\CleanProcedure\UDP\UdpServer.cs:行号 84
+   在 CleanProcedure.CleanManager.ProcessDelegate(QueueInfo info) 位置 f:\GitHub\CleanProcedure\Decontamination\CleanManager.cs:行号 67
+   在 audiotest.BusinessInfoHelper.ScanQueue() 位置 f:\GitHub\CleanProcedure\CleanProcedure\comm\smessagequeue.cs:行号 91
+
+
+
+程序出现异常
+异常说明：System.Type--
+2018-06-01 16:51:01
+★异常类型：InvalidOperationException
+★异常消息：堆栈为空。
+★异常信息：   在 System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   在 System.Collections.Generic.Stack`1.Pop()
+   在 udp_csharp.SocketAsyncEventArgsPool.Pop() 位置 f:\GitHub\CleanProcedure\CleanProcedure\UDP\SocketAsyncEventArgsPool.cs:行号 41
+   在 udp_csharp.UdpSendSocket.Send(Byte[] content, EndPoint remoteEndPoint) 位置 f:\GitHub\CleanProcedure\CleanProcedure\UDP\UdpSendSocket.cs:行号 84
+   在 udp_csharp.UdpServer.Send(Byte[] content, EndPoint remoteEndPoint) 位置 f:\GitHub\CleanProcedure\CleanProcedure\UDP\UdpServer.cs:行号 84
+   在 CleanProcedure.CleanManager.ProcessDelegate(QueueInfo info) 位置 f:\GitHub\CleanProcedure\Decontamination\CleanManager.cs:行号 67
+   在 audiotest.BusinessInfoHelper.ScanQueue() 位置 f:\GitHub\CleanProcedure\CleanProcedure\comm\smessagequeue.cs:行号 91
+
+
+
+程序出现异常
+异常说明：System.Type--
+2018-06-01 16:51:01
+★异常类型：InvalidOperationException
+★异常消息：堆栈为空。
+★异常信息：   在 System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   在 System.Collections.Generic.Stack`1.Pop()
+   在 udp_csharp.SocketAsyncEventArgsPool.Pop() 位置 f:\GitHub\CleanProcedure\CleanProcedure\UDP\SocketAsyncEventArgsPool.cs:行号 41
+   在 udp_csharp.UdpSendSocket.Send(Byte[] content, EndPoint remoteEndPoint) 位置 f:\GitHub\CleanProcedure\CleanProcedure\UDP\UdpSendSocket.cs:行号 84
+   在 udp_csharp.UdpServer.Send(Byte[] content, EndPoint remoteEndPoint) 位置 f:\GitHub\CleanProcedure\CleanProcedure\UDP\UdpServer.cs:行号 84
+   在 CleanProcedure.CleanManager.ProcessDelegate(QueueInfo info) 位置 f:\GitHub\CleanProcedure\Decontamination\CleanManager.cs:行号 67
+   在 audiotest.BusinessInfoHelper.ScanQueue() 位置 f:\GitHub\CleanProcedure\CleanProcedure\comm\smessagequeue.cs:行号 91
+
+
+
+程序出现异常
+异常说明：System.Type--
+2018-06-01 16:51:10
+★异常类型：InvalidOperationException
+★异常消息：堆栈为空。
+★异常信息：   在 System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   在 System.Collections.Generic.Stack`1.Pop()
+   在 udp_csharp.SocketAsyncEventArgsPool.Pop() 位置 f:\GitHub\CleanProcedure\CleanProcedure\UDP\SocketAsyncEventArgsPool.cs:行号 41
+   在 udp_csharp.UdpSendSocket.Send(Byte[] content, EndPoint remoteEndPoint) 位置 f:\GitHub\CleanProcedure\CleanProcedure\UDP\UdpSendSocket.cs:行号 84
+   在 udp_csharp.UdpServer.Send(Byte[] content, EndPoint remoteEndPoint) 位置 f:\GitHub\CleanProcedure\CleanProcedure\UDP\UdpServer.cs:行号 84
+   在 CleanProcedure.CleanManager.ProcessDelegate(QueueInfo info) 位置 f:\GitHub\CleanProcedure\Decontamination\CleanManager.cs:行号 67
+   在 audiotest.BusinessInfoHelper.ScanQueue() 位置 f:\GitHub\CleanProcedure\CleanProcedure\comm\smessagequeue.cs:行号 91
+
+
+
+程序出现异常
+异常说明：System.Type--
+2018-06-01 16:53:17
+★异常类型：InvalidOperationException
+★异常消息：堆栈为空。
+★异常信息：   在 System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   在 System.Collections.Generic.Stack`1.Pop()
+   在 udp_csharp.SocketAsyncEventArgsPool.Pop() 位置 f:\GitHub\CleanProcedure\CleanProcedure\UDP\SocketAsyncEventArgsPool.cs:行号 41
+   在 udp_csharp.UdpSendSocket.Send(Byte[] content, EndPoint remoteEndPoint) 位置 f:\GitHub\CleanProcedure\CleanProcedure\UDP\UdpSendSocket.cs:行号 84
+   在 udp_csharp.UdpServer.Send(Byte[] content, EndPoint remoteEndPoint) 位置 f:\GitHub\CleanProcedure\CleanProcedure\UDP\UdpServer.cs:行号 84
+   在 CleanProcedure.CleanManager.ProcessDelegate(QueueInfo info) 位置 f:\GitHub\CleanProcedure\Decontamination\CleanManager.cs:行号 67
+   在 audiotest.BusinessInfoHelper.ScanQueue() 位置 f:\GitHub\CleanProcedure\CleanProcedure\comm\smessagequeue.cs:行号 91
+
+
+
+程序出现异常
+异常说明：System.Type--
+2018-06-01 16:53:18
+★异常类型：InvalidOperationException
+★异常消息：堆栈为空。
+★异常信息：   在 System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   在 System.Collections.Generic.Stack`1.Pop()
+   在 udp_csharp.SocketAsyncEventArgsPool.Pop() 位置 f:\GitHub\CleanProcedure\CleanProcedure\UDP\SocketAsyncEventArgsPool.cs:行号 41
+   在 udp_csharp.UdpSendSocket.Send(Byte[] content, EndPoint remoteEndPoint) 位置 f:\GitHub\CleanProcedure\CleanProcedure\UDP\UdpSendSocket.cs:行号 84
+   在 udp_csharp.UdpServer.Send(Byte[] content, EndPoint remoteEndPoint) 位置 f:\GitHub\CleanProcedure\CleanProcedure\UDP\UdpServer.cs:行号 84
+   在 CleanProcedure.CleanManager.ProcessDelegate(QueueInfo info) 位置 f:\GitHub\CleanProcedure\Decontamination\CleanManager.cs:行号 67
+   在 audiotest.BusinessInfoHelper.ScanQueue() 位置 f:\GitHub\CleanProcedure\CleanProcedure\comm\smessagequeue.cs:行号 91
+
+
+
+程序出现异常
+异常说明：System.Type--
+2018-06-01 16:53:22
+★异常类型：InvalidOperationException
+★异常消息：堆栈为空。
+★异常信息：   在 System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   在 System.Collections.Generic.Stack`1.Pop()
+   在 udp_csharp.SocketAsyncEventArgsPool.Pop() 位置 f:\GitHub\CleanProcedure\CleanProcedure\UDP\SocketAsyncEventArgsPool.cs:行号 41
+   在 udp_csharp.UdpSendSocket.Send(Byte[] content, EndPoint remoteEndPoint) 位置 f:\GitHub\CleanProcedure\CleanProcedure\UDP\UdpSendSocket.cs:行号 84
+   在 udp_csharp.UdpServer.Send(Byte[] content, EndPoint remoteEndPoint) 位置 f:\GitHub\CleanProcedure\CleanProcedure\UDP\UdpServer.cs:行号 84
+   在 CleanProcedure.CleanManager.ProcessDelegate(QueueInfo info) 位置 f:\GitHub\CleanProcedure\Decontamination\CleanManager.cs:行号 67
+   在 audiotest.BusinessInfoHelper.ScanQueue() 位置 f:\GitHub\CleanProcedure\CleanProcedure\comm\smessagequeue.cs:行号 91
+
+
+
+程序出现异常
+异常说明：System.Type--
+2018-06-01 16:53:22
+★异常类型：InvalidOperationException
+★异常消息：堆栈为空。
+★异常信息：   在 System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   在 System.Collections.Generic.Stack`1.Pop()
+   在 udp_csharp.SocketAsyncEventArgsPool.Pop() 位置 f:\GitHub\CleanProcedure\CleanProcedure\UDP\SocketAsyncEventArgsPool.cs:行号 41
+   在 udp_csharp.UdpSendSocket.Send(Byte[] content, EndPoint remoteEndPoint) 位置 f:\GitHub\CleanProcedure\CleanProcedure\UDP\UdpSendSocket.cs:行号 84
+   在 udp_csharp.UdpServer.Send(Byte[] content, EndPoint remoteEndPoint) 位置 f:\GitHub\CleanProcedure\CleanProcedure\UDP\UdpServer.cs:行号 84
+   在 CleanProcedure.CleanManager.ProcessDelegate(QueueInfo info) 位置 f:\GitHub\CleanProcedure\Decontamination\CleanManager.cs:行号 67
+   在 audiotest.BusinessInfoHelper.ScanQueue() 位置 f:\GitHub\CleanProcedure\CleanProcedure\comm\smessagequeue.cs:行号 91
+
+
+
+程序出现异常
+异常说明：System.Type--
+2018-06-01 16:53:54
+★异常类型：InvalidOperationException
+★异常消息：堆栈为空。
+★异常信息：   在 System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   在 System.Collections.Generic.Stack`1.Pop()
+   在 udp_csharp.SocketAsyncEventArgsPool.Pop() 位置 f:\GitHub\CleanProcedure\CleanProcedure\UDP\SocketAsyncEventArgsPool.cs:行号 41
+   在 udp_csharp.UdpSendSocket.Send(Byte[] content, EndPoint remoteEndPoint) 位置 f:\GitHub\CleanProcedure\CleanProcedure\UDP\UdpSendSocket.cs:行号 84
+   在 udp_csharp.UdpServer.Send(Byte[] content, EndPoint remoteEndPoint) 位置 f:\GitHub\CleanProcedure\CleanProcedure\UDP\UdpServer.cs:行号 84
+   在 CleanProcedure.CleanManager.ProcessDelegate(QueueInfo info) 位置 f:\GitHub\CleanProcedure\Decontamination\CleanManager.cs:行号 67
+   在 audiotest.BusinessInfoHelper.ScanQueue() 位置 f:\GitHub\CleanProcedure\CleanProcedure\comm\smessagequeue.cs:行号 91
+
+
+
+程序出现异常
+异常说明：System.Type--
+2018-06-01 16:54:23
+★异常类型：InvalidOperationException
+★异常消息：堆栈为空。
+★异常信息：   在 System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   在 System.Collections.Generic.Stack`1.Pop()
+   在 udp_csharp.SocketAsyncEventArgsPool.Pop() 位置 f:\GitHub\CleanProcedure\CleanProcedure\UDP\SocketAsyncEventArgsPool.cs:行号 41
+   在 udp_csharp.UdpSendSocket.Send(Byte[] content, EndPoint remoteEndPoint) 位置 f:\GitHub\CleanProcedure\CleanProcedure\UDP\UdpSendSocket.cs:行号 84
+   在 udp_csharp.UdpServer.Send(Byte[] content, EndPoint remoteEndPoint) 位置 f:\GitHub\CleanProcedure\CleanProcedure\UDP\UdpServer.cs:行号 84
+   在 CleanProcedure.CleanManager.ProcessDelegate(QueueInfo info) 位置 f:\GitHub\CleanProcedure\Decontamination\CleanManager.cs:行号 67
+   在 audiotest.BusinessInfoHelper.ScanQueue() 位置 f:\GitHub\CleanProcedure\CleanProcedure\comm\smessagequeue.cs:行号 91
+
+
+
+程序出现异常
+异常说明：System.Type--
+2018-06-01 16:56:09
+★异常类型：InvalidOperationException
+★异常消息：堆栈为空。
+★异常信息：   在 System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   在 System.Collections.Generic.Stack`1.Pop()
+   在 udp_csharp.SocketAsyncEventArgsPool.Pop() 位置 f:\GitHub\CleanProcedure\CleanProcedure\UDP\SocketAsyncEventArgsPool.cs:行号 41
+   在 udp_csharp.UdpSendSocket.Send(Byte[] content, EndPoint remoteEndPoint) 位置 f:\GitHub\CleanProcedure\CleanProcedure\UDP\UdpSendSocket.cs:行号 84
+   在 udp_csharp.UdpServer.Send(Byte[] content, EndPoint remoteEndPoint) 位置 f:\GitHub\CleanProcedure\CleanProcedure\UDP\UdpServer.cs:行号 84
+   在 CleanProcedure.CleanManager.ProcessDelegate(QueueInfo info) 位置 f:\GitHub\CleanProcedure\Decontamination\CleanManager.cs:行号 67
+   在 audiotest.BusinessInfoHelper.ScanQueue() 位置 f:\GitHub\CleanProcedure\CleanProcedure\comm\smessagequeue.cs:行号 91
+
+
+
+程序出现异常
+异常说明：System.Type--
+2018-06-01 16:57:00
+★异常类型：InvalidOperationException
+★异常消息：堆栈为空。
+★异常信息：   在 System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   在 System.Collections.Generic.Stack`1.Pop()
+   在 udp_csharp.SocketAsyncEventArgsPool.Pop() 位置 f:\GitHub\CleanProcedure\CleanProcedure\UDP\SocketAsyncEventArgsPool.cs:行号 41
+   在 udp_csharp.UdpSendSocket.Send(Byte[] content, EndPoint remoteEndPoint) 位置 f:\GitHub\CleanProcedure\CleanProcedure\UDP\UdpSendSocket.cs:行号 84
+   在 udp_csharp.UdpServer.Send(Byte[] content, EndPoint remoteEndPoint) 位置 f:\GitHub\CleanProcedure\CleanProcedure\UDP\UdpServer.cs:行号 84
+   在 CleanProcedure.CleanManager.ProcessDelegate(QueueInfo info) 位置 f:\GitHub\CleanProcedure\Decontamination\CleanManager.cs:行号 67
+   在 audiotest.BusinessInfoHelper.ScanQueue() 位置 f:\GitHub\CleanProcedure\CleanProcedure\comm\smessagequeue.cs:行号 91
+
+
+
+程序出现异常
+异常说明：System.Type--
+2018-06-01 16:58:27
+★异常类型：InvalidOperationException
+★异常消息：堆栈为空。
+★异常信息：   在 System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   在 System.Collections.Generic.Stack`1.Pop()
+   在 udp_csharp.SocketAsyncEventArgsPool.Pop() 位置 f:\GitHub\CleanProcedure\CleanProcedure\UDP\SocketAsyncEventArgsPool.cs:行号 41
+   在 udp_csharp.UdpSendSocket.Send(Byte[] content, EndPoint remoteEndPoint) 位置 f:\GitHub\CleanProcedure\CleanProcedure\UDP\UdpSendSocket.cs:行号 84
+   在 udp_csharp.UdpServer.Send(Byte[] content, EndPoint remoteEndPoint) 位置 f:\GitHub\CleanProcedure\CleanProcedure\UDP\UdpServer.cs:行号 84
+   在 CleanProcedure.CleanManager.ProcessDelegate(QueueInfo info) 位置 f:\GitHub\CleanProcedure\Decontamination\CleanManager.cs:行号 67
+   在 audiotest.BusinessInfoHelper.ScanQueue() 位置 f:\GitHub\CleanProcedure\CleanProcedure\comm\smessagequeue.cs:行号 91
+
+
+
+程序出现异常
+异常说明：System.Type--
+2018-06-01 16:58:37
+★异常类型：InvalidOperationException
+★异常消息：堆栈为空。
+★异常信息：   在 System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   在 System.Collections.Generic.Stack`1.Pop()
+   在 udp_csharp.SocketAsyncEventArgsPool.Pop() 位置 f:\GitHub\CleanProcedure\CleanProcedure\UDP\SocketAsyncEventArgsPool.cs:行号 41
+   在 udp_csharp.UdpSendSocket.Send(Byte[] content, EndPoint remoteEndPoint) 位置 f:\GitHub\CleanProcedure\CleanProcedure\UDP\UdpSendSocket.cs:行号 84
+   在 udp_csharp.UdpServer.Send(Byte[] content, EndPoint remoteEndPoint) 位置 f:\GitHub\CleanProcedure\CleanProcedure\UDP\UdpServer.cs:行号 84
+   在 CleanProcedure.CleanManager.ProcessDelegate(QueueInfo info) 位置 f:\GitHub\CleanProcedure\Decontamination\CleanManager.cs:行号 67
+   在 audiotest.BusinessInfoHelper.ScanQueue() 位置 f:\GitHub\CleanProcedure\CleanProcedure\comm\smessagequeue.cs:行号 91
+
+
+
+程序出现异常
+异常说明：System.Type--
+2018-06-01 17:00:12
+★异常类型：InvalidOperationException
+★异常消息：堆栈为空。
+★异常信息：   在 System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   在 System.Collections.Generic.Stack`1.Pop()
+   在 udp_csharp.SocketAsyncEventArgsPool.Pop() 位置 f:\GitHub\CleanProcedure\CleanProcedure\UDP\SocketAsyncEventArgsPool.cs:行号 41
+   在 udp_csharp.UdpSendSocket.Send(Byte[] content, EndPoint remoteEndPoint) 位置 f:\GitHub\CleanProcedure\CleanProcedure\UDP\UdpSendSocket.cs:行号 84
+   在 udp_csharp.UdpServer.Send(Byte[] content, EndPoint remoteEndPoint) 位置 f:\GitHub\CleanProcedure\CleanProcedure\UDP\UdpServer.cs:行号 84
+   在 CleanProcedure.CleanManager.ProcessDelegate(QueueInfo info) 位置 f:\GitHub\CleanProcedure\Decontamination\CleanManager.cs:行号 67
+   在 audiotest.BusinessInfoHelper.ScanQueue() 位置 f:\GitHub\CleanProcedure\CleanProcedure\comm\smessagequeue.cs:行号 91
+
+
+
+程序出现异常
+异常说明：System.Type--
+2018-06-01 17:01:35
+★异常类型：InvalidOperationException
+★异常消息：堆栈为空。
+★异常信息：   在 System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   在 System.Collections.Generic.Stack`1.Pop()
+   在 udp_csharp.SocketAsyncEventArgsPool.Pop() 位置 f:\GitHub\CleanProcedure\CleanProcedure\UDP\SocketAsyncEventArgsPool.cs:行号 41
+   在 udp_csharp.UdpSendSocket.Send(Byte[] content, EndPoint remoteEndPoint) 位置 f:\GitHub\CleanProcedure\CleanProcedure\UDP\UdpSendSocket.cs:行号 84
+   在 udp_csharp.UdpServer.Send(Byte[] content, EndPoint remoteEndPoint) 位置 f:\GitHub\CleanProcedure\CleanProcedure\UDP\UdpServer.cs:行号 84
+   在 CleanProcedure.CleanManager.ProcessDelegate(QueueInfo info) 位置 f:\GitHub\CleanProcedure\Decontamination\CleanManager.cs:行号 67
+   在 audiotest.BusinessInfoHelper.ScanQueue() 位置 f:\GitHub\CleanProcedure\CleanProcedure\comm\smessagequeue.cs:行号 91
+
+
+
+程序出现异常
+异常说明：System.Type--
+2018-06-01 17:02:08
+★异常类型：InvalidOperationException
+★异常消息：堆栈为空。
+★异常信息：   在 System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   在 System.Collections.Generic.Stack`1.Pop()
+   在 udp_csharp.SocketAsyncEventArgsPool.Pop() 位置 f:\GitHub\CleanProcedure\CleanProcedure\UDP\SocketAsyncEventArgsPool.cs:行号 41
+   在 udp_csharp.UdpSendSocket.Send(Byte[] content, EndPoint remoteEndPoint) 位置 f:\GitHub\CleanProcedure\CleanProcedure\UDP\UdpSendSocket.cs:行号 84
+   在 udp_csharp.UdpServer.Send(Byte[] content, EndPoint remoteEndPoint) 位置 f:\GitHub\CleanProcedure\CleanProcedure\UDP\UdpServer.cs:行号 84
+   在 CleanProcedure.CleanManager.ProcessDelegate(QueueInfo info) 位置 f:\GitHub\CleanProcedure\Decontamination\CleanManager.cs:行号 67
+   在 audiotest.BusinessInfoHelper.ScanQueue() 位置 f:\GitHub\CleanProcedure\CleanProcedure\comm\smessagequeue.cs:行号 91
+
+
+
+程序出现异常
+异常说明：System.Type--
+2018-06-01 17:02:14
+★异常类型：InvalidOperationException
+★异常消息：在创建窗口句柄之前，不能在控件上调用 Invoke 或 BeginInvoke。
+★异常信息：   在 System.Windows.Forms.Control.MarshaledInvoke(Control caller, Delegate method, Object[] args, Boolean synchronous)
+   在 System.Windows.Forms.Control.BeginInvoke(Delegate method, Object[] args)
+   在 Decontamination.PerformManager.UpdateProgressBarMethod(Object pb) 位置 f:\GitHub\CleanProcedure\Decontamination\PerformManager.cs:行号 203
+
+
+
+程序出现异常
+异常说明：System.Type--
+2018-06-01 17:16:32
+★异常类型：ArgumentOutOfRangeException
+★异常消息：指定的参数已超出有效值的范围。
+参数名: offset
+★异常信息：   在 System.Net.Sockets.SocketAsyncEventArgs.SetBufferInternal(Byte[] buffer, Int32 offset, Int32 count)
+   在 udp_csharp.BufferManager.SetBuffer(SocketAsyncEventArgs args) 位置 f:\GitHub\CleanProcedure\CleanProcedure\UDP\BufferManager.cs:行号 58
+   在 udp_csharp.BufferManager.SetBufferValue(SocketAsyncEventArgs args, Byte[] content) 位置 f:\GitHub\CleanProcedure\CleanProcedure\UDP\BufferManager.cs:行号 66
+   在 udp_csharp.UdpSendSocket.Send(Byte[] content, EndPoint remoteEndPoint) 位置 f:\GitHub\CleanProcedure\CleanProcedure\UDP\UdpSendSocket.cs:行号 88
+   在 udp_csharp.UdpServer.Send(Byte[] content, EndPoint remoteEndPoint) 位置 f:\GitHub\CleanProcedure\CleanProcedure\UDP\UdpServer.cs:行号 84
+   在 CleanProcedure.CleanManager.ProcessDelegate(QueueInfo info) 位置 f:\GitHub\CleanProcedure\Decontamination\CleanManager.cs:行号 67
+   在 audiotest.BusinessInfoHelper.ScanQueue() 位置 f:\GitHub\CleanProcedure\CleanProcedure\comm\smessagequeue.cs:行号 91
+
+
+
+程序出现异常
+异常说明：System.Type--
+2018-06-01 17:16:49
+★异常类型：ArgumentOutOfRangeException
+★异常消息：指定的参数已超出有效值的范围。
+参数名: offset
+★异常信息：   在 System.Net.Sockets.SocketAsyncEventArgs.SetBufferInternal(Byte[] buffer, Int32 offset, Int32 count)
+   在 udp_csharp.BufferManager.SetBuffer(SocketAsyncEventArgs args) 位置 f:\GitHub\CleanProcedure\CleanProcedure\UDP\BufferManager.cs:行号 58
+   在 udp_csharp.BufferManager.SetBufferValue(SocketAsyncEventArgs args, Byte[] content) 位置 f:\GitHub\CleanProcedure\CleanProcedure\UDP\BufferManager.cs:行号 66
+   在 udp_csharp.UdpSendSocket.Send(Byte[] content, EndPoint remoteEndPoint) 位置 f:\GitHub\CleanProcedure\CleanProcedure\UDP\UdpSendSocket.cs:行号 88
+   在 udp_csharp.UdpServer.Send(Byte[] content, EndPoint remoteEndPoint) 位置 f:\GitHub\CleanProcedure\CleanProcedure\UDP\UdpServer.cs:行号 84
+   在 CleanProcedure.CleanManager.ProcessDelegate(QueueInfo info) 位置 f:\GitHub\CleanProcedure\Decontamination\CleanManager.cs:行号 67
+   在 audiotest.BusinessInfoHelper.ScanQueue() 位置 f:\GitHub\CleanProcedure\CleanProcedure\comm\smessagequeue.cs:行号 91
+
+
+
+程序出现异常
+异常说明：System.Type--
+2018-06-01 17:17:00
+★异常类型：ArgumentOutOfRangeException
+★异常消息：指定的参数已超出有效值的范围。
+参数名: offset
+★异常信息：   在 System.Net.Sockets.SocketAsyncEventArgs.SetBufferInternal(Byte[] buffer, Int32 offset, Int32 count)
+   在 udp_csharp.BufferManager.SetBuffer(SocketAsyncEventArgs args) 位置 f:\GitHub\CleanProcedure\CleanProcedure\UDP\BufferManager.cs:行号 58
+   在 udp_csharp.BufferManager.SetBufferValue(SocketAsyncEventArgs args, Byte[] content) 位置 f:\GitHub\CleanProcedure\CleanProcedure\UDP\BufferManager.cs:行号 66
+   在 udp_csharp.UdpSendSocket.Send(Byte[] content, EndPoint remoteEndPoint) 位置 f:\GitHub\CleanProcedure\CleanProcedure\UDP\UdpSendSocket.cs:行号 88
+   在 udp_csharp.UdpServer.Send(Byte[] content, EndPoint remoteEndPoint) 位置 f:\GitHub\CleanProcedure\CleanProcedure\UDP\UdpServer.cs:行号 84
+   在 CleanProcedure.CleanManager.ProcessDelegate(QueueInfo info) 位置 f:\GitHub\CleanProcedure\Decontamination\CleanManager.cs:行号 67
+   在 audiotest.BusinessInfoHelper.ScanQueue() 位置 f:\GitHub\CleanProcedure\CleanProcedure\comm\smessagequeue.cs:行号 91
+
+
+
+程序出现异常
+异常说明：System.Type--
+2018-06-01 17:23:34
+★异常类型：ArgumentOutOfRangeException
+★异常消息：指定的参数已超出有效值的范围。
+参数名: offset
+★异常信息：   在 System.Net.Sockets.SocketAsyncEventArgs.SetBufferInternal(Byte[] buffer, Int32 offset, Int32 count)
+   在 udp_csharp.BufferManager.SetBuffer(SocketAsyncEventArgs args) 位置 f:\GitHub\CleanProcedure\CleanProcedure\UDP\BufferManager.cs:行号 58
+   在 udp_csharp.BufferManager.SetBufferValue(SocketAsyncEventArgs args, Byte[] content) 位置 f:\GitHub\CleanProcedure\CleanProcedure\UDP\BufferManager.cs:行号 66
+   在 udp_csharp.UdpSendSocket.Send(Byte[] content, EndPoint remoteEndPoint) 位置 f:\GitHub\CleanProcedure\CleanProcedure\UDP\UdpSendSocket.cs:行号 88
+   在 udp_csharp.UdpServer.Send(Byte[] content, EndPoint remoteEndPoint) 位置 f:\GitHub\CleanProcedure\CleanProcedure\UDP\UdpServer.cs:行号 84
+   在 CleanProcedure.CleanManager.ProcessDelegate(QueueInfo info) 位置 f:\GitHub\CleanProcedure\Decontamination\CleanManager.cs:行号 67
+   在 audiotest.BusinessInfoHelper.ScanQueue() 位置 f:\GitHub\CleanProcedure\CleanProcedure\comm\smessagequeue.cs:行号 91
+
+
+

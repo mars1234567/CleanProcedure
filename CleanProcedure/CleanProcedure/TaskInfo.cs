@@ -13,9 +13,9 @@ namespace Decontamination
        public string Group;
        public int Time;
        public int Step;
-
+       public bool bStart;
        public string errorInfo;
-       public   TaskInfo(string dev, string card,string cleanwork, int time, int step,string group,string error)
+       public   TaskInfo(string dev, string card,string cleanwork, int time, int step,string group,string error,bool binStart)
         {
             DevIP = dev;
             Card = card;
@@ -24,6 +24,7 @@ namespace Decontamination
             Group = group;
             CleanWorker = cleanwork;
             errorInfo = error;
+            bStart = binStart;
         }
     }
 

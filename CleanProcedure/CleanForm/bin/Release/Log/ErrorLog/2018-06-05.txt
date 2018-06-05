@@ -1,0 +1,33 @@
+程序出现异常
+异常说明：System.Type--
+2018-06-05 11:29:46
+★异常类型：KeyNotFoundException
+★异常消息：给定关键字不在字典中。
+★异常信息：   在 System.ThrowHelper.ThrowKeyNotFoundException()
+   在 System.Collections.Generic.Dictionary`2.get_Item(TKey key)
+   在 Decontamination.PerformManager.AddTaskList(TaskInfo info) 位置 f:\GitHub\CleanProcedure\CleanForm\PerformManager.cs:行号 108
+
+
+
+程序出现异常
+异常说明：System.Type--
+2018-06-05 11:30:17
+★异常类型：KeyNotFoundException
+★异常消息：给定关键字不在字典中。
+★异常信息：   在 System.ThrowHelper.ThrowKeyNotFoundException()
+   在 System.Collections.Generic.Dictionary`2.get_Item(TKey key)
+   在 Decontamination.PerformManager.StartTask(TaskInfo info) 位置 f:\GitHub\CleanProcedure\CleanForm\PerformManager.cs:行号 165
+
+
+
+程序出现异常
+异常说明：System.Type--
+2018-06-05 12:00:58
+★异常类型：InvalidOperationException
+★异常消息：在创建窗口句柄之前，不能在控件上调用 Invoke 或 BeginInvoke。
+★异常信息：   在 System.Windows.Forms.Control.MarshaledInvoke(Control caller, Delegate method, Object[] args, Boolean synchronous)
+   在 System.Windows.Forms.Control.BeginInvoke(Delegate method, Object[] args)
+   在 Decontamination.PerformManager.UpdateProgressBarMethod(Object pb) 位置 f:\GitHub\CleanProcedure\CleanForm\PerformManager.cs:行号 221
+
+
+

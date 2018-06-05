@@ -39,10 +39,11 @@ namespace Decontamination
             this.tabmoniter = new CCWin.SkinControl.SkinTabPage();
             this.tabsearch = new CCWin.SkinControl.SkinTabPage();
             this.ListCleanedCard = new CCWin.SkinControl.SkinListView();
-            this.Seq = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.Card = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.WorkCard = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.info = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.colSeq = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.colCardNo = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.colCardName = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.colWorker = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.colInfo = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.tabManager.SuspendLayout();
             this.tabsearch.SuspendLayout();
             this.SuspendLayout();
@@ -103,10 +104,11 @@ namespace Decontamination
             // ListCleanedCard
             // 
             this.ListCleanedCard.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
-            this.Seq,
-            this.Card,
-            this.WorkCard,
-            this.info});
+            this.colSeq,
+            this.colCardNo,
+            this.colCardName,
+            this.colWorker,
+            this.colInfo});
             this.ListCleanedCard.Dock = System.Windows.Forms.DockStyle.Fill;
             this.ListCleanedCard.Location = new System.Drawing.Point(0, 0);
             this.ListCleanedCard.Name = "ListCleanedCard";
@@ -117,24 +119,30 @@ namespace Decontamination
             this.ListCleanedCard.View = System.Windows.Forms.View.Details;
             this.ListCleanedCard.SelectedIndexChanged += new System.EventHandler(this.ListCleanedCard_SelectedIndexChanged);
             // 
-            // Seq
+            // colSeq
             // 
-            this.Seq.Text = "序号";
+            this.colSeq.Text = "序号";
+            this.colSeq.Width = 120;
             // 
-            // Card
+            // colCardNo
             // 
-            this.Card.Text = "序号";
-            this.Card.Width = 200;
+            this.colCardNo.Text = "内镜号";
+            this.colCardNo.Width = 200;
             // 
-            // WorkCard
+            // colCardName
             // 
-            this.WorkCard.Text = "工作卡";
-            this.WorkCard.Width = 200;
+            this.colCardName.Text = "内镜名称";
+            this.colCardName.Width = 120;
             // 
-            // info
+            // colWorker
             // 
-            this.info.Text = "洗消信息";
-            this.info.Width = 600;
+            this.colWorker.Text = "工作人员";
+            this.colWorker.Width = 120;
+            // 
+            // colInfo
+            // 
+            this.colInfo.Text = "洗消信息";
+            this.colInfo.Width = 400;
             // 
             // CleanForm
             // 
@@ -157,10 +165,11 @@ namespace Decontamination
         private CCWin.SkinControl.SkinTabPage tabmoniter;
         private CCWin.SkinControl.SkinTabPage tabsearch;
         private CCWin.SkinControl.SkinListView ListCleanedCard;
-        private ColumnHeader Seq;
-        private ColumnHeader Card;
-        private ColumnHeader WorkCard;
-        private ColumnHeader info;
+        private ColumnHeader colSeq;
+        private ColumnHeader colCardNo;
+        private ColumnHeader colCardName;
+        private ColumnHeader colWorker;
+        private ColumnHeader colInfo;
 
         //private void llbl_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         //{

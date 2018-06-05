@@ -41,5 +41,20 @@ namespace CleanProcedure
  
               }
           }
+
+          public static void GetCardListInfo(ref  Dictionary<string, string> cardlist)
+          {
+              using (CleanProcedureEntities db = new CleanProcedureEntities())
+              {
+                  //刷卡器
+                 List<Clean_Card> Cleanlist = db.Clean_Card.Select(o => o).ToList();
+                  
+                   foreach(var i in Cleanlist)
+                   {
+                       cardlist.Add(i.CardNo,i.CardName);
+                   }
+              }
+             
+          }
     }
 }

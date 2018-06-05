@@ -26,5 +26,6 @@ namespace CleanProcedure
         public string WorkCard { get; set; }
         public System.DateTime EndTime { get; set; }
         public int Sequence { get; set; }
+        public Nullable<bool> YesterdayProc { get; set; }
     }
 }

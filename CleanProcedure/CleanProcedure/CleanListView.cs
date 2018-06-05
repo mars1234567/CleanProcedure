@@ -18,5 +18,6 @@ namespace CleanProcedure
         public string CleanCard { get; set; }
         public string WorkCard { get; set; }
         public string cleanprc { get; set; }
+        public Nullable<System.DateTime> time { get; set; }
     }
 }

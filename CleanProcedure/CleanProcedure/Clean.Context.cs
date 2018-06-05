@@ -38,5 +38,6 @@ namespace CleanProcedure
         public DbSet<Clean_CardDevice> Clean_CardDevice { get; set; }
         public DbSet<Clean_User> Clean_User { get; set; }
         public DbSet<CleanListView> CleanListView { get; set; }
+        public DbSet<CleanCard_UserList> CleanCard_UserList { get; set; }
     }
 }

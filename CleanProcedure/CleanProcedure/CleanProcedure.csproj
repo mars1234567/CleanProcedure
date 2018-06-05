@@ -51,6 +51,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AsyncSocketUDPServer .cs" />
     <Compile Include="CardList.cs" />
     <Compile Include="Clean.Context.cs">
       <AutoGen>True</AutoGen>
@@ -66,6 +67,9 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Clean.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="CleanCard_UserList.cs">
+      <DependentUpon>Clean.tt</DependentUpon>
     </Compile>
     <Compile Include="CleanListView.cs">
       <DependentUpon>Clean.tt</DependentUpon>
@@ -92,6 +96,7 @@
       <DependentUpon>Clean.tt</DependentUpon>
     </Compile>
     <Compile Include="comm\appsettingcfg.cs" />
+    <Compile Include="comm\CardConfigCtrl.cs" />
     <Compile Include="comm\ConfigMgr.cs" />
     <Compile Include="comm\DefaultCls.cs" />
     <Compile Include="comm\LogHelper.cs" />
@@ -120,13 +125,6 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="State.cs" />
     <Compile Include="TaskInfo.cs" />
-    <Compile Include="UDP\BufferManager.cs" />
-    <Compile Include="UDP\CardConfigCtrl.cs" />
-    <Compile Include="UDP\SocketAsyncEventArgsPool.cs" />
-    <Compile Include="UDP\ThreadPing.cs" />
-    <Compile Include="UDP\UdpReceiveSocket.cs" />
-    <Compile Include="UDP\UdpSendSocket.cs" />
-    <Compile Include="UDP\UdpServer.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config">

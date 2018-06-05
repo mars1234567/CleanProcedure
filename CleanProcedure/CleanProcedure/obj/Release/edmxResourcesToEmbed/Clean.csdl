@@ -104,6 +104,7 @@
     <Property Name="WorkCard" Type="String" Nullable="false" FixedLength="true" MaxLength="20" Unicode="true" />
     <Property Name="EndTime" Type="DateTime" Nullable="false" Precision="3" />
     <Property Name="Sequence" Type="Int32" Nullable="false" />
+    <Property Name="YesterdayProc" Type="Boolean" />
   </EntityType>
   <EntityType Name="Dic_Area">
     <Key>
@@ -226,6 +227,7 @@
     <EntitySet Name="Clean_CardDevice" EntityType="Self.Clean_CardDevice" />
     <EntitySet Name="Clean_User" EntityType="Self.Clean_User" />
     <EntitySet Name="CleanListView" EntityType="CleanModel.CleanListView" />
+    <EntitySet Name="CleanCard_UserList" EntityType="CleanModel.CleanCard_UserList" />
   </EntityContainer>
   <EntityType Name="CleanListView">
     <Key>
@@ -237,5 +239,26 @@
     <Property Name="CleanCard" Type="String" Nullable="false" MaxLength="20" FixedLength="true" Unicode="true" />
     <Property Name="WorkCard" Type="String" Nullable="false" MaxLength="20" FixedLength="true" Unicode="true" />
     <Property Name="cleanprc" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="time" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="CleanCard_UserList">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" />
+    <Property Name="CleanCard" Type="String" MaxLength="20" FixedLength="true" Unicode="true" Nullable="false" />
+    <Property Name="Sequence" Type="Int32" Nullable="false" />
+    <Property Name="UseStatus" Type="String" MaxLength="20" FixedLength="true" Unicode="true" />
+    <Property Name="ZuofeiID" Type="String" MaxLength="20" FixedLength="true" Unicode="true" />
+    <Property Name="ZuofeiTime" Type="DateTime" Precision="3" />
+    <Property Name="Endoscopic" Type="String" MaxLength="20" FixedLength="true" Unicode="true" />
+    <Property Name="PatientID" Type="String" MaxLength="20" FixedLength="true" Unicode="true" />
+    <Property Name="PatientName" Type="String" MaxLength="20" FixedLength="true" Unicode="true" />
+    <Property Name="Sex" Type="String" MaxLength="4" FixedLength="true" Unicode="true" />
+    <Property Name="Age" Type="String" MaxLength="4" FixedLength="true" Unicode="true" />
+    <Property Name="ExamRoom" Type="String" MaxLength="20" FixedLength="true" Unicode="true" />
+    <Property Name="ExamDoctor" Type="String" MaxLength="20" FixedLength="true" Unicode="true" />
+    <Property Name="ExamNurse" Type="String" MaxLength="20" FixedLength="true" Unicode="true" />
+    <Property Name="ExamTime" Type="DateTime" Precision="3" />
   </EntityType>
 </Schema>

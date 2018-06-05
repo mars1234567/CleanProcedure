@@ -123,8 +123,6 @@
     <Property Name="MarrorType" Type="nvarchar" MaxLength="50" />
     <Property Name="MarrorCleanPerson" Type="nvarchar" MaxLength="40" />
   </EntityType>
-  <!--生成过程中发现错误:
-警告 6002: 表/视图“Clean.dbo.Clean_RecordList”未定义主键。已推断出该键，并将定义创建为只读的表/视图。-->
   <EntityType Name="Clean_RecordList">
     <Key>
       <PropertyRef Name="Id" />
@@ -141,6 +139,7 @@
     <Property Name="WorkCard" Type="nchar" MaxLength="20" Nullable="false" />
     <Property Name="EndTime" Type="datetime" Nullable="false" />
     <Property Name="Sequence" Type="int" Nullable="false" />
+    <Property Name="YesterdayProc" Type="bit" />
   </EntityType>
   <EntityType Name="Clean_User">
     <Key>
@@ -156,6 +155,26 @@
     <Property Name="WorkGroupNum" Type="smallint" />
     <Property Name="Department" Type="nvarchar" MaxLength="20" />
     <Property Name="Signature" Type="varbinary(max)" />
+  </EntityType>
+  <EntityType Name="CleanCard_UserList">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" />
+    <Property Name="CleanCard" Type="nchar" MaxLength="20" Nullable="false" />
+    <Property Name="Sequence" Type="int" Nullable="false" />
+    <Property Name="UseStatus" Type="nchar" MaxLength="20" />
+    <Property Name="ZuofeiID" Type="nchar" MaxLength="20" />
+    <Property Name="ZuofeiTime" Type="datetime" />
+    <Property Name="Endoscopic" Type="nchar" MaxLength="20" />
+    <Property Name="PatientID" Type="nchar" MaxLength="20" />
+    <Property Name="PatientName" Type="nchar" MaxLength="20" />
+    <Property Name="Sex" Type="nchar" MaxLength="4" />
+    <Property Name="Age" Type="nchar" MaxLength="4" />
+    <Property Name="ExamRoom" Type="nchar" MaxLength="20" />
+    <Property Name="ExamDoctor" Type="nchar" MaxLength="20" />
+    <Property Name="ExamNurse" Type="nchar" MaxLength="20" />
+    <Property Name="ExamTime" Type="datetime" />
   </EntityType>
   <EntityType Name="Dic_Area">
     <Key>
@@ -226,6 +245,7 @@
     <Property Name="CleanCard" Type="nchar" MaxLength="20" Nullable="false" />
     <Property Name="WorkCard" Type="nchar" MaxLength="20" Nullable="false" />
     <Property Name="cleanprc" Type="nvarchar(max)" />
+    <Property Name="time" Type="datetime" />
   </EntityType>
   <EntityContainer Name="CleanModelStoreContainer">
     <EntitySet Name="Clean_Card" EntityType="Self.Clean_Card" Schema="dbo" store:Type="Tables" />
@@ -233,34 +253,21 @@
     <EntitySet Name="Clean_Factory" EntityType="Self.Clean_Factory" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Clean_Pretreatment" EntityType="Self.Clean_Pretreatment" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Clean_Record" EntityType="Self.Clean_Record" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Clean_RecordList" EntityType="Self.Clean_RecordList" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Clean_User" EntityType="Self.Clean_User" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="CleanCard_UserList" EntityType="Self.CleanCard_UserList" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Dic_Area" EntityType="Self.Dic_Area" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Dic_UserRole" EntityType="Self.Dic_UserRole" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Dic_Workgroup" EntityType="Self.Dic_Workgroup" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Endoscopic_Device" EntityType="Self.Endoscopic_Device" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Endoscopic_Mirror" EntityType="Self.Endoscopic_Mirror" Schema="dbo" store:Type="Tables" />
-    <EntitySet Name="Clean_RecordList" EntityType="Self.Clean_RecordList" store:Type="Tables" store:Schema="dbo">
-      <DefiningQuery>SELECT 
-[Clean_RecordList].[Id] AS [Id], 
-[Clean_RecordList].[CleanCard] AS [CleanCard], 
-[Clean_RecordList].[CleanIp] AS [CleanIp], 
-[Clean_RecordList].[StartTime] AS [StartTime], 
-[Clean_RecordList].[CleanPort] AS [CleanPort], 
-[Clean_RecordList].[StepTime] AS [StepTime], 
-[Clean_RecordList].[StepName] AS [StepName], 
-[Clean_RecordList].[StepNum] AS [StepNum], 
-[Clean_RecordList].[MaxNum] AS [MaxNum], 
-[Clean_RecordList].[WorkCard] AS [WorkCard], 
-[Clean_RecordList].[EndTime] AS [EndTime], 
-[Clean_RecordList].[Sequence] AS [Sequence]
-FROM [dbo].[Clean_RecordList] AS [Clean_RecordList]</DefiningQuery>
-    </EntitySet>
     <EntitySet Name="CleanListView" EntityType="Self.CleanListView" store:Type="Views" store:Schema="dbo">
       <DefiningQuery>SELECT 
 [CleanListView].[Sequence] AS [Sequence], 
 [CleanListView].[CleanCard] AS [CleanCard], 
 [CleanListView].[WorkCard] AS [WorkCard], 
-[CleanListView].[cleanprc] AS [cleanprc]
+[CleanListView].[cleanprc] AS [cleanprc], 
+[CleanListView].[time] AS [time]
 FROM [dbo].[CleanListView] AS [CleanListView]</DefiningQuery>
     </EntitySet>
   </EntityContainer>

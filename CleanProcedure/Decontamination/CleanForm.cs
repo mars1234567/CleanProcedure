@@ -9,6 +9,8 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 using CCWin;
+using NetFrame.Net.UDP.Sock.Asynchronous;
+using System.Net;
 
 namespace Decontamination
 {
@@ -17,10 +19,11 @@ namespace Decontamination
         //洗消流程管理
         CleanManager cm = new CleanManager();
 
-
+        
         public CleanForm()
         {
             InitializeComponent();
+            
         }
 
 
@@ -66,14 +69,24 @@ namespace Decontamination
                 foreach(var i in ul)
                 {
                   ListViewItem col =  ListCleanedCard.Items.Add(i.Sequence.ToString());
+                  string cardname = "";
+                  string workName = i.WorkCard;
+                  if (cm.Cardlist.ContainsKey(i.CleanCard))
+                      cardname = cm.Cardlist[i.CleanCard];
+                  if (cm.Cardlist.ContainsKey(i.WorkCard))
+                      workName = cm.Cardlist[i.WorkCard];
+
                   col.SubItems.Add(i.CleanCard);
-                  col.SubItems.Add(i.WorkCard);
+                  col.SubItems.Add(cardname);
+                  col.SubItems.Add(workName);
                   col.SubItems.Add(i.cleanprc);
 
 
                 }
             }
         }
+
+
 
 
     }

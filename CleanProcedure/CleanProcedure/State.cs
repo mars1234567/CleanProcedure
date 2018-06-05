@@ -19,7 +19,7 @@ namespace CleanProcedure
         public int StepTime;
         //洗消步骤
         public int StepNum;
-        static int id = 0;
+        public static int id = 0;
 
         //传入工作人员卡
         public State(string cardno,string clientIp,int time=0)

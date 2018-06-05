@@ -16,6 +16,8 @@ namespace CleanProcedure
         private Clean_CardDevice Step;
         //前一个
         private StepNode Last;
+        //后一个
+        private StepNode Next;
         //IP地址
         private string ClientIp;
         //端口号
@@ -25,7 +27,10 @@ namespace CleanProcedure
         {
             Last = Node;
         }
-
+        public void SetNext(StepNode Node)
+        {
+            Next = Node;
+        }
         public int GetStepNum()
         {
             return (int)Step.StepNumber;
@@ -47,11 +52,15 @@ namespace CleanProcedure
         }
         public string GetCleanGroup()
         {
-            return Step.CleanGroup;
+            return Step.DevType;
         }
         public StepNode GetLast()
         {
             return Last;
+        }
+        public StepNode GetNext()
+        {
+            return Next;
         }
         public string StepIp()
         {
